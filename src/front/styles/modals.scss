@@ -1,0 +1,70 @@
+.modal-header {
+  border: none;
+  padding-bottom: 0;
+  justify-content: space-between;
+}
+.modal-header::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 1.35rem;
+  width: 0.5rem;
+  height: 4rem;
+  background-color: var(--primary-color);
+}
+.modal-title {
+  color: var(--primary-color);
+  margin: 1rem 0 0;
+  font-size: 18px;
+  padding-left: 2rem;
+}
+.modal-content {
+  border: none;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.253);
+}
+.modal-footer {
+  border: none;
+}
+.inputs-holder {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.labels-ls {
+  align-self: baseline;
+  padding: 1rem 0 0 0;
+}
+.inputs-holder label {
+  font-weight: 400;
+  font-size: medium;
+}
+.inputs-ls {
+  border: none;
+  border-bottom: 2px solid rgb(209, 209, 209);
+  padding: 0.75rem;
+  border-radius: 1px;
+  outline: none;
+  margin: 0.75rem 0;
+  font-size: medium;
+  background-color: rgb(238, 238, 238);
+}
+.signup-button {
+  padding: 0.75rem 1.25rem;
+  font-size: 18px;
+  border: 1px solid var(--primary-color);
+  border-radius: 1px;
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+  margin: 1rem 2rem 2rem;
+}
+.signup-button:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+.modal-dialog {
+  max-width: 32rem;
+}
+.btn-close {
+  margin-bottom: 2rem !important;
+}

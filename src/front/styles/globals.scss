@@ -1,0 +1,12 @@
+:root {
+  --primary-color: #979797;
+  --primary-hover: #bdbdbd;
+  --background-body: #ffffff;
+  --text-color: #aaa;
+}
+body {
+  background-color: var(--background-body);
+}
+ul {
+  list-style-type: none;
+}

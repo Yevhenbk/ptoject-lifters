@@ -67,7 +67,7 @@ def create_the_admin():
         name=name, 
         lastname=lastname,
         email=email, 
-        _password=generate_password_hash(password, method='pbkdf2:sha256', salt_length=16),
+        password=generate_password_hash(password, method='pbkdf2:sha256', salt_length=16),
         is_theAdmin=True,
         is_active=True
     )

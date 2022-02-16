@@ -1,0 +1,17 @@
+.wrapper-first ul {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+.wrapper-first ul li {
+  margin: 0.5rem 0.75rem;
+  padding: 0.5rem 0.75rem;
+}
+.wrapper-first ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+}
+.wrapper-first ul li a:hover {
+  color: var(--background-body);
+}

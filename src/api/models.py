@@ -15,7 +15,7 @@ class Account(db.Model):
     name = db.Column(db.VARCHAR, unique=False, nullable=False)
     lastname = db.Column(db.VARCHAR, unique=False, nullable=False)
     email = db.Column(db.VARCHAR, unique=True, nullable=False)
-    _password = db.Column(db.VARCHAR, unique=False, nullable=False)
+    password = db.Column(db.VARCHAR, unique=False, nullable=False)
     is_theAdmin = db.Column(db.Boolean(), unique=False, nullable=False)
     is_active = db.Column(db.Boolean(), unique=False, nullable=False)
 
