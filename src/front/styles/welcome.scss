@@ -1,0 +1,33 @@
+.welcome-class {
+  background-color: var(--primary-color);
+  color: var(--background-body);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  padding: 8rem 0 2rem;
+}
+.wel-holder {
+  max-width: 35rem;
+  text-align: center;
+}
+.welcome-title {
+  padding-bottom: 0.75rem;
+}
+.welcome-button {
+  color: var(--background-body);
+  background-color: transparent;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.5rem 1.75rem;
+  font-size: 16px;
+  margin: 1rem 0 2rem;
+  font-weight: 300;
+}
+.welcome-button:hover {
+  background-color: var(--background-body);
+  border: 1px solid var(--background-body);
+  color: var(--black);
+}
+.wel-logo {
+  width: 14rem;
+}

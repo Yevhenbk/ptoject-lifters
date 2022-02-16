@@ -15,3 +15,14 @@
 .wrapper-first ul li a:hover {
   color: var(--background-body);
 }
+.navbar-logo {
+  color: var(--background-body);
+}
+.active-nav {
+  background-color: var(--primary-color);
+  box-shadow: inset 0 -1px 0 0 rgb(0 0 0 / 10%);
+}
+.navbar {
+  transition: visibility 0.35s step-start, transform 0.35s ease,
+    background-color 0.35s ease, box-shadow 0.35s ease, height 0.2s ease;
+}

@@ -21,7 +21,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="myServiceButtonHolder">
+      <div>
         <input
           type="button"
           className="ff"

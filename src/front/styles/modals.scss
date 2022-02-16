@@ -68,3 +68,12 @@
 .btn-close {
   margin-bottom: 2rem !important;
 }
+.ff {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 18px;
+}
+.ff:hover {
+  color: var(--background-body);
+}

@@ -8,7 +8,7 @@ export const Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
 
 	const showColor = () => {
-		if (window.scrollY >= 90) {
+		if (window.scrollY >= 437.4) {
 			setNavbar(true);
 		} else {
 			setNavbar(false);
@@ -18,7 +18,7 @@ export const Navbar = () => {
 	window.addEventListener("scroll", showColor);
 
 	return (
-		<nav className="navbar navbar-light bg-light" collapseOnSelect
+		<nav collapseOnSelect
 			expand="lg"
 			className={
 				navbar
