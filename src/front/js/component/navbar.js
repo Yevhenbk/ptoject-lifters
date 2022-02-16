@@ -8,7 +8,7 @@ export const Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
 
 	const showColor = () => {
-		if (window.scrollY >= 437.4) {
+		if (window.scrollY >= 360.4) {
 			setNavbar(true);
 		} else {
 			setNavbar(false);

@@ -1,0 +1,89 @@
+.card-group-cards {
+  display: flex;
+  flex-direction: row;
+}
+#img-block {
+  width: 100%;
+  margin: 0;
+  height: 20rem;
+}
+.figure-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24rem;
+  height: 28rem;
+  border-radius: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  &:hover {
+    .caption-card {
+      bottom: 0;
+    }
+  }
+}
+.figure-card:hover {
+  .caption-card {
+    bottom: 0;
+  }
+}
+.background-cards {
+  height: 100%;
+  transition: 0.25s;
+}
+.caption-card {
+  position: absolute;
+  bottom: -51%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: white;
+  line-height: 1;
+  transition: 0.25s;
+}
+.comp-card-1 {
+  background-color: var(--primary-color);
+}
+.comp-card-2 {
+  background-color: var(--primary-color);
+}
+.comp-card-3 {
+  background-color: var(--primary-color);
+}
+.fig-sec-p {
+  text-align: center;
+  text-decoration: underline;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+.figure-second-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+.cards-info {
+  color: white;
+  text-align: center;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  line-height: 1.25;
+}
+.cards-refs {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 2rem 0;
+  color: var(--background-body);
+  text-decoration: underline;
+}
+.class-info-holder {
+  height: 10rem;
+}
+@media screen and (max-width: 610px) {
+  .card-group-cards {
+    flex-direction: column;
+  }
+}

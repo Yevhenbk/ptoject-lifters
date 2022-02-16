@@ -18,7 +18,10 @@ const Welcome = () => {
           elit. Assumenda ducimus optio fugiat odio beatae, rerum doloremque, id
           corrupti iusto accusamus soluta!
         </p>
-        <input type="button" value="Clase gratis" className="welcome-button" />
+        <div className="wel-buttons-holder">
+          <input type="button" value="Reserve" className="welcome-button" />
+          <input type="button" value="Learn More" className="welcome-button" />
+        </div>
       </div>
     </div>
   );
