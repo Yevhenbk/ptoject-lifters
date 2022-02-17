@@ -10,6 +10,7 @@ const Welcome = () => {
       </div>
       <div className="wel-holder">
         <h4 className="welcome-title">Welcome to 'ClubName'</h4>
+        <div className="hr-line" />
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
           ducimus optio fugiat odio beatae, rerum doloremque, id corrupti iusto

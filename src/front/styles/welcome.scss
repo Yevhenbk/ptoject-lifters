@@ -9,6 +9,11 @@
 .wel-holder {
   max-width: 35rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.wel-holder p {
+  margin-top: 1rem;
 }
 .welcome-title {
   padding-bottom: 0.75rem;
