@@ -1,0 +1,54 @@
+.installs {
+    background-color: var(--primary-color);
+}
+.installs p {
+    color: white;
+}
+.installs-section-one {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60vw;
+    padding: 4rem 4rem 0 4rem;
+}
+.installs {
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+.installs-title {
+    color: var(--background-body);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.installs-text {
+    color: var(--background-body);
+    text-align: center;
+}
+Iframe {
+    display: flex;
+    border: none;
+    height: 26rem;
+    width: 50vw;
+    position: relative;
+}
+.installs-text {
+    padding: 1rem 2rem 6rem 2rem;
+}
+.installs p {
+    margin: 0;
+}
+@media screen and (max-width: 1085px) {
+    .installs {
+        display: flex; 
+        flex-direction: column;
+    }
+    .installs-section-one {
+        width: 100%;
+        padding: 4rem .5rem 0 .5rem;
+    }
+    Iframe {
+        width: 100%;
+        height: 20rem;
+    }
+}
