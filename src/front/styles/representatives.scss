@@ -1,18 +1,12 @@
-.img-rep {
-  width: 26rem;
-}
-.card-group-representatives {
-  display: flex;
-  flex: row;
-}
 .marks-divs {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: var(--background-second);
+  background-color: var(--secondary-color);
   color: var(--black);
+  padding: 4rem 0;
 }
 .marks-title {
   margin-bottom: 1rem;
@@ -20,11 +14,8 @@
 .marks-p {
   margin-top: 1rem;
   padding: 0 4rem;
+  max-width: 70rem;
 }
-.marks-divs .welcome-button {
-  margin: 0;
-  margin-top: 1rem;
-}
-.marks-divs .hr-line {
-  background-color: var(--black);
+.marks-divs p {
+  font-size: 21px;
 }
