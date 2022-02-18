@@ -4,7 +4,7 @@
   justify-content: center;
   background: var(--secondary-color);
   padding: 0;
-  padding: 2rem 0;
+  padding: 2rem 0 6rem;
   overflow: hidden;
 }
 .op-cards-holder {
@@ -100,7 +100,7 @@
   margin-top: 2.5rem;
 }
 .op-buttons {
-  display: flex;
+  display: none;
   justify-content: center;
   margin: 2rem 0;
 }
