@@ -19,3 +19,22 @@
 .marks-divs p {
   font-size: 21px;
 }
+.menu-link {
+  margin: 2rem 0 1rem;
+  color: var(--black);
+  font-size: 21px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.menu-link:hover {
+  color: var(--primary-color);
+}
+.inter-div {
+  height: 0.15rem;
+  width: 8rem;
+  background-color: var(--primary-color);
+  transition: 0.8s all;
+}
+a.menu-link:hover + .inter-div {
+  width: 22rem;
+}

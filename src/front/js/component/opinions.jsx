@@ -1,4 +1,5 @@
 import React from "react";
+// import Rating from "@mui/material/Rating";
 import nouser from "../../img/noimage.jpg";
 import "../../styles/opinions.scss";
 
@@ -29,6 +30,7 @@ const Opinions = () => {
                 <i className="fas fa-star" />
                 <i className="fas fa-star" />
                 <i className="far fa-star" />
+                {/* <Rating name="read-only" value={value} readOnly /> */}
               </div>
               <div className="op-text-holder">
                 <p className="op-text">

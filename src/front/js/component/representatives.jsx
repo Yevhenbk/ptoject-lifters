@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../img/noimage.jpg";
+import { Link } from "react-router-dom";
 import "../../styles/representatives.scss";
 
 const Representatives = () => {
@@ -13,7 +13,11 @@ const Representatives = () => {
           de origen. El pesista es un atleta fuerte, rápido, con una condición
           física suprema y una gran capacidad de concentración.
         </p>
-        <p className="marks-footer">!Únete a nuestro club de halterofilia!</p>
+        {/* <p className="marks-footer">!Únete a nuestro club de halterofilia!</p> */}
+        <Link to="/clases" className="menu-link">
+          !Únete a nuestro club de halterofilia!
+        </Link>
+        <div className="inter-div" />
       </div>
     </div>
   );
