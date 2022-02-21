@@ -1,15 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import ScrollToTop from "./component/scrollToTop";
-
 import { Home } from "./pages/home";
-import { Demo } from "./pages/demo";
-import { Single } from "./pages/single";
+import { About } from "./pages/about";
 import injectContext from "./store/appContext";
-
 import { Navbar } from "./component/navbar";
 import Footer from "./component/footer.jsx";
-
 import "../styles/globals.scss";
 
 //create your first component
@@ -26,7 +21,10 @@ const Layout = () => {
 					<Route exact path="/">
 						<Home />
 					</Route>
-					<Route exact path="/demo">
+					<Route exact path="/about">
+						<About />
+					</Route>
+					{/* <Route exact path="/demo">
 						<Demo />
 					</Route>
 					<Route exact path="/single/:theid">
@@ -34,7 +32,7 @@ const Layout = () => {
 					</Route>
 					<Route>
 						<h1>Not found!</h1>
-					</Route>
+					</Route> */}
 				</Switch>
 				<Footer />
 			</BrowserRouter>

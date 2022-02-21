@@ -30,7 +30,7 @@ export const Navbar = () => {
 				<div className="wrapper-first">
 					<ul>
 						<li>
-							<Link to="/aboutUs" className="menu-href">
+							<Link to="/about" className="menu-href">
 								About Us
 							</Link>
 						</li>
