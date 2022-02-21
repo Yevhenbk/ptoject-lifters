@@ -4,7 +4,7 @@
   justify-content: center;
   background: var(--secondary-color);
   padding: 0;
-  padding: 2rem 0 6rem;
+  padding: 2rem 0;
   overflow: hidden;
 }
 .op-cards-holder {
@@ -39,13 +39,15 @@
   display: flex;
   flex-direction: column;
   width: 25rem;
-  height: 16rem;
+  height: 18.25rem;
   background-color: white;
   margin: 0 1.5rem;
   transition: 0.2s all ease;
   border: 1px solid var(--border);
   border-radius: 5px;
   transition: all ease 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .op-card-img {
   border-radius: 50%;
@@ -57,7 +59,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
 }
 .in-between {
   display: flex;
@@ -82,17 +84,11 @@
   width: 1.5rem;
   height: 1.5rem;
 }
-.fa-star {
-  color: rgb(255, 145, 0);
-  margin: 0 0.1rem;
-}
-.op-rating {
-  padding: 0 1rem;
-}
 .op-text {
   font-size: 16px;
-  font-weight: 400;
-  color: var(--primary-hover);
+  font-weight: 300;
+  color: var(--black);
+  margin: 0;
 }
 .footer-op {
   height: 0.35rem;
@@ -100,12 +96,13 @@
   margin-top: 2.5rem;
 }
 .op-buttons {
-  display: none;
+  display: flex;
   justify-content: center;
   margin: 2rem 0;
 }
 .op-buttons label {
-  background-color: var(--primary-color);
+  border: 1px solid var(--primary-hover);
+  background-color: var(--primary-hover);
   margin: 0 0.4rem;
   border-radius: 50px;
   height: 1rem;
@@ -118,7 +115,7 @@
 .op-buttons label.active {
   width: 1.1rem;
   height: 1.1rem;
-  background-color: var(--primary-hover);
+  background-color: transparent;
 }
 .radio-but {
   display: none;
@@ -126,26 +123,26 @@
 #one:checked ~ .op-buttons label.one {
   width: 1.1rem;
   height: 1.1rem;
-  background-color: var(--primary-hover);
+  background-color: transparent;
 }
 #two:checked ~ .op-buttons label.two {
   width: 1.1rem;
   height: 1.1rem;
-  background-color: var(--primary-hover);
+  background-color: transparent;
 }
 #two:checked ~ .op-buttons label.one {
   width: 1rem;
   height: 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--primary-hover);
 }
 #one:checked ~ .op-buttons label.two {
   width: 1rem;
   height: 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--primary-hover);
 }
 .op-text-holder {
-  height: 5.5rem;
-  overflow: scroll;
+  height: 12.85rem;
+  overflow: hidden;
   overflow-x: hidden;
   padding: 1rem;
 }

@@ -55,15 +55,6 @@ export const Navbar = () => {
 							</Link>
 						</li>
 						<li>
-							<a
-								href="https://www.google.com/maps/place/The+House+Of+Lifters/@40.4358317,-3.6248256,17z/data=!4m7!3m6!1s0xd422f4e610ce843:0x43df4bc2aac5cf56!8m2!3d40.4357427!4d-3.6229584!9m1!1b1"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="menu-href">
-								Opiniones
-							</a>
-						</li>
-						<li>
 							<Login />
 						</li>
 					</ul>

@@ -37,7 +37,7 @@
 }
 .sct-first p {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--background-body);
 }
 .sct-second p:hover {
@@ -45,7 +45,7 @@
 }
 .sct-second p {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--background-body);
 }
 .sct-second {
@@ -79,22 +79,21 @@
 .middle-location {
   color: var(--background-body);
   font-size: 16px;
-  font-weight: 400;
   margin: 0;
   text-align: center;
 }
 .middle-tag {
-  font-size: 21px;
+  font-size: 18px;
   color: var(--text-color);
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
   cursor: pointer;
   padding-top: 0.5rem;
 }
 .middle-info {
-  font-size: 21px;
+  font-size: 18px;
   color: var(--text-color);
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   padding-top: 0.5rem;
 }

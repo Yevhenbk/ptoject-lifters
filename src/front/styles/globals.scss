@@ -25,7 +25,7 @@ h4 {
   font-weight: 400;
 }
 h2 {
-  font-size: 36px;
+  font-size: 24px;
 }
 p {
   font-size: 16px;
@@ -42,5 +42,15 @@ div.wel-holder:hover > .hr-line {
   width: 4rem;
 }
 div.installs-section-one:hover > .hr-line {
+  width: 4rem;
+}
+.inter-div {
+  background-color: var(--primary-color);
+  width: 3rem;
+  height: 0.15rem;
+  align-self: center;
+  transition: 0.3s;
+}
+div.marks-divs:hover > .inter-div {
   width: 4rem;
 }
