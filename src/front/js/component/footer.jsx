@@ -5,16 +5,6 @@ import "../../styles/footer.scss";
 const Footer = () => {
   return (
     <>
-      <div className="footer-holder">
-        <div className="card-group">
-          <div className="footer-section-one">
-            <div className="img-holder-footer">
-              <img src={logo} alt="Logo" className="footer-Logo" />
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="middle-section">
         <div className="middle-section-first">
           <p className="middle-location">Our location</p>
@@ -24,10 +14,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <img
-          src="https://crossfitmarbella.com/wp-content/uploads/NutritionBadge-300x57.png"
-          className="middle-image"
-        />
+        <img src={logo} className="middle-image" />
 
         <div className="middle-section-second">
           <p className="middle-location">Contact Information</p>

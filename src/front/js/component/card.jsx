@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/opinions.scss";
 
 const Card = ({ img, name, rating, text }) => {
   return (

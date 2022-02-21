@@ -28,8 +28,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: var(--black);
+  background: rgb(34, 34, 34);
   padding: 1rem 0.5rem;
+  box-shadow: inset 0 10px 10px -5px #141414;
 }
 .sct-first {
   display: flex;
@@ -67,7 +68,7 @@
 }
 .middle-section {
   padding: 3rem 0;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -75,16 +76,23 @@
 .middle-section-first {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.middle-section-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .middle-location {
-  color: var(--background-body);
+  color: var(--primary-color);
   font-size: 16px;
+  font-weight: 400;
   margin: 0;
   text-align: center;
 }
 .middle-tag {
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--black);
   text-decoration: none;
   font-weight: 300;
   cursor: pointer;
@@ -92,7 +100,7 @@
 }
 .middle-info {
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--black);
   font-weight: 300;
   text-align: center;
   padding-top: 0.5rem;
@@ -104,7 +112,7 @@
 .middle-image {
   display: flex;
   align-self: center;
-  width: 18rem;
+  width: 10rem;
 }
 .vertical {
   display: flex;

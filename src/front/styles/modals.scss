@@ -49,18 +49,19 @@
   background-color: rgb(238, 238, 238);
 }
 .signup-button {
-  padding: 0.75rem 1.25rem;
-  font-size: 18px;
-  border: 1px solid var(--primary-color);
-  border-radius: 1px;
-  background-color: var(--primary-color);
-  color: white;
+  padding: 0.5rem 1.75rem;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  color: var(--black);
+  background-color: transparent;
   width: 100%;
   margin: 1rem 2rem 2rem;
 }
 .signup-button:hover {
-  background-color: var(--primary-hover);
-  border-color: var(--primary-hover);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--background-body);
 }
 .modal-dialog {
   max-width: 32rem;

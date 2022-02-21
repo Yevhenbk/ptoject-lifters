@@ -1,13 +1,11 @@
 import React from "react";
 import Card from "./card.jsx";
-import nouser from "../../img/noimage.jpg";
 import "../../styles/opinions.scss";
 
 const Opinions = () => {
   return (
     <div className="opinions-holder">
       <div className="opinions">
-        {/* <h2 className="op-header">¿Qué dicen de nosotros?</h2> */}
         <p className="op-header-text">¿Qué dicen de nosotros?</p>
         <input type="radio" name="dot" id="one" className="radio-but" />
         <input type="radio" name="dot" id="two" className="radio-but" />
