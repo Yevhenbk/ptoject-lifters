@@ -1,10 +1,11 @@
-const BASE_URL = "https://3001-yevhenbk-lifters-634gfro26tm.ws-eu31.gitpod.io/api/";
+const BASE_URL = "https://3001-yevhenbk-lifters-wvunkfzsyi7.ws-eu33.gitpod.io/api/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 
-			islogged: false
+			islogged: false,
+			clases: []
 
 		},
 		actions: {
@@ -75,6 +76,26 @@ const getState = ({ getStore, getActions, setStore }) => {
 						localStorage.setItem("token", responseAsJson);
 					})
 					.catch(error => console.error("Unknown error", error));
+			},
+
+			getClasses: (data, id) => {
+				console.log(data);
+				fetch(BASE_URL + "clases", {
+					method: "GET",
+					headers: new Headers({ "Content-Type": "application/json", "Sec-Fetch-Mode": "no-cors" })
+				})
+					.then(function (response) {
+						if (!response.ok) {
+							throw Error("I can't load a service");
+						}
+						return response.json();
+					})
+					.then(function (responseAsJson) {
+						setStore({ clases: responseAsJson });
+					})
+					.catch(function (error) {
+						console.log("Looks like there was a problem: \n", error);
+					});
 			},
 
 

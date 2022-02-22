@@ -178,6 +178,16 @@ def add_new_classes():
         return ({'error': 'Unexpected error'}), 400
 
 
+@api.route('/clases', methods=['GET'])
+def get_classes():
+    classes = Classes.get_all()
+    print(classes,"@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+
+    if classes:
+        return classes.to_dict(), 200
+
+    return({'error': 'Not fount'})
+
 
 @api.route('/admin/products', methods=['POST'])
 def add_new_products():

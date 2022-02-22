@@ -9,7 +9,8 @@ const Info = () => {
         <p>
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum alias
           fugiat autem quis qui enim doloribus, sint, expedita, ab hic error non
-          dolore veniam deserunt. Quod adipisci aperiam rerum ipsam."
+          dolore veniam deserunt. Quod adipisci aperiam rerum ipsam." - Coache's
+          name
         </p>
         <img src={noimg} className="info-img" />
       </div>

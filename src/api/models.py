@@ -165,6 +165,12 @@ class Classes(db.Model):
     def get_by_id(cls, id):
         classes = cls.query.get(id)
         return classes
+
+    @classmethod
+    def get_all(cls):
+        print("get all")
+        classes = cls.query.all()
+        return classes
     
     def create(self):
         db.session.add(self)

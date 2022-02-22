@@ -30,11 +30,16 @@
   margin: 1rem 0 2rem;
   font-weight: 300;
 }
+.welcome-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .welcome-button:hover {
   background-color: var(--background-body);
   border: 1px solid var(--background-body);
   color: var(--black);
 }
 .wel-logo {
-  width: 14rem;
+  width: 12rem;
 }
