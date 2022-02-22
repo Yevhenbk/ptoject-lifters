@@ -1,14 +1,15 @@
 import React from "react";
 import Opener from "../component/opener.jsx";
+import Info from "../component/info.jsx";
+import Installs from "../component/installs.jsx";
 
 export const About = () => {
 
     return (
         <div className="about">
-            <Opener
-                title="welcome"
-                img="#"
-                text="lorem" />
+            <Opener />
+            <Info />
+            <Installs />
         </div>
     );
 };

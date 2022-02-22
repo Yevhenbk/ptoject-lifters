@@ -1,15 +1,18 @@
 import React from "react";
 
-const Opener = ({ img, title, text }) => {
+const Opener = () => {
   return (
     <div className="welcome-class">
-      <div className="welcome-logo">
-        <img src={img} className="wel-logo" />
-      </div>
       <div className="wel-holder">
-        <h4 className="welcome-title">{title}</h4>
+        <h4 className="welcome-title">About Us</h4>
         <div className="hr-line" />
-        <p>{text}</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+          ullam a repellendus beatae assumenda adipisci et, veritatis neque
+          earum facilis, repellat aut delectus, porro natus dolorem provident
+          consectetur nisi commodi. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit.
+        </p>
       </div>
     </div>
   );

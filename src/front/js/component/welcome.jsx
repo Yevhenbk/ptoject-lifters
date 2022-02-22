@@ -20,7 +20,7 @@ const Welcome = () => {
           corrupti iusto accusamus soluta!
         </p>
         <div className="wel-buttons-holder">
-          <input type="button" value="Reserve" className="welcome-button" />
+          <input type="button" value="Inscribirme" className="welcome-button" />
           <input type="button" value="Learn More" className="welcome-button" />
         </div>
       </div>
