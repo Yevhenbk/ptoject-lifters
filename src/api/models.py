@@ -259,7 +259,7 @@ class CompetitionTeam(db.Model):
     def __repr__(self):
         return f'CompetitionTeam {self.id}'
     
-    def serialize (self):
+    def to_dict(self):
         return {
             "id": self.id, 
             "athlete_name": self.athlete_name,
@@ -272,6 +272,11 @@ class CompetitionTeam(db.Model):
     @classmethod
     def get_by_id(cls, id):
         competiotionTeam = cls.query.get(id)
+        return competiotionTeam
+
+    @classmethod
+    def get_all(cls):
+        competiotionTeam = cls.query.all()
         return competiotionTeam
     
     def create(self):

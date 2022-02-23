@@ -1,21 +1,18 @@
-"""
-This module takes care of starting the API Server, Loading the DB and Adding the endpoints
-"""
 from datetime import timedelta
-
 from flask import Flask, request, jsonify, url_for, Blueprint
 from sqlalchemy import exc
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
-
 from werkzeug.security import check_password_hash, generate_password_hash
-
 from api.models import db, Account, Federated, TheAdmin, Classes, Products, Blog, CompetitionTeam
 from api.utils import generate_sitemap, APIException
-
 import cloudinary
 import cloudinary.uploader
+import cloudinary.api
+import os
 
 api = Blueprint('api', __name__)
+ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
+
 
 @api.route('/login', methods=['POST'])
 def login():
@@ -219,30 +216,46 @@ def add_new_products():
 
 @api.route('/admin/competitors', methods=['POST'])
 def add_new_athletes():
-    print("llego")
+    cloudinary.config(
+        cloud_name= os.getenv('CLOUD_NAME'),
+        api_key= os.getenv('API_KEY'),
+        api_secret= os.getenv('API_SECRET')
+    )
     athlete_name = request.json.get('athlete_name', None)
-    img = request.json.get('img', None) 
+    img = None
     snatch = request.json.get('snatch', None)
     cj = request.json.get('cj', None)
     total = request.json.get('total', None) 
+    file_upload = request.files.get('file')
+    print(file_upload)
+    if file_upload:
+        print(file_upload.filename)
 
-    if not (athlete_name and img and snatch and cj and total):
-        return ({'error': 'Some fields are missing'}), 400
-        competitionTeam = CompetitionTeam(
-        athlete_name=athlete_name,
-        img=img, 
-        snatch=snatch,
-        cj=cj,
-        total=total
-    )
-    print(competitionTeam.to_dict())
+        #validar la extension del archivo
+        if file_upload.filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS:
+            print("si")
+            upload_result = cloudinary.uploader.upload(file_upload)
+            if upload_result:
+                img = upload_result.get('secure_url')
+                file_name = file_upload.filename
 
-    try:
-        competitionTeam_created = competitionTeam.create()
-        return jsonify(competitionTeam_created.to_dict()), 201
-        
-    except exc.IntegrityError:
-        return ({'error': 'Unexpected error'}), 400
+            competiotionTeam = CompetitionTeam( athlete_name=athlete_name, img=img, snatch=snatch, cj=cj, total=total)
+            
+            try:
+                competitionTeam_created = competitionTeam.create()
+                return jsonify(competitionTeam_created.to_dict()), 201
+            
+            except exc.IntegrityError:
+                return ({'error': 'Unexpected error'}), 400
+
+
+@api.route('/competitors', methods=['GET'])
+def get_competitors():
+    competitionTeam = CompetitionTeam.get_all()
+    
+    if competitionTeam:
+        competitionTeam_dict = [competitors.to_dict() for competitors in competitionTeam]
+        return jsonify(competitionTeam_dict), 200
 
 
 @api.route('/admin/blog', methods=['POST'])

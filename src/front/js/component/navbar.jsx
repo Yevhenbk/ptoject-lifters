@@ -41,7 +41,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" className="menu-href">
+              <Link to="/competitors" className="menu-href">
                 Equipo
               </Link>
             </li>

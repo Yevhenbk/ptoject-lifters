@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
 import { Clases } from "./pages/clases";
+import { Competitors } from "./pages/competitors";
 import injectContext from "./store/appContext";
 import Navbar from "./component/navbar.jsx";
 import Footer from "./component/footer.jsx";
@@ -26,6 +27,9 @@ const Layout = () => {
 					</Route>
 					<Route exact path="/clases">
 						<Clases />
+					</Route>
+					<Route exact path="/competitors">
+						<Competitors />
 					</Route>
 					{/* <Route exact path="/single/:theid">
 						<Single />
