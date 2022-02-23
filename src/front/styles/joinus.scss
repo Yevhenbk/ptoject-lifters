@@ -1,0 +1,16 @@
+.joinus-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--black);
+  padding: 2rem 0;
+}
+.joinus-holder .welcome-title {
+  margin: 0;
+  padding: 0 0 0.5rem;
+}
+.joinus-holder .wel-holder p {
+  font-size: 21px;
+}

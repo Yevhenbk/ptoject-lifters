@@ -1,31 +1,9 @@
 import React from "react";
-import logo from "../../img/noimage.jpg";
 import "../../styles/footer.scss";
 
 const Footer = () => {
   return (
     <>
-      <div className="middle-section">
-        <div className="middle-section-first">
-          <p className="middle-location">Our location</p>
-          <a href="#" className="middle-tag">
-            Calle de Miguel Yuste, 43 <br />
-            28037 - Madrid, Espana
-          </a>
-        </div>
-
-        <img src={logo} className="middle-image" />
-
-        <div className="middle-section-second">
-          <p className="middle-location">Contact Information</p>
-
-          <p className="middle-info">
-            thehouseoflifters@gmail.com
-            <br /> 722 75 39 92
-          </p>
-        </div>
-      </div>
-
       <div className="footer-section-two">
         <div className="sct-first">
           <p>Copyright © 2021</p>

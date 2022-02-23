@@ -66,54 +66,6 @@
   color: white;
   margin: 0;
 }
-.middle-section {
-  padding: 3rem 0;
-  background: var(--secondary-color);
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-}
-.middle-section-first {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.middle-section-second {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.middle-location {
-  color: var(--black);
-  font-size: 16px;
-  font-weight: 300;
-  margin: 0;
-  text-align: center;
-}
-.middle-tag {
-  font-size: 18px;
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 400;
-  cursor: pointer;
-  padding-top: 0.5rem;
-}
-.middle-info {
-  font-size: 18px;
-  color: var(--primary-color);
-  font-weight: 400;
-  text-align: center;
-  padding-top: 0.5rem;
-}
-.middle-tag:hover {
-  text-decoration: none;
-  color: var(--primary-hover);
-}
-.middle-image {
-  display: flex;
-  align-self: center;
-  width: 10rem;
-}
 .vertical {
   display: flex;
   align-self: center;

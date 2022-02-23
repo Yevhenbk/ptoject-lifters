@@ -1,6 +1,7 @@
 import React from "react";
 import Opener from "../component/opener.jsx";
 import Table from "../component/table.jsx";
+import Joinus from "../component/joinus.jsx";
 
 
 export const Clases = () => {
@@ -16,6 +17,7 @@ export const Clases = () => {
             consectetur nisi commodi. Lorem ipsum dolor sit amet consectetur
             adipisicing elit." />
             <Table />
+            <Joinus />
         </div>
     );
 };
