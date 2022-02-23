@@ -1,4 +1,4 @@
-const BASE_URL = "https://3001-yevhenbk-lifters-wvunkfzsyi7.ws-eu33.gitpod.io/api/";
+const BASE_URL = "https://3001-yevhenbk-lifters-eako2uc0q9b.ws-eu33.gitpod.io/api/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
@@ -96,35 +96,35 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.catch(function (error) {
 						console.log("Looks like there was a problem: \n", error);
 					});
-			},
+			}
 
 
 			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
-			},
+			// exampleFunction: () => {
+			// 	getActions().changeColor(0, "green");
+			// },
 
-			getMessage: () => {
-				// fetching data from the backend
-				fetch(process.env.BACKEND_URL + "/api/hello")
-					.then(resp => resp.json())
-					.then(data => setStore({ message: data.message }))
-					.catch(error => console.log("Error loading message from backend", error));
-			},
-			changeColor: (index, color) => {
-				//get the store
-				const store = getStore();
+			// getMessage: () => {
+			// fetching data from the backend
+			// 	fetch(process.env.BACKEND_URL + "/api/hello")
+			// 		.then(resp => resp.json())
+			// 		.then(data => setStore({ message: data.message }))
+			// 		.catch(error => console.log("Error loading message from backend", error));
+			// },
+			// changeColor: (index, color) => {
+			//get the store
+			// const store = getStore();
 
-				//we have to loop the entire demo array to look for the respective index
-				//and change its color
-				const demo = store.demo.map((elm, i) => {
-					if (i === index) elm.background = color;
-					return elm;
-				});
+			//we have to loop the entire demo array to look for the respective index
+			//and change its color
+			// const demo = store.demo.map((elm, i) => {
+			// 	if (i === index) elm.background = color;
+			// 	return elm;
+			// });
 
-				//reset the global store
-				setStore({ demo: demo });
-			}
+			//reset the global store
+			// 	setStore({ demo: demo });
+			// }
 		}
 	};
 };

@@ -181,12 +181,10 @@ def add_new_classes():
 @api.route('/clases', methods=['GET'])
 def get_classes():
     classes = Classes.get_all()
-    print(classes,"@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
-
+    
     if classes:
-        return classes.to_dict(), 200
-
-    return({'error': 'Not fount'})
+        classes_dict = [clases.to_dict() for clases in classes]
+        return jsonify(classes_dict), 200
 
 
 @api.route('/admin/products', methods=['POST'])

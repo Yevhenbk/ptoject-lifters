@@ -17,43 +17,86 @@ const Table = () => {
           <div className="week-day">
             <div className="week-day-ho">
               <p>Lunes</p>
-              {store.classes.map((classes, index) => {
-                console.log(
-                  classes,
-                  "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-                );
-                return (
-                  <div key={`classes-${index}`}>
-                    <div className="get-class">
-                      <p>{classes.start_hour}</p>
-                    </div>
+              {store.clases
+                .filter((c) => c.monday === true)
+                .map((filteredClass) => (
+                  <div className="get-class">
+                    <p>{filteredClass.start_hour}</p>
+                    <span>-</span>
+                    <p>{filteredClass.end_hour}</p>
                   </div>
-                );
-              })}
+                ))}
             </div>
             <div className="week-day-ho">
               <p>Martes</p>
-              {/* map */}
+              {store.clases
+                .filter((c) => c.tuesday === true)
+                .map((filteredClass) => (
+                  <div className="get-class">
+                    <p>{filteredClass.start_hour}</p>
+                    <span>-</span>
+                    <p>{filteredClass.end_hour}</p>
+                  </div>
+                ))}
             </div>
           </div>
           <div className="week-day">
             <div className="week-day-ho">
               <p>Miercoles</p>
-              {/* map */}
+              {store.clases
+                .filter((c) => c.wednesday === true)
+                .map((filteredClass) => (
+                  <div className="get-class">
+                    <p>{filteredClass.start_hour}</p>
+                    <span>-</span>
+                    <p>{filteredClass.end_hour}</p>
+                  </div>
+                ))}
             </div>
             <div className="week-day-ho">
               <p>Jueves</p>
-              {/* map */}
+              {store.clases
+                .filter((c) => c.thursday === true)
+                .map((filteredClass) => (
+                  <div className="get-class">
+                    <p>{filteredClass.start_hour}</p>
+                    <span>-</span>
+                    <p>{filteredClass.end_hour}</p>
+                  </div>
+                ))}
             </div>
           </div>
           <div className="week-day">
             <div className="week-day-ho">
               <p>Viernes</p>
-              {/* map */}
+              {store.clases
+                .filter((c) => c.friday === true)
+                .map((filteredClass) => (
+                  <div className="get-class">
+                    <p>{filteredClass.start_hour}</p>
+                    <span>-</span>
+                    <p>{filteredClass.end_hour}</p>
+                  </div>
+                ))}
             </div>
             <div className="week-day-ho">
               <p>Sabado</p>
-              {/* map */}
+              {store.clases.map((clases, index) => {
+                for (let i = 0, div; (div = store.clases[i]); i++) {
+                  // console.log(store.clases]);
+                  if (div.saturday === true) {
+                    return (
+                      <div key={`clases-${index}`}>
+                        <div className="get-class">
+                          <p>{div.start_hour}</p>
+                          <span>-</span>
+                          <p>{div.end_hour}</p>
+                        </div>
+                      </div>
+                    );
+                  }
+                }
+              })}
             </div>
           </div>
         </div>
