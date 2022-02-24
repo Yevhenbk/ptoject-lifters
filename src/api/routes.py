@@ -3,6 +3,8 @@ from flask import Flask, request, jsonify, url_for, Blueprint
 from sqlalchemy import exc
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from werkzeug.security import check_password_hash, generate_password_hash
+from werkzeug.utils import secure_filename
+from werkzeug.datastructures import ImmutableMultiDict
 from api.models import db, Account, Federated, TheAdmin, Classes, Products, Blog, CompetitionTeam
 from api.utils import generate_sitemap, APIException
 import cloudinary
@@ -222,7 +224,7 @@ def add_new_athletes():
         api_secret= os.getenv('API_SECRET')
     )
     athlete_name = request.json.get('athlete_name', None)
-    img = None
+    img = ""
     snatch = request.json.get('snatch', None)
     cj = request.json.get('cj', None)
     total = request.json.get('total', None) 
