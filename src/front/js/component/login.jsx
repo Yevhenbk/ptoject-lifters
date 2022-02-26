@@ -11,7 +11,7 @@ const Login = () => {
 
   const getLogin = (data) => {
     let islogged = actions.login(data);
-    console.log(islogged);
+    console.log(store.islogged);
   };
 
   const [show, setShow] = useState(false);
