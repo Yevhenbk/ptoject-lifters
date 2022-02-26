@@ -2,6 +2,7 @@ import React from "react";
 import Opener from "../component/opener.jsx";
 import Table from "../component/table.jsx";
 import Joinus from "../component/joinus.jsx";
+import noimg from "../../img/noimage.jpg";
 
 
 export const Clases = () => {
@@ -9,7 +10,7 @@ export const Clases = () => {
     return (
         <div className="clases">
             <Opener
-                img="https://img.icons8.com/external-flat-juicy-fish/500/000000/external-lifting-gym-life-flat-flat-juicy-fish-2.png"
+                img={noimg}
                 title="Clases"
                 text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
             ullam a repellendus beatae assumenda adipisci et, veritatis neque

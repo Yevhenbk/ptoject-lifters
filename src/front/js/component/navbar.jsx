@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 import Login from "./login.jsx";
 import "../../styles/navbar.scss";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
+  const { store, actions } = useContext(Context);
 
   const showColor = () => {
     if (window.scrollY >= 373.4) {
@@ -13,6 +15,30 @@ const Navbar = () => {
       setNavbar(false);
     }
   };
+
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      actions.setLoggedIn();
+    } else {
+      actions.setLoggedOut();
+    }
+    function checkUserData() {
+      const token = localStorage.getItem("token");
+      console.log("hello");
+
+      if (token) {
+        actions.setLoggedIn();
+      } else {
+        actions.setLoggedOut();
+      }
+    }
+
+    window.addEventListener("storage", checkUserData);
+
+    return () => {
+      window.removeEventListener("storage", checkUserData);
+    };
+  }, []);
 
   window.addEventListener("scroll", showColor);
 
@@ -55,9 +81,7 @@ const Navbar = () => {
                 Productos
               </Link>
             </li>
-            <li>
-              <Login />
-            </li>
+            <li>{!store.islogged ? <Login /> : <p>Hola</p>}</li>
           </ul>
         </div>
       </div>

@@ -1,6 +1,7 @@
-const BASE_URL = "https://3001-yevhenbk-lifters-eako2uc0q9b.ws-eu33.gitpod.io/api/";
+const BASE_URL = "https://3001-yevhenbk-lifters-24i6q88qrvy.ws-eu34.gitpod.io/api/";
 
 const getState = ({ getStore, getActions, setStore }) => {
+
 	return {
 		store: {
 
@@ -11,6 +12,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		actions: {
 
 			login: data => {
+				console.log(data);
 				fetch(BASE_URL + "login", {
 					method: "POST",
 					body: JSON.stringify(data),

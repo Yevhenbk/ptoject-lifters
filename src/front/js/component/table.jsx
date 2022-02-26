@@ -79,25 +79,6 @@ const Table = () => {
                   </div>
                 ))}
             </div>
-            <div className="week-day-ho">
-              <p>Sabado</p>
-              {store.clases.map((clases, index) => {
-                for (let i = 0, div; (div = store.clases[i]); i++) {
-                  // console.log(store.clases]);
-                  if (div.saturday === true) {
-                    return (
-                      <div key={`clases-${index}`}>
-                        <div className="get-class">
-                          <p>{div.start_hour}</p>
-                          <span>-</span>
-                          <p>{div.end_hour}</p>
-                        </div>
-                      </div>
-                    );
-                  }
-                }
-              })}
-            </div>
           </div>
         </div>
       </div>

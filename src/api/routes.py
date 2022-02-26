@@ -26,23 +26,23 @@ def login():
     if not (email and password):
         return ({'error': 'Wrong email or password'}), 400
 
-    user = Account.get_by_email(email)
-    print(user)
+    account = Account.get_by_email(email)
+    print(account)
 
     
-    if user.is_theAdmin:
-        theAdmin = TheAdmin.get_by_id_account(user.id)
+    if account.is_theAdmin:
+        theAdmin = TheAdmin.get_by_id_account(account.id)
         print(theAdmin)
-        print(check_password_hash(user._password, password))
-        if theAdmin and user.is_active and check_password_hash(user._password, password):
-            token = create_access_token(identity=theAdmin.id, expires_delta=timedelta(minutes=120))
-            return {'token': token}, 200
+        print(check_password_hash(account.password, password))
+        if theAdmin and account.is_active and check_password_hash(account.password, password):
+            token = create_access_token(identity=account.id, expires_delta=timedelta(minutes=120))
+            return {'token': token, "email":account.email}, 200
 
 
     else:
-        federated = Federated.get_by_id_account(user.id)
+        federated = Federated.get_by_id_account(account.id)
 
-        if federated and user.is_active and check_password_hash(user._password, password):
+        if federated and account.is_active and check_password_hash(account._password, password):
             token = create_access_token(identity=federated.id, expires_delta=timedelta(minutes=120))
             return {'token': token}, 200
 
