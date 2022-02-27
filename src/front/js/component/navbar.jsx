@@ -9,6 +9,11 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const { store, actions } = useContext(Context);
 
+  useEffect(() => {
+    actions.getAccs();
+  }, []);
+  console.log(store);
+
   const showColor = () => {
     if (window.scrollY >= 373.4) {
       setNavbar(true);
@@ -85,27 +90,25 @@ const Navbar = () => {
             <li>
               {!store.islogged ? (
                 <Login />
-              ) : (
-                (store.accounts.is_theAdmin = true ? (
-                  <Dropdown>
-                    <Dropdown.Toggle id="dropdown-basic">
-                      {localStorage.getItem("name")}
-                    </Dropdown.Toggle>
+              ) : localStorage.getItem("is_theAdmin") ? (
+                <Dropdown>
+                  <Dropdown.Toggle id="dropdown-basic">
+                    {localStorage.getItem("name")}
+                  </Dropdown.Toggle>
 
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="#/action-1">Mi Perfil</Dropdown.Item>
-                      <Dropdown.Item onClick={actions.logOut}>
-                        Log Out
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
-                ) : (
-                  (store.accounts.is_theAdmin = false(
-                    // <div className="navbar-modal">
-                    //   <input type="button" onClick={actions.logOut} className="ff" value="Logout" />
-                    // </div>
-                    <div>Quack</div>
-                  ))
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Mi Perfil</Dropdown.Item>
+                    <Dropdown.Item onClick={actions.logOut}>
+                      Log Out
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              ) : (
+                (store.accounts.is_theAdmin = false(
+                  // <div className="navbar-modal">
+                  //   <input type="button" onClick={actions.logOut} className="ff" value="Logout" />
+                  // </div>
+                  <div>Quack</div>
                 ))
               )}
             </li>

@@ -41,14 +41,14 @@ def login():
         print(check_password_hash(user.password, password))
         if theAdmin and user.is_active and check_password_hash(user.password, password):
             token = create_access_token(identity=theAdmin.id, expires_delta=timedelta(minutes=120))
-            return {'token': token, 'role': 1, "name":user.name}, 200
+            return {'token': token, 'role': 1, "name":user.name, "is_theAdmin":user.is_theAdmin}, 200
 
     else:
         federated = Federated.get_by_id_account(user.id)
 
         if federated and user.is_active and check_password_hash(user.password, password):
             token = create_access_token(identity=federated.id, expires_delta=timedelta(minutes=120))
-            return {'token': token, 'role': 2, "name":user.name}, 200
+            return {'token': token, 'role': 2, "name":user.name, "is_theAdmin":user.is_theAdmin}, 200
 
 
 @api.route('/accounts', methods=['GET'])
@@ -58,6 +58,30 @@ def get_accounts():
     if account:
         account_dict = [acc.to_dict() for acc in account]
         return jsonify(account_dict), 200
+
+
+# @api.route('/admins', methods=['GET'])
+# def get_admins():
+#     theAdmin = TheAdmin.get_all()
+    
+
+#     if theAdmin:
+#         theAdmin_dict = [add.to_dict() for add in theAdmin]
+#         return jsonify(theAdmin_dict.to_dict()), 200
+
+#     return({'error': 'Not fount'})
+
+
+# @api.route('/federateds', methods=['GET'])
+# def get_feds():
+#     federated = Federated.get_all()
+    
+
+#     if federated:
+#         federated_dict = [fed.to_dict() for fed in federated]
+#         return jsonify(federated_dict.to_dict()), 200
+
+#     return({'error': 'Not fount'})
 
 
 @api.route('/admin', methods=['POST'])

@@ -30,7 +30,8 @@ class Account(db.Model):
             "id": self.id,
             "name": self.name, 
             "lastname":self.lastname, 
-            "email": self.email
+            "email": self.email,
+            "is_theAdmin": self.is_theAdmin
         }
 
     @classmethod
@@ -72,12 +73,18 @@ class Federated(db.Model):
             "id": self.id, 
             "name": federated.name, 
             "lastname":federated.lastname, 
-            "email": federated.email
+            "email": federated.email,
+            "is_theAdmin": federated.is_theAdmin
         }
 
     @classmethod
     def get_by_id(cls, id):
         federated = cls.query.get(id)
+        return federated
+
+    @classmethod
+    def get_all(cls):
+        federated = cls.query.all()
         return federated
 
     @classmethod
@@ -113,12 +120,18 @@ class TheAdmin(db.Model):
             "id": self.id,
             "name": theAdmin.name, 
             "lastname":theAdmin.lastname, 
-            "email": theAdmin.email 
+            "email": theAdmin.email,
+            "is_theAdmin": theAdmin.is_theAdmin 
         }
 
     @classmethod
     def get_by_id(cls, id):
         theAdmin = cls.query.get(id)
+        return theAdmin
+
+    @classmethod
+    def get_all(cls):
+        theAdmin = cls.query.all()
         return theAdmin
 
     @classmethod

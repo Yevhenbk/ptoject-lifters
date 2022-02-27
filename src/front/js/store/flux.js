@@ -1,4 +1,4 @@
-const BASE_URL = "https://3001-yevhenbk-lifters-gmrz5yooe3v.ws-eu34.gitpod.io/api/";
+const BASE_URL = "https://3001-yevhenbk-lifters-rv54k3kqsux.ws-eu34.gitpod.io/api/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 
