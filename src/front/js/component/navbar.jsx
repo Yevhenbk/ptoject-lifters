@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     actions.getAccs();
   }, []);
-  console.log(store);
+  console.log(localStorage);
 
   const showColor = () => {
     if (window.scrollY >= 373.4) {
@@ -90,26 +90,35 @@ const Navbar = () => {
             <li>
               {!store.islogged ? (
                 <Login />
-              ) : localStorage.getItem("is_theAdmin") ? (
+              ) : localStorage.getItem("role") === "1" ? (
                 <Dropdown>
                   <Dropdown.Toggle id="dropdown-basic">
-                    {localStorage.getItem("name")}
+                    Hola, {localStorage.getItem("name")}
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Mi Perfil</Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link to="/profile" className="menu-href">
+                        Mi Perfil
+                      </Link>
+                    </Dropdown.Item>
                     <Dropdown.Item onClick={actions.logOut}>
                       Log Out
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               ) : (
-                (store.accounts.is_theAdmin = false(
-                  // <div className="navbar-modal">
-                  //   <input type="button" onClick={actions.logOut} className="ff" value="Logout" />
-                  // </div>
-                  <div>Quack</div>
-                ))
+                <Dropdown>
+                  <Dropdown.Toggle id="dropdown-basic">
+                    Hola, {localStorage.getItem("name")}
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item onClick={actions.logOut}>
+                      Log Out
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               )}
             </li>
           </ul>

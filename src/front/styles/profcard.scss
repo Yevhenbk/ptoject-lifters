@@ -1,0 +1,61 @@
+.profcard-holder {
+  background: var(--primary-color);
+  color: var(--background-body);
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 0 0;
+  align-items: center;
+  min-height: 449.6px;
+}
+.prof-title-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.h4-pr {
+  padding-bottom: 0.75rem;
+}
+.items-holder {
+  min-width: 100%;
+  min-height: 20rem;
+  background: var(--primary-color);
+  margin: 0;
+  align-items: center;
+}
+.members-holder h4 {
+  text-align: center;
+}
+.members-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-body);
+  color: var(--black);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px,
+    rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+  max-width: 20rem;
+  margin: 4rem 2rem;
+  padding: 2rem;
+}
+.members {
+  display: flex;
+  justify-content: center;
+}
+.get-acc {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: flex;
+  margin: 1rem 0;
+  justify-content: space-between;
+  width: 12rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.get-acc p {
+  margin: 0.5rem;
+}

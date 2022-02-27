@@ -101,6 +101,10 @@ div.marks-divs:hover > .inter-div {
   background: var(--secondary-color);
   color: var(--primary-hover);
 }
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  background: transparent;
+}
 .dropdown-menu {
   position: absolute;
   z-index: 1000;

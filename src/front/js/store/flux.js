@@ -1,4 +1,4 @@
-const BASE_URL = "https://3001-yevhenbk-lifters-rv54k3kqsux.ws-eu34.gitpod.io/api/";
+const BASE_URL = "https://3001-yevhenbk-lifters-zn6utqdhcq5.ws-eu34.gitpod.io/api/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 
@@ -36,6 +36,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("token" + data.token);
 						localStorage.setItem("token", data.token);
 						localStorage.setItem("name", data.name);
+						localStorage.setItem("role", data.role);
 						setStore({ islogged: true });
 						//redirect(""); //pasar la url de la vista que va a ver el usuario cuando se registra
 					})

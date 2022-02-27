@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
+import { Profile } from "./pages/profile";
 import { Clases } from "./pages/clases";
 import { Competitors } from "./pages/competitors";
 import injectContext from "./store/appContext";
@@ -30,6 +31,9 @@ const Layout = () => {
 					</Route>
 					<Route exact path="/competitors">
 						<Competitors />
+					</Route>
+					<Route exact path="/profile">
+						<Profile />
 					</Route>
 					{/* <Route exact path="/single/:theid">
 						<Single />

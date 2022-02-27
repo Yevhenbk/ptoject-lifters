@@ -41,14 +41,14 @@ def login():
         print(check_password_hash(user.password, password))
         if theAdmin and user.is_active and check_password_hash(user.password, password):
             token = create_access_token(identity=theAdmin.id, expires_delta=timedelta(minutes=120))
-            return {'token': token, 'role': 1, "name":user.name, "is_theAdmin":user.is_theAdmin}, 200
+            return {'token': token, 'role': 1, "name":user.name}, 200
 
     else:
         federated = Federated.get_by_id_account(user.id)
 
         if federated and user.is_active and check_password_hash(user.password, password):
             token = create_access_token(identity=federated.id, expires_delta=timedelta(minutes=120))
-            return {'token': token, 'role': 2, "name":user.name, "is_theAdmin":user.is_theAdmin}, 200
+            return {'token': token, 'role': 2, "name":user.name}, 200
 
 
 @api.route('/accounts', methods=['GET'])
