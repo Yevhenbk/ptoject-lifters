@@ -35,6 +35,9 @@ def login():
     if user.is_theAdmin:
         theAdmin = TheAdmin.get_by_id_account(user.id)
         print(user.name)
+        print(user.is_theAdmin)
+        print(user.password)
+        print(user.is_active)
         print(check_password_hash(user.password, password))
         if theAdmin and user.is_active and check_password_hash(user.password, password):
             token = create_access_token(identity=theAdmin.id, expires_delta=timedelta(minutes=120))
@@ -48,6 +51,13 @@ def login():
             return {'token': token, 'role': 2, "name":user.name}, 200
 
 
+@api.route('/accounts', methods=['GET'])
+def get_accounts():
+    account = Account.get_all()
+    
+    if account:
+        account_dict = [acc.to_dict() for acc in account]
+        return jsonify(account_dict), 200
 
 
 @api.route('/admin', methods=['POST'])
@@ -84,6 +94,10 @@ def create_the_admin():
     except exc.IntegrityError:
         return ({'error': 'This email / phone number is already in use'}), 400
 
+    if account :
+        token = create_access_token(identity=account.to_dict(), expires_delta=timedelta(minutes=100))
+        return({'token' : token}), 200
+
 
 
 @api.route('/federated', methods=['POST'])
@@ -119,6 +133,10 @@ def create_federated():
         return jsonify(federated.to_dict()), 201
     except exc.IntegrityError:
         return ({'error': 'This email / phone number is already in use'}), 400
+
+    if account :
+        token = create_access_token(identity=account.to_dict(), expires_delta=timedelta(minutes=100))
+        return({'token' : token}), 200
 
 
 

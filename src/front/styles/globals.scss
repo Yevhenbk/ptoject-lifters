@@ -54,3 +54,62 @@ div.installs-section-one:hover > .hr-line {
 div.marks-divs:hover > .inter-div {
   width: 4rem;
 }
+.btn {
+  font-size: 16px;
+  font-weight: 400;
+  background: transparent;
+  color: var(--text-color);
+  border: none;
+  padding: 0;
+}
+.btn:hover {
+  background: transparent;
+  color: var(--background-body);
+}
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle {
+  outline: none;
+  color: var(--background-body);
+  background: transparent;
+  border: none;
+}
+.btn-check:active + .btn-primary:focus,
+.btn-check:checked + .btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(49, 131, 253, 0) !important;
+}
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(49, 131, 253, 0) !important;
+}
+.dropdown-item {
+  text-align: left;
+  font-weight: 300;
+  background-color: var(--background-body);
+}
+.wrapper-first ul li div.dropdown-menu.show a {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+.wrapper-first ul li div.dropdown-menu.show a:hover {
+  background: var(--secondary-color);
+  color: var(--primary-hover);
+}
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  text-align: left;
+  background-color: var(--background-body);
+  background-clip: padding-box;
+  border-radius: 5px;
+}

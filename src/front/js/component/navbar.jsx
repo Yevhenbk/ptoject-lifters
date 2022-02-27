@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import Login from "./login.jsx";
@@ -81,7 +82,33 @@ const Navbar = () => {
                 Productos
               </Link>
             </li>
-            <li>{!store.islogged ? <Login /> : <p>Hola</p>}</li>
+            <li>
+              {!store.islogged ? (
+                <Login />
+              ) : (
+                (store.accounts.is_theAdmin = true ? (
+                  <Dropdown>
+                    <Dropdown.Toggle id="dropdown-basic">
+                      {localStorage.getItem("name")}
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">Mi Perfil</Dropdown.Item>
+                      <Dropdown.Item onClick={actions.logOut}>
+                        Log Out
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                ) : (
+                  (store.accounts.is_theAdmin = false(
+                    // <div className="navbar-modal">
+                    //   <input type="button" onClick={actions.logOut} className="ff" value="Logout" />
+                    // </div>
+                    <div>Quack</div>
+                  ))
+                ))
+              )}
+            </li>
           </ul>
         </div>
       </div>

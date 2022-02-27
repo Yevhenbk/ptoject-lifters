@@ -28,7 +28,6 @@ class Account(db.Model):
     def to_dict(self):
         return {
             "id": self.id,
-            "img": self.img, 
             "name": self.name, 
             "lastname":self.lastname, 
             "email": self.email
@@ -37,6 +36,11 @@ class Account(db.Model):
     @classmethod
     def get_by_id(cls, id):
         account = cls.query.get(id)
+        return account
+
+    @classmethod
+    def get_all(cls):
+        account = cls.query.all()
         return account
 
     @classmethod
@@ -66,7 +70,6 @@ class Federated(db.Model):
 
         return {
             "id": self.id, 
-            "img": federated.img, 
             "name": federated.name, 
             "lastname":federated.lastname, 
             "email": federated.email

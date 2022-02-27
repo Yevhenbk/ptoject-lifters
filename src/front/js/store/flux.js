@@ -1,4 +1,4 @@
-const BASE_URL = "https://3001-yevhenbk-lifters-2gq2nsr20l4.ws-eu34.gitpod.io/api/";
+const BASE_URL = "https://3001-yevhenbk-lifters-gmrz5yooe3v.ws-eu34.gitpod.io/api/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 
@@ -6,7 +6,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 
 			islogged: false,
-			clases: []
+			clases: [],
+			accounts: []
 
 		},
 		actions: {
@@ -94,6 +95,27 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					.then(function (responseAsJson) {
 						setStore({ clases: responseAsJson });
+					})
+					.catch(function (error) {
+						console.log("Looks like there was a problem: \n", error);
+					});
+			},
+
+
+			getAccs: (data, id) => {
+				console.log(data);
+				fetch(BASE_URL + "accounts", {
+					method: "GET",
+					headers: new Headers({ "Content-Type": "application/json", "Sec-Fetch-Mode": "no-cors" })
+				})
+					.then(function (response) {
+						if (!response.ok) {
+							throw Error("I can't load a service");
+						}
+						return response.json();
+					})
+					.then(function (responseAsJson) {
+						setStore({ accounts: responseAsJson });
 					})
 					.catch(function (error) {
 						console.log("Looks like there was a problem: \n", error);
