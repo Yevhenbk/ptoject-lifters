@@ -1,4 +1,4 @@
-const BASE_URL = "https://3001-yevhenbk-lifters-zn6utqdhcq5.ws-eu34.gitpod.io/api/";
+const BASE_URL = "https://3001-yevhenbk-lifters-r4uywl0z1fu.ws-eu34.gitpod.io/api/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 
@@ -59,8 +59,31 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({ islogged: false });
 			},
 
-			signup: data => {
-				fetch(BASE_URL + "signup", {
+			signupAdmin: data => {
+				fetch(BASE_URL + "admin", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+						"Sec-Fetch-Mode": "no-cors"
+					},
+					body: JSON.stringify(data)
+				})
+					.then(resp => {
+						if (!resp.ok) {
+							throw Error("Invalid info");
+						}
+						// console.log(response.json)
+						return response.json();
+
+					})
+					.then(responseAsJson => {
+						localStorage.setItem("token", responseAsJson);
+					})
+					.catch(error => console.error("Unknown error", error));
+			},
+
+			signupFed: data => {
+				fetch(BASE_URL + "federated", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
