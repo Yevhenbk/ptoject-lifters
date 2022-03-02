@@ -33,7 +33,7 @@ const Login = () => {
       <Modal show={show} onHide={handleClose} className="modal show">
         <form action="" method="post" onSubmit={handleSubmit(getLogin)}>
           <Modal.Header>
-            <Modal.Title>Login</Modal.Title>
+            <Modal.Title>Welcome to 'ClubName'</Modal.Title>
             <CloseButton onClick={handleClose} />
           </Modal.Header>
 
@@ -71,8 +71,14 @@ const Login = () => {
 
           <Modal.Footer>
             <input
+              type="button"
+              value="Registro?"
+              className="signup-button"
+              onClick={handleClose}
+            />
+            <input
               type="submit"
-              value="Entrar"
+              value="Log In"
               className="signup-button"
               onClick={handleClose}
             />
