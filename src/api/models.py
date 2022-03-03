@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 from sqlalchemy.dialects.postgresql import VARCHAR
-from sqlalchemy import Column, ForeignKey, Integer, Table, Numeric, Enum, Time
+from sqlalchemy import Column, ForeignKey, Integer, Table, Numeric, Enum, Time, TIMESTAMP
 
 
 db = SQLAlchemy()
@@ -147,8 +147,8 @@ class TheAdmin(db.Model):
 class Classes(db.Model):
     __tablename__="classes"
     id = db.Column(db.Integer, primary_key=True)
-    start_hour = db.Column(db.Time, nullable=False)
-    end_hour = db.Column(db.Time, nullable=False)
+    start_hour = db.Column(db.TIMESTAMP(timezone=False), nullable=False)
+    end_hour = db.Column(db.TIMESTAMP(timezone=False), nullable=False)
     monday = db.Column(db.Boolean(), nullable=True)
     tuesday = db.Column(db.Boolean(), nullable=True)
     wednesday = db.Column(db.Boolean(), nullable=True)
