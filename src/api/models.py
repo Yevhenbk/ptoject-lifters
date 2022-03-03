@@ -19,8 +19,8 @@ class Account(db.Model):
     is_theAdmin = db.Column(db.Boolean(), unique=False, nullable=False)
     is_active = db.Column(db.Boolean(), unique=False, nullable=False)
 
-    have_federated = relationship("Federated", backref="account", overlaps="account,have_federated")
-    have_admin = relationship("TheAdmin", backref="account", overlaps="account,have_admin")
+    have_federated = relationship("Federated", backref="account")
+    have_admin = relationship("TheAdmin", backref="account")
 
     def __repr__(self):
         return f'Account {self.id}'
@@ -60,7 +60,7 @@ class Federated(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     id_account = db.Column(db.Integer, ForeignKey("account.id"))
 
-    have_account = relationship("Account", backref="federated", overlaps="account,have_federated")
+    have_account = relationship("Account", backref="federated")
 
 
     def __repr__(self):
@@ -103,7 +103,7 @@ class TheAdmin(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     id_account = db.Column(db.Integer, ForeignKey("account.id"))
 
-    have_account = relationship("Account", backref="theAdmin", overlaps="account,have_admin")
+    have_account = relationship("Account", backref="theAdmin")
     have_classes = relationship("Classes", backref="theAdmin")
     have_blog = relationship("Blog", backref="theAdmin")
     have_products = relationship("Products", backref="theAdmin")
@@ -147,8 +147,8 @@ class TheAdmin(db.Model):
 class Classes(db.Model):
     __tablename__="classes"
     id = db.Column(db.Integer, primary_key=True)
-    start_hour = db.Column(db.TIMESTAMP(timezone=False), nullable=False)
-    end_hour = db.Column(db.TIMESTAMP(timezone=False), nullable=False)
+    start_hour = db.Column(db.Time(timezone=False), nullable=False)
+    end_hour = db.Column(db.Time(timezone=False), nullable=False)
     monday = db.Column(db.Boolean(), nullable=True)
     tuesday = db.Column(db.Boolean(), nullable=True)
     wednesday = db.Column(db.Boolean(), nullable=True)
