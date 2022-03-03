@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
 from sqlalchemy.dialects.postgresql import VARCHAR
-from sqlalchemy import Column, ForeignKey, Integer, Table, DateTime, Numeric, Enum
+from sqlalchemy import Column, ForeignKey, Integer, Table, Numeric, Enum, Time
 
 
 db = SQLAlchemy()
@@ -147,15 +147,13 @@ class TheAdmin(db.Model):
 class Classes(db.Model):
     __tablename__="classes"
     id = db.Column(db.Integer, primary_key=True)
-    start_hour = db.Column(db.DateTime, nullable=False)
-    end_hour = db.Column(db.DateTime, nullable=False)
+    start_hour = db.Column(db.Time, nullable=False)
+    end_hour = db.Column(db.Time, nullable=False)
     monday = db.Column(db.Boolean(), nullable=True)
     tuesday = db.Column(db.Boolean(), nullable=True)
     wednesday = db.Column(db.Boolean(), nullable=True)
     thursday = db.Column(db.Boolean(), nullable=True)
     friday = db.Column(db.Boolean(), nullable=True)
-    saturday = db.Column(db.Boolean(), nullable=True)
-    sunday = db.Column(db.Boolean(), nullable=True) 
     admin_id = Column(Integer, ForeignKey('theAdmin.id'))
 
 
@@ -164,17 +162,13 @@ class Classes(db.Model):
     
     def to_dict(self):
         return {
-            "id": self.id,
             "start_hour": self.start_hour,
             "end_hour": self.end_hour,
             "monday": self.monday,
             "tuesday": self.tuesday,
             "wednesday": self.wednesday,
             "thursday": self.thursday,
-            "friday": self.friday,
-            "saturday": self.saturday,
-            "sunday": self.sunday, 
-            "admin_id": self.admin_id
+            "friday": self.friday
         }
 
     @classmethod

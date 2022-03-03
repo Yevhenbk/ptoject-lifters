@@ -158,32 +158,24 @@ def add_new_classes():
     )
     friday = request.json.get(
         'friday', None
-    ) 
-    saturday = request.json.get(
-        'saturday', None
     )
-    sunday = request.json.get(
-        'sunday', None
-    ) 
 
     if not (start_hour and end_hour):
         return ({'error': 'Some fields are missing'}), 400
-        classes = Classes(
-        start_hour=start_hour,
-        end_hour=end_hour, 
-        monday=monday,
-        tuesday=tuesday,
-        wednesday=wednesday,
-        thursday=thursday,
-        friday=friday,
-        saturday=saturday,
-        sunday=sunday
+        
+    classes = Classes(
+    start_hour=start_hour,
+    end_hour=end_hour, 
+    monday=monday,
+    tuesday=tuesday,
+    wednesday=wednesday,
+    thursday=thursday,
+    friday=friday
     )
-    print(classes.to_dict())
 
     try:
-        classes_created = classes.create()
-        return jsonify(classes_created.to_dict()), 201
+        classes_dict=classes.create()
+        return jsonify(classes_dict.to_dict()), 201
         
     except exc.IntegrityError:
         return ({'error': 'Unexpected error'}), 400

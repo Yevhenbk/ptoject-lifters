@@ -1,4 +1,4 @@
-const BASE_URL = "https://3001-yevhenbk-lifters-r4uywl0z1fu.ws-eu34.gitpod.io/api/";
+const BASE_URL = "https://3001-yevhenbk-lifters-ks001mn199l.ws-eu34.gitpod.io/api/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 
@@ -105,6 +105,26 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.catch(error => console.error("Unknown error", error));
 			},
 
+			addClasses: data => {
+				fetch(BASE_URL + "admin/classes", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+						"Sec-Fetch-Mode": "no-cors"
+					},
+					body: JSON.stringify(data)
+				})
+					.then(resp => {
+						if (!resp.ok) {
+							throw Error("Invalid info");
+						}
+						console.log(response.json)
+						return response.json();
+
+					})
+					.catch(error => console.error("Unknown error", error));
+			},
+
 			getClasses: (data, id) => {
 				console.log(data);
 				fetch(BASE_URL + "clases", {
@@ -145,6 +165,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("Looks like there was a problem: \n", error);
 					});
 			}
+
+
 
 
 			// Use getActions to call a function within a fuction

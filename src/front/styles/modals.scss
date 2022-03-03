@@ -20,14 +20,19 @@
   padding: 0.5rem 0 1rem 1.5rem;
 }
 .modal-content {
+  max-width: 26rem;
   border: none;
   box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.253);
 }
 .signup-button:nth-child(1) {
-  background-color: rgb(224, 91, 91);
+  background-color: var(--primary-hover);
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
 }
 .signup-button:nth-child(2) {
-  background-color: rgb(68, 192, 130);
+  background-color: var(--primary-color);
+  margin-left: 0.5rem;
+  margin-right: 1.5rem;
 }
 .modal-footer {
   border: none;
@@ -65,8 +70,9 @@
   border-radius: 5px;
   color: var(--background-body);
   background-color: var(--secondary-color);
-  width: 12rem;
-  margin: 1rem 1.5rem 2rem;
+  width: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .modal-dialog {
   max-width: 32rem;
@@ -75,6 +81,12 @@
   margin-bottom: 2rem;
   font-size: 10px;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+.modal-header .btn-close:active {
+  box-shadow: none;
+}
+.modal-header .btn-close:focus {
+  box-shadow: none;
 }
 .ff {
   background: transparent;
@@ -88,4 +100,9 @@
 }
 .modal-body {
   padding: 0;
+}
+.modal.show .modal-dialog {
+  display: flex;
+  transform: none;
+  justify-content: center;
 }

@@ -8,6 +8,7 @@ export const Profile = () => {
     return (
         <div className="about">
             <Profcard />
+
         </div>
     );
 };

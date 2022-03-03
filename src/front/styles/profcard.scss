@@ -16,13 +16,18 @@
   padding-bottom: 0.75rem;
 }
 .items-holder {
-  min-width: 100%;
   min-height: 20rem;
   background: var(--primary-color);
   margin: 0;
-  align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  background: var(--secondary-color);
+  width: 70%;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  margin: 2rem;
+  box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px,
+    rgb(27 31 35 / 15%) 0px 0px 0px 1px;
 }
 .members-holder h4 {
   text-align: center;
@@ -38,18 +43,8 @@
   box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px,
     rgb(27 31 35 / 15%) 0px 0px 0px 1px;
   max-width: 20rem;
-  margin: 2rem;
+  margin-top: 4rem;
   padding: 2rem;
-}
-.members {
-  display: flex;
-  justify-content: space-evenly;
-  background: var(--secondary-color);
-  width: 90%;
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px,
-    rgb(27 31 35 / 15%) 0px 0px 0px 1px;
 }
 .get-acc {
   border: 1px solid var(--border);
