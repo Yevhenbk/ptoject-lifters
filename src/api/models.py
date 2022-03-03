@@ -147,8 +147,8 @@ class TheAdmin(db.Model):
 class Classes(db.Model):
     __tablename__="classes"
     id = db.Column(db.Integer, primary_key=True)
-    start_hour = db.Column(db.Time(timezone=False), nullable=False)
-    end_hour = db.Column(db.Time(timezone=False), nullable=False)
+    start_hour = db.Column(db.Time(timezone=False), nullable=False, default=str)
+    end_hour = db.Column(db.Time(timezone=False), nullable=False, default=str)
     monday = db.Column(db.Boolean(), nullable=True)
     tuesday = db.Column(db.Boolean(), nullable=True)
     wednesday = db.Column(db.Boolean(), nullable=True)
