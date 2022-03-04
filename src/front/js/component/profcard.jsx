@@ -2,6 +2,7 @@ import React from "react";
 import Members from "../component/members.jsx";
 import "../../styles/profcard.scss";
 import Addclass from "../component/addclass.jsx";
+import Registeradmin from "./registeradmin.jsx";
 
 const Profcard = () => {
   return (
@@ -12,7 +13,10 @@ const Profcard = () => {
       </div>
       <div className="items-holder">
         <Members />
-        <Addclass />
+        <div className="items-sec">
+          <Addclass />
+          <Registeradmin />
+        </div>
       </div>
     </div>
   );

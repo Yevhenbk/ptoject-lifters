@@ -5,13 +5,12 @@ import Modal from "react-bootstrap/Modal";
 import CloseButton from "react-bootstrap/CloseButton";
 import "../../styles/modals.scss";
 
-const Login = () => {
+const Registeradmin = () => {
   const { register, handleSubmit } = useForm();
   const { store, actions } = useContext(Context);
 
-  const getLogin = (data) => {
-    let islogged = actions.login(data);
-    console.log(store.islogged);
+  const getAdmin = (data) => {
+    actions.registerAdmin(data);
   };
 
   const [show, setShow] = useState(false);
@@ -22,24 +21,50 @@ const Login = () => {
   return (
     <>
       <div>
-        <input
-          type="button"
-          className="ff"
-          value="Login"
-          onClick={handleShow}
-        />
+        <div className="add-acc">
+          <input
+            type="button"
+            className="ff-rec"
+            value="Registro Admin"
+            onClick={handleShow}
+          />
+        </div>
       </div>
 
       <Modal show={show} onHide={handleClose} className="modal show">
-        <form action="" method="post" onSubmit={handleSubmit(getLogin)}>
+        <form action="" method="post" onSubmit={handleSubmit(getAdmin)}>
           <Modal.Header>
-            <Modal.Title>Welcome to 'ClubName'</Modal.Title>
+            <Modal.Title>Register Admin</Modal.Title>
             <CloseButton onClick={handleClose} />
           </Modal.Header>
 
           <Modal.Body>
             <div>
               <div className="inputs-holder">
+                <label htmlFor="pwd" className="labels-ls">
+                  Name:
+                </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="inputs-ls"
+                  {...register("name")}
+                />
+
+                <label htmlFor="pwd" className="labels-ls">
+                  Lastname:
+                </label>
+
+                <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  className="inputs-ls"
+                  {...register("lastname")}
+                />
+
                 <label htmlFor="email" className="labels-ls">
                   Email:
                 </label>
@@ -49,7 +74,6 @@ const Login = () => {
                   id="email"
                   name="email"
                   className="inputs-ls"
-                  placeholder="example@gmail.com"
                   {...register("email")}
                 />
 
@@ -62,7 +86,6 @@ const Login = () => {
                   id="pwd"
                   name="pwd"
                   className="inputs-ls"
-                  placeholder="ex@mpl1%"
                   {...register("password")}
                 />
               </div>
@@ -72,7 +95,7 @@ const Login = () => {
           <Modal.Footer>
             <input
               type="submit"
-              value="Log In"
+              value="Registrar"
               className="signup-button"
               onClick={handleClose}
             />
@@ -83,4 +106,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Registeradmin;

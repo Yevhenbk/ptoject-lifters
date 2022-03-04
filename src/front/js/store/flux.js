@@ -1,4 +1,4 @@
-const BASE_URL = "https://3001-yevhenbk-lifters-wqwx7yloi2z.ws-eu34.gitpod.io/api/";
+const BASE_URL = "https://3001-yevhenbk-lifters-lcqdn5mdtip.ws-eu34.gitpod.io/api/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 
@@ -59,7 +59,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({ islogged: false });
 			},
 
-			signupAdmin: data => {
+			registerAdmin: data => {
 				fetch(BASE_URL + "admin", {
 					method: "POST",
 					headers: {

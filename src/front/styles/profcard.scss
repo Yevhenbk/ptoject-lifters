@@ -62,3 +62,32 @@
 .get-acc p {
   margin: 0.5rem;
 }
+.members {
+  padding-bottom: 2rem;
+}
+.items-sec {
+  padding: 2rem 0;
+}
+.add-acc {
+  justify-content: center;
+  display: flex;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: var(--background-body);
+  color: var(--black);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px,
+    rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+  max-width: 20rem;
+}
+input.ff-rec {
+  margin: 0;
+  width: 100%;
+  border: none;
+  background-color: var(--background-body);
+  font-size: 21px;
+}
+input.ff-rec:hover {
+  color: var(--text-color);
+}

@@ -147,8 +147,8 @@ class TheAdmin(db.Model):
 class Classes(db.Model):
     __tablename__="classes"
     id = db.Column(db.Integer, primary_key=True)
-    start_hour = db.Column(db.Time(timezone=False), nullable=False, default=str)
-    end_hour = db.Column(db.Time(timezone=False), nullable=False, default=str)
+    start_hour = db.Column(db.Time(timezone=False), nullable=False)
+    end_hour = db.Column(db.Time(timezone=False), nullable=False)
     monday = db.Column(db.Boolean(), nullable=True)
     tuesday = db.Column(db.Boolean(), nullable=True)
     wednesday = db.Column(db.Boolean(), nullable=True)
@@ -172,11 +172,6 @@ class Classes(db.Model):
         }
 
     @classmethod
-    def get_by_id(cls, id):
-        classes = cls.query.get(id)
-        return classes
-
-    @classmethod
     def get_all(cls):
         print("get all")
         classes = cls.query.all()
@@ -186,6 +181,7 @@ class Classes(db.Model):
         db.session.add(self)
         db.session.commit()
         return self
+
 
 class Blog(db.Model):
     __tablename__="blog"
