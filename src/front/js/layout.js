@@ -6,7 +6,6 @@ import { Profile } from "./pages/profile";
 import { Clases } from "./pages/clases";
 import { Competitors } from "./pages/competitors";
 import injectContext from "./store/appContext";
-import Navbar from "./component/navbar.jsx";
 import Footer from "./component/footer.jsx";
 import "../styles/globals.scss";
 
@@ -18,7 +17,6 @@ const Layout = () => {
 	return (
 		<div>
 			<BrowserRouter basename={basename}>
-				<Navbar />
 				<Switch>
 					<Route exact path="/">
 						<Home />
