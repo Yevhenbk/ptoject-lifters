@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-import Login from "./login.jsx";
 import "../../styles/navbar.scss";
 
 const Navbar = () => {
@@ -89,7 +88,9 @@ const Navbar = () => {
             </li>
             <li>
               {!store.islogged ? (
-                <Login />
+                <Link to="/login" className="menu-href">
+                  Login
+                </Link>
               ) : localStorage.getItem("role") === "1" ? (
                 <Dropdown>
                   <Dropdown.Toggle id="dropdown-basic">

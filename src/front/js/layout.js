@@ -4,6 +4,7 @@ import { Home } from "./pages/home";
 import { About } from "./pages/about";
 import { Profile } from "./pages/profile";
 import { Clases } from "./pages/clases";
+import { Login } from './pages/login';
 import { Competitors } from "./pages/competitors";
 import injectContext from "./store/appContext";
 import Footer from "./component/footer.jsx";
@@ -20,6 +21,9 @@ const Layout = () => {
 				<Switch>
 					<Route exact path="/">
 						<Home />
+					</Route>
+					<Route exact path="/login">
+						<Login />
 					</Route>
 					<Route exact path="/about">
 						<About />

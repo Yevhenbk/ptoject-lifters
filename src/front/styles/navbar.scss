@@ -4,7 +4,7 @@
   flex-direction: row;
 }
 .wrapper-first ul li {
-  margin: 0.25rem 0.75rem;
+  margin: 0.5rem 0.75rem;
   padding: 0rem 0.75rem;
 }
 .ff-nav .wrapper-first ul li a:hover {
@@ -22,11 +22,13 @@
 .navbar-logo {
   color: var(--background-body);
   font-weight: 300;
+  font-size: 18px;
   margin: 0;
 }
 .navbar-logo-second {
   color: var(--text-color);
   font-weight: 300;
+  font-size: 18px;
   margin: 0;
 }
 .active-nav {

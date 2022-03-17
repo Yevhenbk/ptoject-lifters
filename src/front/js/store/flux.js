@@ -1,4 +1,5 @@
-const BASE_URL = "https://3001-yevhenbk-ptojectlifters-p5n3zuvown3.ws-eu34.gitpod.io/api/";
+const BASE_URL = "https://3001-yevhenbk-ptojectlifters-ao0qvicfike.ws-eu34.gitpod.io/api/";
+
 
 const getState = ({ getStore, getActions, setStore }) => {
 
@@ -14,6 +15,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			login: data => {
 				console.log(data);
+				const redirectToProfile = () => {
+					if (localStorage.getItem("role") === "1") {
+						location.replace("profile");
+					}
+				};
 				fetch(BASE_URL + "login", {
 					method: "POST",
 					body: JSON.stringify(data),
@@ -38,7 +44,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						localStorage.setItem("name", data.name);
 						localStorage.setItem("role", data.role);
 						setStore({ islogged: true });
-						//redirect(""); //pasar la url de la vista que va a ver el usuario cuando se registra
+						redirectToProfile();
 					})
 					.catch(error => {
 						console.error("Unknown error", error);

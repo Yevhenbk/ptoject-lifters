@@ -1,97 +1,70 @@
-.modal-header {
-  border: none;
-  padding: 0.5rem;
-  padding-bottom: 0;
-  justify-content: space-between;
-}
-.modal-header::before {
-  display: none;
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 1.35rem;
-  width: 0.5rem;
-  height: 4rem;
-  background-color: var(--primary-color);
-}
-.modal-title {
-  color: var(--primary-color);
-  margin: 0;
-  padding: 0.5rem 0 1rem 1.5rem;
-}
-.modal-content {
-  max-width: 26rem;
-  border: none;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.253);
-}
-.modal-footer {
-  border: none;
+.login-holder {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  background: var(--secondary-color);
+}
+.modal-login {
+  width: 30vw;
+  margin: 6rem 0 4rem;
+  padding: 3rem;
+  background: var(--background-body);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .inputs-holder {
   display: flex;
   flex-direction: column;
-  padding: 0 2rem;
-}
-.labels-ls {
-  align-self: baseline;
-  padding: 1rem 0 0 0;
-}
-.inputs-holder label {
-  font-weight: 400;
-  font-size: 16px;
 }
 .inputs-ls {
+  margin: 0.75rem 0;
+  padding: 0.75rem;
   border: none;
-  padding: 0.5rem;
-  border-radius: 5px;
-  outline: none;
-  margin: 0.5rem 0;
-  font-size: medium;
-  background-color: rgb(238, 238, 238);
+  font-size: 18px;
+  color: var(--secondary-color);
+  border-radius: 3px;
+  font-weight: 300;
+  width: 100%;
+}
+.ls-first {
+  background-color: var(--primary-color);
+}
+.ls-second {
+  background-color: var(--text-color);
+}
+::placeholder {
+  color: var(--secondary-color);
+  font-weight: 300;
 }
 .signup-button {
-  padding: 0.5rem 0.5rem;
-  font-size: 18px;
-  border: none;
-  font-weight: 300;
-  border-radius: 5px;
-  color: var(--background-body);
-  background-color: var(--primary-color);
   width: 100%;
-  margin: 1rem 1.5rem 2rem;
-}
-.modal-dialog {
-  max-width: 32rem;
-}
-.modal-header .btn-close {
-  margin-bottom: 2rem;
-  font-size: 10px;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-}
-.modal-header .btn-close:active {
-  box-shadow: none;
-}
-.modal-header .btn-close:focus {
-  box-shadow: none;
-}
-.ff {
-  background: transparent;
+  padding: 0.75rem;
   border: none;
-  color: var(--text-color);
-  font-size: 16px;
-  font-weight: 300;
-}
-.ff:hover {
+  font-size: 18px;
+  background: var(--primary-hover);
   color: var(--background-body);
+  border-radius: 3px;
 }
-.modal-body {
-  padding: 0;
+.mm-footer {
+  margin-top: 1rem;
 }
-.modal.show .modal-dialog {
-  display: flex;
-  transform: none;
-  justify-content: center;
+.mm-body {
+  padding: 0.5rem 0;
+}
+.mm-header p {
+  font-weight: 400;
+}
+.mm-header span {
+  color: var(--primary-hover);
+}
+.href-mm {
+  text-decoration: none;
+  color: var(--black);
+}
+.mm-body p {
+  font-weight: 400;
+}
+.mm-body span {
+  color: var(--primary-hover);
 }
