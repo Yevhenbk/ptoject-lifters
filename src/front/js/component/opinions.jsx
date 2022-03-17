@@ -6,7 +6,11 @@ const Opinions = () => {
   return (
     <div className="opinions-holder">
       <div className="opinions">
-        <p className="op-header-text">¿Qué dicen de nosotros?</p>
+        <h2 className="op-header-text">¿Qué dicen de nosotros?</h2>
+        <p className="op-header-p">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ex autem
+          amet nostrum here.
+        </p>
         <input type="radio" name="dot" id="one" className="radio-but" />
         <input type="radio" name="dot" id="two" className="radio-but" />
         <div className="op-cards-holder">
