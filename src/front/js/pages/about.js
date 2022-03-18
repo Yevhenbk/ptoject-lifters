@@ -1,22 +1,44 @@
 import React from "react";
-import Opener from "../component/opener.jsx";
+
 import Info from "../component/info.jsx";
-import Installs from "../component/installs.jsx";
-import noimg from "../../img/noimage.jpg";
+import Navbarsecond from "../component/navbarsecond.jsx";
+
 
 export const About = () => {
 
     return (
         <div className="about">
-            <Opener title="About Us"
-                img={noimg}
-                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
-            ullam a repellendus beatae assumenda adipisci et, veritatis neque
-            earum facilis, repellat aut delectus, porro natus dolorem provident
-            consectetur nisi commodi. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit." />
-            <Info />
-            <Installs />
+            <Navbarsecond />
+            <div className="title-page">
+                <h2>About Us</h2>
+            </div>
+            <Info
+                id="ab-card-one"
+                title="Our mission"
+                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+            ducimus optio fugiat odio beatae, rerum doloremque, id corrupti iusto
+            accusamus soluta! Ea, earum eaque illum ullam accusantium atque
+            possimus nisi. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Assumenda ducimus optio fugiat odio beatae, rerum doloremque, id
+            corrupti iusto accusamus soluta!" />
+            <Info
+                id="ab-card-two"
+                title="Our vision"
+                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+            ducimus optio fugiat odio beatae, rerum doloremque, id corrupti iusto
+            accusamus soluta! Ea, earum eaque illum ullam accusantium atque
+            possimus nisi. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Assumenda ducimus optio fugiat odio beatae, rerum doloremque, id
+            corrupti iusto accusamus soluta!" />
+            <Info
+                id="ab-card-three"
+                title="Our values"
+                text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+            ducimus optio fugiat odio beatae, rerum doloremque, id corrupti iusto
+            accusamus soluta! Ea, earum eaque illum ullam accusantium atque
+            possimus nisi. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Assumenda ducimus optio fugiat odio beatae, rerum doloremque, id
+            corrupti iusto accusamus soluta!" />
         </div>
     );
 };

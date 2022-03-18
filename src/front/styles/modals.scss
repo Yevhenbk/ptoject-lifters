@@ -1,17 +1,16 @@
 .login-holder {
   display: flex;
   justify-content: center;
-  background: var(--secondary-color);
+  background: var(--border);
 }
 .modal-login {
-  width: 30vw;
+  width: 24rem;
   margin: 6rem 0 4rem;
-  padding: 3rem;
+  padding: 2rem;
   background: var(--background-body);
   border: 1px solid var(--border);
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .inputs-holder {
   display: flex;
@@ -21,7 +20,7 @@
   margin: 0.75rem 0;
   padding: 0.75rem;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--secondary-color);
   border-radius: 3px;
   font-weight: 300;
@@ -29,6 +28,9 @@
 }
 .ls-first {
   background-color: var(--primary-color);
+}
+.inputs-ls:focus {
+  outline: none;
 }
 .ls-second {
   background-color: var(--text-color);
@@ -41,10 +43,11 @@
   width: 100%;
   padding: 0.75rem;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   background: var(--primary-hover);
   color: var(--background-body);
   border-radius: 3px;
+  font-weight: 300;
 }
 .mm-footer {
   margin-top: 1rem;
