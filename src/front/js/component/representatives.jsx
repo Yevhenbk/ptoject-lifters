@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import noimage from "../../img/noimage.jpg";
 import "../../styles/representatives.scss";
 
 const Representatives = () => {
   return (
     <div className="resisted-group">
+      <div className="res-img-holder">
+        <img src={noimage} className="res-group-img" />
+      </div>
+
       <div className="marks-divs">
         <h2 className="marks-title">Por que Halterofilia?</h2>
-        {/* <div className="inter-div" /> */}
         <p className="marks-p">
           Deporte con una historia milenaria. El levantamiento de pesas es
           historia viva del ser humano, sin importar la civilización o el pais

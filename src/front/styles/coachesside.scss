@@ -1,0 +1,53 @@
+.coaches-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4rem 0;
+}
+.testimonials-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 4rem;
+}
+.testimonials-quote {
+  font-size: 18px;
+  max-width: 40rem;
+  font-style: italic;
+}
+.icon-quote {
+  align-self: center;
+  width: 1.5rem;
+}
+.coaches-img {
+  border-radius: 50%;
+  width: 6rem;
+}
+.side-first {
+  text-align: center;
+  padding-top: 2rem;
+}
+.side-first h4 {
+  padding-top: 1rem;
+  margin: 0;
+  font-weight: 400;
+}
+.side-second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.vertical-side {
+  height: 5rem;
+  width: 0.1rem;
+  background-color: #e5e5e5;
+}
+.testimonials-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

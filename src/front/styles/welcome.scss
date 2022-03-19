@@ -9,10 +9,10 @@
 }
 .wel-holder {
   max-width: 35rem;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .wel-holder p {
   margin-top: 1rem;
@@ -24,7 +24,6 @@
   color: var(--background-body);
   background-color: transparent;
   border: 1px solid var(--border);
-  border-radius: 5px;
   padding: 0.5rem 1.75rem;
   font-size: 16px;
   margin: 1rem 0 2rem;
@@ -42,4 +41,7 @@
 }
 .wel-logo {
   width: 12rem;
+}
+.wel-buttons-holder .welcome-button {
+  margin-right: 1rem;
 }

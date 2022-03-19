@@ -9,7 +9,7 @@ export const Login = () => {
 
     return (
         <div className="login">
-            <Navbar />
+            <Navbarsecond />
             <Setlogin />
         </div>
     );
