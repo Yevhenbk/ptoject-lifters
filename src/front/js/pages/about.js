@@ -3,8 +3,6 @@ import React from "react";
 import Info from "../component/info.jsx";
 import Navbarsecond from "../component/navbarsecond.jsx";
 import Coachesside from "../component/coachesside.jsx";
-import Installs from "../component/installs.jsx";
-
 
 export const About = () => {
 
@@ -42,7 +40,6 @@ export const About = () => {
             elit. Assumenda ducimus optio fugiat odio beatae, rerum doloremque, id
             corrupti iusto accusamus soluta!" />
             <Coachesside />
-            <Installs />
         </div>
     );
 };
