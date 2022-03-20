@@ -17,12 +17,14 @@ const Representatives = () => {
           de origen. El pesista es un atleta fuerte, rápido, con una condición
           física suprema y una gran capacidad de concentración.
         </p>
-        <input
-          type="button"
-          className="button-dark"
-          value="!Únete a nuestro club de halterofilia!"
-          id="dark"
-        />
+        <div className="button-dark-holder">
+          <input
+            type="button"
+            className="button-dark"
+            value="!Únete a nuestro club de halterofilia!"
+            id="dark"
+          />
+        </div>
       </div>
     </div>
   );

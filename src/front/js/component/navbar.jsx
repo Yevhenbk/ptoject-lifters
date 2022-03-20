@@ -14,7 +14,7 @@ const Navbar = () => {
   console.log(localStorage);
 
   const showColor = () => {
-    if (window.scrollY >= 373.4) {
+    if (window.scrollY >= 390.4) {
       setNavbar(true);
     } else {
       setNavbar(false);
