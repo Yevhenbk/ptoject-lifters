@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <nav
-      collapseOnSelect
+      collapseonselect="true"
       expand="lg"
       className={
         navbar
