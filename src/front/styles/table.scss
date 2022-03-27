@@ -1,11 +1,7 @@
 .table-holder {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: white;
   align-items: center;
   padding: 1rem;
-  margin: 6rem 0 4rem;
   border: 1px solid var(--border);
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -23,16 +19,20 @@
 .week-day-table {
   display: flex;
   flex-direction: row;
+  background: var(--background-second);
 }
 .week-day-ho {
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
 }
 .week-day-ho p {
   font-size: 18px;
   text-align: center;
+  margin: 0;
 }
 .table-holder h2 {
   padding: 2rem;
+  text-align: left;
+  margin: 0;
 }
 .get-class {
   border: 1px solid var(--border);

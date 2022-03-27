@@ -120,3 +120,32 @@ div.marks-divs:hover > .inter-div {
 .home {
   background: var(--background-body);
 }
+.clases {
+  background-color: var(--secondary-color);
+}
+.title-page {
+  background: var(--secondary-color);
+  padding: 8rem 0 4rem;
+  text-align: center;
+}
+.saying {
+  background: var(--secondary-color);
+  max-width: 40rem;
+  text-align: end;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.table-s {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+.table-s p {
+  font-size: 18px;
+}
+.saying h2 {
+  margin-bottom: 1rem;
+}

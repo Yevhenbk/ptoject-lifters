@@ -12,7 +12,10 @@ const Card = ({ img, name, rating, text }) => {
               {Array(rating)
                 .fill()
                 .map((_, i) => (
-                  <img src="https://img.icons8.com/fluency/21/000000/filled-star.png" />
+                  <img
+                    key={i}
+                    src="https://img.icons8.com/fluency/21/000000/filled-star.png"
+                  />
                 ))}
             </div>
           </div>
