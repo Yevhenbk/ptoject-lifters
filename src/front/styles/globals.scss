@@ -130,9 +130,9 @@ div.marks-divs:hover > .inter-div {
 }
 .saying {
   background: var(--secondary-color);
-  max-width: 40rem;
+  max-width: 30rem;
   text-align: end;
-  padding: 0 4rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -140,7 +140,7 @@ div.marks-divs:hover > .inter-div {
 .table-s {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-bottom: 4rem;
 }
 .table-s p {
