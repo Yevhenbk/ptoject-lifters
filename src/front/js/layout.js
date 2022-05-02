@@ -9,6 +9,7 @@ import { Competitors } from "./pages/competitors";
 import injectContext from "./store/appContext";
 import Footer from "./component/footer.jsx";
 import "../styles/globals.scss";
+import "../styles/tokens.scss";
 
 const Layout = () => {
 	//the basename is used when the project is published in a subdirectory and not in the root of the domain

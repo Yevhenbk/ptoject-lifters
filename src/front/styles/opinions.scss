@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--secondary-color);
+  background: var(--primary);
   padding: 0;
   padding: 2rem 0;
   overflow: hidden;
@@ -19,16 +19,16 @@
 .op-header {
   text-align: center;
   padding: 0 0 1rem 0;
-  color: white;
   margin: 0;
 }
 .op-header-text {
-  color: var(--black);
+  color: white;
   text-align: left;
   padding: 0 0 1rem 5rem;
 }
 .op-header-p {
   font-size: 21px;
+  color: white;
   padding-left: 5rem;
   margin-bottom: 4rem;
 }
@@ -43,13 +43,13 @@
   flex-direction: column;
   width: 25rem;
   height: 18.25rem;
-  background-color: white;
+  background-color: #252525;
   margin: 0 1.5rem;
-  transition: 0.2s all ease;
-  border: 1px solid var(--border);
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   transition: all ease 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .op-card-img {
   border-radius: 50%;
@@ -73,13 +73,14 @@
 }
 .op-card-name {
   margin: 0;
+  color: white;
   font-size: 18px;
   font-weight: 400;
 }
 .op-card-date {
   margin: 0;
   font-size: 14px;
-  color: var(--primary-hover);
+  color: white;
 }
 .google-img {
   background-image: url("https://cdn.trustindex.io/assets/platform/Google/icon.svg");
@@ -89,7 +90,7 @@
 .op-text {
   font-size: 16px;
   font-weight: 300;
-  color: var(--black);
+  color: var(--secondary);
   margin: 0;
 }
 .footer-op {
@@ -103,8 +104,8 @@
   margin: 2rem 0;
 }
 .op-buttons label {
-  border: 1px solid var(--primary-hover);
-  background-color: var(--primary-hover);
+  border: 1px solid var(--secondary);
+  background-color: var(--secondary);
   margin: 0 0.4rem;
   border-radius: 50px;
   height: 1rem;
@@ -135,12 +136,12 @@
 #two:checked ~ .op-buttons label.one {
   width: 1rem;
   height: 1rem;
-  background-color: var(--primary-hover);
+  background-color: var(--secondary);
 }
 #one:checked ~ .op-buttons label.two {
   width: 1rem;
   height: 1rem;
-  background-color: var(--primary-hover);
+  background-color: var(--secondary);
 }
 .op-text-holder {
   height: 12.85rem;

@@ -1,6 +1,6 @@
 .welcome-class {
-  background-color: var(--primary-color);
-  color: var(--background-body);
+  background-color: var(--primary);
+  color: var(--secondary);
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -21,9 +21,9 @@
   padding-bottom: 0.75rem;
 }
 .welcome-button {
-  color: var(--background-body);
+  color: var(--secondary);
   background-color: transparent;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-bb);
   padding: 0.5rem 1.75rem;
   font-size: 16px;
   margin: 1rem 0;
@@ -35,8 +35,8 @@
   justify-content: center;
 }
 .welcome-button:hover {
-  background-color: var(--background-body);
-  border: 1px solid var(--background-body);
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
   color: var(--black);
 }
 .wel-logo {

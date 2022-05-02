@@ -1,5 +1,5 @@
 .installs {
-  background-color: var(--primary-color);
+  background-color: #252525;
 }
 .installs p {
   color: white;
@@ -19,7 +19,7 @@
   justify-content: space-evenly;
 }
 .installs-title {
-  color: var(--background-body);
+  color: white;
   text-align: center;
   padding-bottom: 1rem;
   margin: 0;
@@ -27,7 +27,6 @@
 .installs-text {
   color: var(--background-body);
   text-align: center;
-  padding-top: 1rem;
 }
 Iframe {
   display: flex;
