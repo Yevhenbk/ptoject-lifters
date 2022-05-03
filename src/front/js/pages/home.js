@@ -1,23 +1,15 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import Welcome from "../component/welcome.jsx";
-import Tcarousel from "../component/carousel.jsx";
-import Representatives from "../component/representatives.jsx";
-import Opinions from "../component/opinions.jsx";
-import Installs from "../component/installs.jsx";
-import Navbar from "../component/navbar.jsx";
+import LucNav from '../luc/Navbar/LucNav.jsx';
+import Slider from "../luc/Slider/Slider.jsx";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="home">
-			<Navbar />
-			<Welcome />
-			<Tcarousel />
-			<Representatives />
-			<Opinions />
-			<Installs />
+		<div className='luc__home'>
+			<LucNav />
+			<Slider />
 		</div>
 	);
 };
