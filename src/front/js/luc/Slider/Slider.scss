@@ -9,12 +9,11 @@
 }
 .slider__section_one {
   max-width: 50%;
-  padding: 0 5rem;
+  padding: 0 7rem;
 }
 .header__one {
   color: var(--secondary);
-  font-size: 38px;
-  font-weight: 600;
+  font-size: 36px;
 }
 .slider__paragraph {
   font-size: 21px;
@@ -32,9 +31,12 @@
   color: var(--black);
 }
 .slider__section_two {
-  width: 50%;
   overflow: hidden;
+  height: 100%;
 }
-.slider__img {
-  position: inherit;
+.carousel-control-prev {
+  display: none;
+}
+.carousel-control-next {
+  display: none;
 }

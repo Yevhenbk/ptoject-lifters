@@ -1,34 +1,47 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import weights from "../../img/wide.jpg";
+import slide1 from "../../img/im1.jpeg";
+import slide2 from "../../img/im4.jpeg";
+import slide3 from "../../img/im3.jpeg";
 
 import "../../styles/carousel.scss";
 
 const Tcarousel = () => {
   return (
-    <Carousel>
-      <Carousel.Item interval={4000}>
-        <img className="carouselImage" src={weights} alt="First slide" />
+    <Carousel fade>
+      <Carousel.Item interval={5000}>
+        <img className="carouselImage" src={slide1} alt="First slide" />
         <Carousel.Caption>
-          <h4>First slide label</h4>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p className="carousel__par">
+            <span className="span__par">Nulla vitae elit libero </span>
+
+            <span className="span__cover">
+              a pharetra augue mollis interdum
+            </span>
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={4000}>
-        <img className="carouselImage" src={weights} alt="Second slide" />
+      <Carousel.Item interval={5000}>
+        <img className="carouselImage" src={slide2} alt="Second slide" />
 
         <Carousel.Caption>
-          <h4>Second slide label</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className="carousel__par">
+            <span className="span__par">Lorem ipsum dolor sit amet </span>
+
+            <span className="span__cover">consectetur adipiscing elit</span>
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={4000}>
-        <img className="carouselImage" src={weights} alt="Third slide" />
+      <Carousel.Item interval={5000}>
+        <img className="carouselImage" src={slide3} alt="Third slide" />
 
         <Carousel.Caption>
-          <h4>Third slide label</h4>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          <p className="carousel__par">
+            <span className="span__par">Praesent commodo cursus magna </span>
+
+            <span className="span__cover">
+              vel scelerisque nisl consectetur
+            </span>
           </p>
         </Carousel.Caption>
       </Carousel.Item>

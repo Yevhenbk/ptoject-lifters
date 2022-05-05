@@ -1,4 +1,5 @@
 import React from "react";
+import Carousel from "../../component/carousel.jsx";
 import slider from "../../../img/im5.jpeg";
 
 import "./Slider.scss";
@@ -23,7 +24,8 @@ const Slider = () => {
         />
       </div>
       <div className="slider__section_two">
-        <img src={slider} className="slider__img" />
+        {/* <img src={slider} className="slider__img" /> */}
+        <Carousel />
       </div>
     </div>
   );
