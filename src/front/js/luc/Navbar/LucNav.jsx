@@ -1,7 +1,8 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
-import { ImHome2 } from "react-icons/im";
+// import { ImHome2 } from "react-icons/im";
 import { AiFillInstagram } from "react-icons/ai";
+import { Navbarmenu } from "../../component/Navbarmenu/Navbarmenu.jsx";
 
 import "./LucNav.scss";
 
@@ -12,7 +13,10 @@ const LucNav = () => {
       <div className="luc__nav__icons">
         <MdEmail className="icon__small" />
         <AiFillInstagram className="icon__grand" />
-        <ImHome2 className="icon__grand" />
+        {/* <ImHome2 className="icon__grand" /> */}
+        <div className="menu__grand">
+          <Navbarmenu />
+        </div>
       </div>
     </div>
   );

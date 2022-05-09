@@ -46,3 +46,17 @@
   color: var(--white);
   background-color: var(--border-bb);
 }
+.menu__grand {
+  align-self: center;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  background-color: var(--secondary);
+  border-radius: 50px;
+  padding: 0.5rem;
+  color: black;
+  margin: 0 0.5rem;
+}
+.menu__grand:hover {
+  background-color: var(--border-bb);
+}

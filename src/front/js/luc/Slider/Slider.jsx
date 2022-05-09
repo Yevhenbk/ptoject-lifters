@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from "../../component/carousel.jsx";
-import slider from "../../../img/im5.jpeg";
 
 import "./Slider.scss";
 
@@ -9,7 +8,7 @@ const Slider = () => {
     <div className="luc__slider">
       <div className="slider__section_one">
         <h1 className="header__one">
-          Weightlifting make a positive impact on your body.
+          Lorem ipsum dolor sit amet consectetur adip.
         </h1>
         <p className="slider__paragraph">
           Deporte con una historia milenaria. El levantamiento de pesas es
@@ -24,7 +23,6 @@ const Slider = () => {
         />
       </div>
       <div className="slider__section_two">
-        {/* <img src={slider} className="slider__img" /> */}
         <Carousel />
       </div>
     </div>
