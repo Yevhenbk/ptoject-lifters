@@ -1,15 +1,14 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import Setlogin from '../component/setlogin.jsx';
-import Navbarsecond from '../component/navbarsecond.jsx';
-import Navbar from '../component/navbar.jsx';
+import Setlogin from "../component/Login/SetLogin.jsx";
+import LucNav from "../luc/Navbar/LucNav.jsx";
 
 export const Login = () => {
     const { store, actions } = useContext(Context);
 
     return (
         <div className="login">
-            <Navbarsecond />
+            <LucNav />
             <Setlogin />
         </div>
     );

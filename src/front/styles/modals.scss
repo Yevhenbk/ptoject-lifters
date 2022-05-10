@@ -1,71 +1,77 @@
-.login-holder {
+.login__holder {
   display: flex;
   justify-content: center;
-  background: var(--secondary-color);
+  background: var(--black);
 }
-.modal-login {
+.modal__login {
   width: 24rem;
   margin: 7rem 0 4rem;
   padding: 2rem;
-  background: var(--background-body);
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid var(--border-bb);
 }
-.inputs-holder {
+.inputs__holder {
   display: flex;
   flex-direction: column;
 }
-.inputs-ls {
+.inputs__ls {
   margin: 0.75rem 0;
   padding: 0.75rem;
   border: none;
   font-size: 16px;
-  color: var(--secondary-color);
+  color: var(--secondary);
   font-weight: 300;
   width: 100%;
 }
-.ls-first {
-  background-color: var(--primary-color);
+.ls__first {
+  background-color: var(--primary);
 }
-.inputs-ls:focus {
+.inputs__ls:focus {
   outline: none;
 }
-.ls-second {
-  background-color: var(--text-color);
+.ls__second {
+  background-color: var(--primary);
 }
 ::placeholder {
-  color: var(--secondary-color);
-  font-weight: 300;
+  color: var(--border-bb);
 }
-.signup-button {
+.signup__button {
   width: 100%;
   padding: 0.75rem;
   border: none;
-  font-size: 16px;
-  background: var(--black);
-  color: var(--background-body);
-  font-weight: 300;
-}
-.mm-footer {
-  margin-top: 1rem;
-}
-.mm-body {
-  padding: 0.5rem 0;
-}
-.mm-header p {
-  font-weight: 400;
-}
-.mm-header span {
-  color: var(--primary-hover);
-}
-.href-mm {
-  text-decoration: none;
+  font-size: 18px;
+  background: var(--secondary);
   color: var(--black);
 }
-.mm-body p {
+.signup__button:hover {
+  background: var(--border-bb);
+  color: var(--white);
+}
+.mm__footer {
+  margin-top: 1rem;
+}
+.mm__body {
+  padding: 0.5rem 0;
+}
+.mm__header h2 {
+  font-weight: 500;
+  color: var(--secondary);
+}
+.mm__header p {
+  font-weight: 500;
+}
+.mm__header span {
+  color: var(--white);
+}
+.href__mm {
+  text-decoration: none;
+  color: var(--white);
+}
+.href__mm:hover {
+  color: var(--border-bb);
+}
+.mm__body p {
   font-weight: 400;
 }
-.mm-body span {
-  color: var(--primary-hover);
+.mm__body span {
+  color: var(--white);
 }
