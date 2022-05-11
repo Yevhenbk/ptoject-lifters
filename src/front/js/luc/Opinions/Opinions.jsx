@@ -1,12 +1,12 @@
 import React from "react";
-import Card from "./card.jsx";
-import "../../styles/opinions.scss";
+import Card from "../../component/Card/Card.jsx";
+import "./Opinions.scss";
 
 const Opinions = () => {
   return (
     <div className="opinions-holder">
       <div className="opinions">
-        <h2 className="op-header-text">¿Qué dicen de nosotros?</h2>
+        <h1 className="op-header-text">¿Qué dicen de nosotros?</h1>
         <p className="op-header-p">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ex autem
           amet nostrum here.

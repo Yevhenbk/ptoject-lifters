@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import LucNav from '../luc/Navbar/LucNav.jsx';
 import Slider from "../luc/Slider/Slider.jsx";
+import Opinions from "../luc/Opinions/Opinions.jsx";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -10,6 +11,7 @@ export const Home = () => {
 		<div className='luc__home'>
 			<LucNav />
 			<Slider />
+			<Opinions />
 		</div>
 	);
 };
