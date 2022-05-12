@@ -3,7 +3,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0;
+  padding: 1rem 0;
+  transition: 0.5s;
+}
+.active__nav {
+  background-color: var(--black);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.581);
 }
 .header__three {
   font-size: 28px;
