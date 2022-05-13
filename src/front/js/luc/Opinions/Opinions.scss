@@ -2,16 +2,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--primary);
-  padding: 12rem 0 2rem;
+  padding: 0 0 2rem;
   overflow: hidden;
   text-align: end;
+  background: linear-gradient(70deg, var(--black) 20%, var(--primary) 0%);
+  background-attachment: fixed;
+}
+.op__headers {
+  padding-top: 6rem;
 }
 .op-cards-holder {
   display: flex;
   justify-content: space-evenly;
   width: 200%;
-  transition: 1s all ease;
 }
 #two:checked ~ div.op-cards-holder {
   margin-left: -100%;
@@ -32,6 +35,7 @@
 .op-cards {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-evenly;
   width: calc(100% / 2 - 10px);
 }
@@ -39,20 +43,37 @@
   display: flex;
   flex-direction: column;
   width: 25rem;
-  height: 18.25rem;
-  background-color: var(--primary);
-  margin: 0 1.5rem;
+  background-color: transparent;
+  margin: 1.5rem 1rem;
   border: 1px solid var(--border-bb);
   transition: all ease 0.3s;
+}
+.free-card {
+  width: 35rem;
+  height: 18.25rem;
+  margin: 0 1.5rem;
 }
 .op-card-img {
   border-radius: 50%;
   border: 2px solid var(--secondary);
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   margin-right: 1rem;
 }
+.free-card-img {
+  border-radius: 50%;
+  border: 3px solid var(--secondary);
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem;
+}
 .op-cards-first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1rem 0;
+}
+.free-cards-first {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -65,6 +86,11 @@
 .op-card-first-holder {
   display: flex;
   flex-direction: column;
+  text-align: left;
+}
+.free-card-first-holder {
+  display: flex;
+  flex-direction: column;
 }
 .op-card-name {
   margin: 0;
@@ -72,9 +98,20 @@
   font-size: 18px;
   font-weight: 400;
 }
+.free-card-name {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 21px;
+  font-weight: 500;
+}
 .op-card-date {
   margin: 0;
   font-size: 14px;
+  color: var(--white);
+}
+.free-card-date {
+  margin: 0;
+  font-size: 16px;
   color: var(--white);
 }
 .google-img {
@@ -83,10 +120,17 @@
   height: 1.5rem;
 }
 .op-text {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   color: var(--white);
   margin: 0;
+  text-align: start;
+}
+.free-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white);
+  padding-top: 2rem;
   text-align: start;
 }
 .footer-op {
@@ -140,7 +184,7 @@
   background-color: var(--secondary);
 }
 .op-text-holder {
-  height: 12.85rem;
+  height: 10rem;
   overflow: hidden;
   overflow-x: hidden;
   padding: 1rem;
@@ -158,4 +202,15 @@
     margin: 1rem 0;
     align-self: center;
   }
+}
+.horizontal__brake {
+  display: none;
+  height: 0.15rem;
+  width: 55rem;
+  background-color: var(--secondary);
+  align-self: flex-end;
+  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.horizontal__active {
+  width: 65rem;
 }

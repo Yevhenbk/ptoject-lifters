@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "../../component/carousel.jsx";
+import SliderButton from "../../component/Buttons/Slider/SliderButton.jsx";
 
 import "./Slider.scss";
 
@@ -16,11 +17,7 @@ const Slider = () => {
           de origen. El pesista es un atleta fuerte, rápido, con una condición
           física suprema y una gran capacidad de concentración.
         </p>
-        <input
-          type="button"
-          className="slider__button"
-          value="Solicitar clase gratis"
-        />
+        <SliderButton />
       </div>
       <div className="slider__section_two">
         <Carousel />

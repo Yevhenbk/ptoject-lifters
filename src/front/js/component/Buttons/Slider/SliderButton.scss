@@ -1,0 +1,35 @@
+a.thar-three {
+  color: var(--secondary);
+  cursor: pointer;
+  display: block;
+  max-width: 214.66px;
+  font-size: 21px;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid var(--secondary);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+a.thar-three:hover {
+  color: var(--black);
+  background-color: transparent;
+  text-shadow: nthree;
+}
+a.thar-three:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+a.thar-three:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  color: var(--black);
+  background: var(--secondary);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
