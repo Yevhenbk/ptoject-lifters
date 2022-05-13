@@ -5,41 +5,36 @@
   padding: 0 0 2rem;
   overflow: hidden;
   text-align: end;
-  background: linear-gradient(70deg, var(--black) 20%, var(--primary) 0%);
   background-attachment: fixed;
+  background-color: var(--primary);
 }
 .op__headers {
   padding-top: 6rem;
 }
-.op-cards-holder {
+.op__cards__holder {
   display: flex;
   justify-content: space-evenly;
-  width: 200%;
 }
-#two:checked ~ div.op-cards-holder {
-  margin-left: -100%;
-}
-.op-header {
+.op__header {
   margin: 0;
 }
-.op-header-text {
+.op__header__text {
   color: var(--secondary);
   text-align: center;
 }
-.op-header-p {
+.op__header__p {
   font-size: 21px;
   text-align: center;
   color: var(--secondary);
   margin-bottom: 5rem;
 }
-.op-cards {
+.op__cards {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: calc(100% / 2 - 10px);
 }
-.op-card {
+.op__card {
   display: flex;
   flex-direction: column;
   width: 25rem;
@@ -48,169 +43,128 @@
   border: 1px solid var(--border-bb);
   transition: all ease 0.3s;
 }
-.free-card {
-  width: 35rem;
-  height: 18.25rem;
-  margin: 0 1.5rem;
+.free__card {
+  width: 38rem;
+  height: 19.25rem;
+  margin: 0 4rem;
 }
-.op-card-img {
+.op__card__img {
   border-radius: 50%;
   border: 2px solid var(--secondary);
   width: 3rem;
   height: 3rem;
   margin-right: 1rem;
 }
-.free-card-img {
+.free__card__img {
   border-radius: 50%;
   border: 3px solid var(--secondary);
   width: 5rem;
   height: 5rem;
   margin-right: 2rem;
 }
-.op-cards-first {
+.op__cards__first {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem 1rem 0;
 }
-.free-cards-first {
+.free__cards__first {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem 1rem 0;
 }
-.in-between {
+.in__between {
   display: flex;
   flex-direction: row;
 }
-.op-card-first-holder {
+.op__card__first__holder {
   display: flex;
   flex-direction: column;
   text-align: left;
+  justify-content: center;
 }
-.free-card-first-holder {
+.free__card__first__holder {
   display: flex;
   flex-direction: column;
+  text-align: left;
+  justify-content: center;
 }
-.op-card-name {
+.op__card__name {
   margin: 0;
   color: var(--secondary);
   font-size: 18px;
   font-weight: 400;
 }
-.free-card-name {
+.free__card__name {
   margin: 0;
   color: var(--secondary);
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 500;
+  text-align: left;
 }
-.op-card-date {
+.op__card__date {
   margin: 0;
   font-size: 14px;
   color: var(--white);
 }
-.free-card-date {
+.free__card__date {
   margin: 0;
   font-size: 16px;
   color: var(--white);
 }
-.google-img {
+.google__img {
   background-image: url("https://cdn.trustindex.io/assets/platform/Google/icon.svg");
   width: 1.5rem;
   height: 1.5rem;
 }
-.op-text {
+.op__text {
   font-size: 14px;
   font-weight: 300;
   color: var(--white);
   margin: 0;
   text-align: start;
 }
-.free-text {
-  font-size: 18px;
-  font-weight: 400;
+.free__text {
+  font-size: 21px;
+  font-weight: 300;
   color: var(--white);
   padding-top: 2rem;
   text-align: start;
 }
-.footer-op {
+.footer__op {
   height: 0.35rem;
   width: 100%;
   margin-top: 2.5rem;
 }
-.op-buttons {
+.op__buttons {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
 }
-.op-buttons label {
-  border: 1px solid var(--secondary);
-  background-color: var(--secondary);
-  margin: 0 0.4rem;
-  border-radius: 50px;
-  height: 1rem;
+.free-rating img {
+  width: 1.25rem;
+}
+.op__rating img {
   width: 1rem;
-  transition: 0.2s all ease;
 }
-.op-buttons label:hover {
-  cursor: pointer;
-}
-.op-buttons label.active {
-  width: 1.1rem;
-  height: 1.1rem;
-  background-color: transparent;
-}
-.radio-but {
-  display: none;
-}
-#one:checked ~ .op-buttons label.one {
-  width: 1.1rem;
-  height: 1.1rem;
-  background-color: transparent;
-}
-#two:checked ~ .op-buttons label.two {
-  width: 1.1rem;
-  height: 1.1rem;
-  background-color: transparent;
-}
-#two:checked ~ .op-buttons label.one {
-  width: 1rem;
-  height: 1rem;
-  background-color: var(--secondary);
-}
-#one:checked ~ .op-buttons label.two {
-  width: 1rem;
-  height: 1rem;
-  background-color: var(--secondary);
-}
-.op-text-holder {
-  height: 10rem;
+.op__text__holder {
+  height: 9.2rem;
   overflow: hidden;
   overflow-x: hidden;
-  padding: 1rem;
+  padding: 0.75rem;
 }
 @media screen and (max-width: 1260px) {
-  .op-card {
+  .op__card {
     margin: 0 0.5rem;
   }
 }
 @media screen and (max-width: 795px) {
-  .op-cards {
+  .op__cards {
     flex-direction: column;
   }
-  .op-card {
+  .op__card {
     margin: 1rem 0;
     align-self: center;
   }
-}
-.horizontal__brake {
-  display: none;
-  height: 0.15rem;
-  width: 55rem;
-  background-color: var(--secondary);
-  align-self: flex-end;
-  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
-}
-.horizontal__active {
-  width: 65rem;
 }

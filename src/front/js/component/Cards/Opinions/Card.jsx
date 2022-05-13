@@ -2,13 +2,13 @@ import React from "react";
 
 const Card = ({ img, name, rating, text }) => {
   return (
-    <div className="op-card">
-      <div className="op-cards-first">
-        <div className="in-between">
-          <img src={img} className="op-card-img" />
-          <div className="op-card-first-holder">
-            <p className="op-card-name">{name}</p>
-            <div className="op-rating">
+    <div className="op__card">
+      <div className="op__cards__first">
+        <div className="in__between">
+          <img src={img} className="op__card__img" />
+          <div className="op__card__first__holder">
+            <p className="op__card__name">{name}</p>
+            <div className="op__rating">
               {Array(rating)
                 .fill()
                 .map((_, i) => (
@@ -20,10 +20,10 @@ const Card = ({ img, name, rating, text }) => {
             </div>
           </div>
         </div>
-        <div className="google-img" />
+        <div className="google__img" />
       </div>
-      <div className="op-text-holder">
-        <p className="op-text">{text}</p>
+      <div className="op__text__holder">
+        <p className="op__text">{text}</p>
       </div>
     </div>
   );
