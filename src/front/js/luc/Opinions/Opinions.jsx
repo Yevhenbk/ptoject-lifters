@@ -21,7 +21,7 @@ const Opinions = () => {
               img="https://lh3.googleusercontent.com/a-/AOh14Gjc_5E8O7TP46hPM5luG76S6azjkfcqwOVlTxDT0Q=w75-h75-p-rp-mo-br100"
               name="Victor Siankope"
               rating={5}
-              text='"El mejor lugar donde aprender halterofilia en Madrid para todas las edades. Además dispone de un club de competidores donde también empezar a entrar en el mundo de la competición. Puedes ir y solicitar tu clase de prueba gratuita!!!"'
+              text="El mejor lugar donde aprender halterofilia en Madrid para todas las edades. Además dispone de un club de competidores donde también empezar a entrar en el mundo de la competición. Puedes ir y solicitar tu clase de prueba gratuita!!!"
             />
             <div className="op__grouped">
               <Card
@@ -29,16 +29,16 @@ const Opinions = () => {
                 name="Coke Perez"
                 rating={5}
                 className="grouped__op__card"
-                text='"Sin duda el mejor sitio que conozco donde enseñan la técnica correcta y al más puro estilo olímpico de la halterofilia. Lo recomiendo para todo aquel que quiera pulir al detalle sus movimientos y sacar el máximo partido a este deporte."'
+                text="Sin duda el mejor sitio que conozco donde enseñan la técnica correcta y al más puro estilo olímpico de la halterofilia. Lo recomiendo para todo aquel que quiera pulir al detalle sus movimientos y sacar el máximo partido a este deporte."
               />
               <Card
                 img="https://lh3.googleusercontent.com/a-/AOh14GivAf9-7tWSuTvGw37FYVaO_LzVyCDiTaAjcVf5fg=w72-h72-p-c0x00000000-rp-mo-br100"
                 name="NoeliaParra"
                 rating={5}
                 className="grouped__op__card"
-                text='"Si te gusta o te llama la atención la halterofilia, hay que venir aquí para probarlo.
+                text='Si te gusta o te llama la atención la halterofilia, hay que venir aquí para probarlo.
             No importa que levantes más, levantes menos, tengas técnica o no, es un club que desde el primer día te acogen todos los compañeros, el buen rollo está asegurado, y todo de la mano de un gran profesional como Toni, donde no existen los "no puedo".
-            Gracias :)"'
+            Gracias :)'
               />
             </div>
           </div>

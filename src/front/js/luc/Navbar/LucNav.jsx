@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaUserCircle } from "react-icons/fa";
+import { TiUser } from "react-icons/ti";
 import { AiFillInstagram } from "react-icons/ai";
 import { Navbarmenu } from "../../component/Navbarmenu/Navbarmenu.jsx";
 
@@ -29,7 +29,7 @@ const LucNav = () => {
       <div className="luc__nav__icons">
         <AiFillInstagram className="icon__small" />
         <Link to="/login">
-          <FaUserCircle className="icon__grand" />
+          <TiUser className="icon__grand" />
         </Link>
         <div className="menu__grand">
           <Navbarmenu />
