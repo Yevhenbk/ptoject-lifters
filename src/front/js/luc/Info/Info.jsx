@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GiStrongMan } from "react-icons/gi";
 import { IoMdMan } from "react-icons/io";
 import { GiWeightLiftingUp } from "react-icons/gi";
@@ -8,6 +8,15 @@ import cardSecond from "../../../img/im2.jpeg";
 import "./Info.scss";
 
 const Info = () => {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="info__holder">
       <div className="info">
@@ -39,8 +48,20 @@ const Info = () => {
         </div>
         <div className="block__wrapper">
           <div className="info__block">
-            <img className="block__img__one" src={cardFirst}></img>
-            <img className="block__img__two" src={cardSecond}></img>
+            <img
+              className="block__img__one"
+              src={cardFirst}
+              style={{
+                transform: `translateY(${offsetY * 0.04}px) rotate(-3deg)`,
+              }}
+            ></img>
+            <img
+              className="block__img__two"
+              src={cardSecond}
+              style={{
+                transform: `translateY(-${offsetY * 0.04}px) rotate(2deg)`,
+              }}
+            ></img>
           </div>
           <div className="info__par">
             <h2>
