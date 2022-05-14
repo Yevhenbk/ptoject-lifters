@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;1,400;1,500&display=swap");
 
 :root {
   --primary: #1b1b1b;
@@ -7,17 +8,10 @@
   --black: rgb(3, 3, 3);
   --white: rgb(255, 255, 255);
 }
-
-.column {
-  display: flex;
-  flex-direction: column;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-}
-.centered {
-  align-items: center;
+h1,
+h2,
+h3 {
+  font-family: "Libre Bodoni", serif;
 }
 .hr-line {
   background-color: var(--secondary);

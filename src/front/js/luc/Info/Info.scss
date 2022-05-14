@@ -30,7 +30,7 @@
 .info__state h3 {
   font-size: 21px;
   font-weight: 400;
-  color: var(--white);
+  color: var(--secondary);
   margin: 1rem 2rem 0;
 }
 .info__state p {
@@ -41,13 +41,17 @@
 }
 .state__icon {
   font-size: 3rem;
-  color: var(--white);
+  color: var(--secondary);
 }
 .info__par {
   max-width: 27rem;
   color: var(--white);
   text-align: right;
   padding-left: 6rem;
+}
+.info__par p {
+  font-size: 18px;
+  font-weight: 300;
 }
 .block__wrapper {
   display: flex;
@@ -58,6 +62,7 @@
 .block__img__one {
   width: 20rem;
   transform: rotate(-3deg);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 .block__img__two {
   width: 14rem;
@@ -65,8 +70,10 @@
   left: -3rem;
   bottom: -6rem;
   transform: rotate(1deg);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 .info__par h2 {
   font-size: 24px;
   font-weight: 500;
+  color: var(--secondary);
 }
