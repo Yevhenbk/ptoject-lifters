@@ -1,0 +1,30 @@
+.sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 6rem 0;
+}
+.sections__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.spanner {
+  color: var(--secondary);
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.sections__text h1 {
+  color: var(--secondary);
+}
+.sections__p {
+  color: var(--secondary);
+  font-size: 21px;
+}
+.sections__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
