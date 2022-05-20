@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../../component/Cards/Opinions/Card.jsx";
 import CardFree from "../../component/Cards/Opinions/CardFree.jsx";
 import "./Opinions.scss";
 
 const Opinions = () => {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="opinions__holder">
       <div className="opinions">
@@ -23,7 +32,12 @@ const Opinions = () => {
               rating={5}
               text="El mejor lugar donde aprender halterofilia en Madrid para todas las edades. Además dispone de un club de competidores donde también empezar a entrar en el mundo de la competición. Puedes ir y solicitar tu clase de prueba gratuita!!!"
             />
-            <div className="op__grouped">
+            <div
+              className="op__grouped"
+              style={{
+                transform: `translateY(-${offsetY * 0.09}px)`,
+              }}
+            >
               <Card
                 img="https://lh3.googleusercontent.com/a-/AOh14GhesxpQg56-QScfLW2j985LntsFMUgm9FE3fowH9A=w72-h72-p-c0x00000000-rp-mo-br100"
                 name="Coke Perez"
