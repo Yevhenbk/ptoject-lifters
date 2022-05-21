@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./FadeInSection.scss";
 
 function FadeInSection(props) {
-  const [isVisible, setVisible] = useState(true);
+  const [isVisible, setVisible] = useState(false);
   const domRef = useRef();
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
