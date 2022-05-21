@@ -52,14 +52,14 @@ const Info = () => {
               className="block__img__one"
               src={cardFirst}
               style={{
-                transform: `translateY(${offsetY * 0.05}px) rotate(-3deg)`,
+                transform: `translateY(${offsetY * 0.07}px) rotate(-3deg)`,
               }}
             ></img>
             <img
               className="block__img__two"
               src={cardSecond}
               style={{
-                transform: `translateY(-${offsetY * 0.05}px) rotate(2deg)`,
+                transform: `translateY(-${offsetY * 0.1}px) rotate(2deg)`,
               }}
             ></img>
           </div>

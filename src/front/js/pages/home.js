@@ -4,16 +4,21 @@ import LucNav from '../luc/Navbar/LucNav.jsx';
 import Slider from "../luc/Slider/Slider.jsx";
 import Opinions from "../luc/Opinions/Opinions.jsx";
 import Info from "../luc/Info/Info.jsx";
+import SmoothScrolling from "../component/SmoothScrolling/SmoothScrolling.js";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className='luc__home'>
+		<>
 			<LucNav />
-			<Slider />
-			<Opinions />
-			<Info />
-		</div>
+			<SmoothScrolling><div className='luc__home'>
+				<Slider />
+				<Opinions />
+				<Info />
+			</div>
+			</SmoothScrolling>
+		</>
+
 	);
 };

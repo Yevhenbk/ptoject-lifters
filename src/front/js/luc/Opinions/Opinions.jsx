@@ -38,7 +38,7 @@ const Opinions = () => {
             <div
               className="op__grouped"
               style={{
-                transform: `translateY(-${offsetY * 0.09}px)`,
+                transform: `translateY(-${offsetY * 0.14}px)`,
               }}
             >
               <Card
