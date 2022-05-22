@@ -1,0 +1,23 @@
+.coach-img__background {
+  height: 80vh;
+  background-image: url(https://eingleses.com/wp-content/uploads/2019/07/no-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px #00000077;
+}
+.coach__info {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+.coach__info h1 {
+  color: var(--secondary);
+}
+.coach__info p,
+ul li {
+  color: var(--white);
+}
