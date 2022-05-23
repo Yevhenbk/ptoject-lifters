@@ -8,7 +8,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.411) 0px 3px 8px;
 }
 @media screen and (max-width: 740px) {
   .wrapper {

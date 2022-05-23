@@ -1,5 +1,6 @@
 import React from "react";
 import { RiInstagramLine } from "react-icons/ri";
+import FadeInSection from "../../component/FadeInSection/FadeInSection.jsx";
 
 import "./CoachSide.scss";
 
@@ -8,7 +9,9 @@ function CoachSide() {
     <div className="side__holder">
       <div className="coach-img__background">
         <div className="coach__info">
-          <h1>Introducing your Coach, Antonio Torres</h1>
+          <FadeInSection>
+            <h1>Introducing your Coach, Antonio Torres</h1>
+          </FadeInSection>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             quidem tenetur explicabo laudantium ullam quis. Aperiam voluptate
@@ -22,19 +25,13 @@ function CoachSide() {
               <li>Técn. Halterofilia Nivel 1</li>
               <li>P.Trainer NSCA</li>
               <li>Seleccionador asturiano 13/14</li>
-              <li>
-                Fundador{" "}
-                <a herf="#" className="span__cover">
-                  @escuelaastur
-                </a>{" "}
-                04 The House Of Lifters 18
-              </li>
+              <li>Fundador escuelaastur 04 The House Of Lifters 18</li>
             </ul>
             <a
               href="https://www.instagram.com/toni_torres_entrenador/"
               className="coach__insta"
             >
-              <RiInstagramLine />
+              <RiInstagramLine className="insta__coach-icon" />
             </a>
           </div>
         </div>
