@@ -10,13 +10,12 @@ function CoachSide() {
       <div className="coach-img__background">
         <div className="coach__info">
           <FadeInSection>
-            <h1>Introducing your Coach, Antonio Torres</h1>
+            <h1>Introducing your coach, Antonio Torres</h1>
           </FadeInSection>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
             quidem tenetur explicabo laudantium ullam quis. Aperiam voluptate
-            molestiae nostrum, praesentium deleniti tenetur illum quia possimus
-            odit magnam eligendi eum. Nulla.
+            molestiae nostrum, praesentium deleniti."
           </p>
           <div className="ul-side__holder">
             <ul>
@@ -27,12 +26,15 @@ function CoachSide() {
               <li>Seleccionador asturiano 13/14</li>
               <li>Fundador escuelaastur 04 The House Of Lifters 18</li>
             </ul>
-            <a
-              href="https://www.instagram.com/toni_torres_entrenador/"
-              className="coach__insta"
-            >
-              <RiInstagramLine className="insta__coach-icon" />
-            </a>
+            <FadeInSection>
+              <a
+                href="https://www.instagram.com/toni_torres_entrenador/"
+                className="coach__insta"
+              >
+                <RiInstagramLine className="insta__coach-icon" />
+                <h2>Instagram</h2>
+              </a>
+            </FadeInSection>
           </div>
         </div>
       </div>
