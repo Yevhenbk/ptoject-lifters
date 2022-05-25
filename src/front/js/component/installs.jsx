@@ -1,5 +1,7 @@
 import React from "react";
 import Iframe from "react-iframe";
+import FadeInSection from "./FadeInSection/FadeInSection.jsx";
+
 import "../../styles/installs.scss";
 
 const Installs = () => {
@@ -7,7 +9,10 @@ const Installs = () => {
     <div className="installs-holder">
       <div className="installs ">
         <div className="installs-section-one ">
-          <h4 className="installs-title">Instalaciones</h4>
+          <FadeInSection>
+            <h1 className="installs-title">Instalaciones</h1>
+          </FadeInSection>
+
           <p className="installs-text">
             Formarmos parte del Madsport Academy, quienes también ofrecen clases
             de calistenia, CrossFit, boxeo, MMA, krav maga, fitboxing, tiendas

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { ImWhatsapp } from "react-icons/im";
 import { useForm } from "react-hook-form";
 import { Context } from "../../store/appContext.js";
 import FadeInSection from "../../component/FadeInSection/FadeInSection.jsx";
@@ -27,9 +28,7 @@ const ContactForm = () => {
         <form action="" method="post" className="modal__form">
           <div className="mm__body">
             <FadeInSection>
-              <p>
-                Solicita tu clase <span className="span__cover">GRATIS</span>
-              </p>
+              <h3>Solicita tu clase gratis</h3>
             </FadeInSection>
             <div className="inputs__holder">
               <input

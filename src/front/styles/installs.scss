@@ -1,9 +1,10 @@
 .installs {
-  background-color: #252525;
+  background-color: var(--primary);
 }
 .installs p {
-  color: white;
+  color: var(--white);
   text-align: end;
+  font-size: 21px;
 }
 .installs-section-one {
   display: flex;
@@ -19,7 +20,7 @@
   justify-content: space-evenly;
 }
 .installs-title {
-  color: white;
+  color: var(--secondary);
   text-align: center;
   padding-bottom: 1rem;
   margin: 0;
@@ -31,7 +32,7 @@
 Iframe {
   display: flex;
   border: none;
-  height: 26rem;
+  height: 36rem;
   width: 50vw;
   position: relative;
 }
