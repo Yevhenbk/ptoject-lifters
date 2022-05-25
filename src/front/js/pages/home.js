@@ -6,6 +6,7 @@ import Opinions from "../luc/Opinions/Opinions.jsx";
 import Info from "../luc/Info/Info.jsx";
 import CoachSide from "../luc/CoachSide/CoachSide.jsx";
 import SmoothScrolling from "../component/SmoothScrolling/SmoothScrolling.js";
+import ContactForm from "../luc/CoantactForm/ContactForm.jsx";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -19,6 +20,7 @@ export const Home = () => {
           <Opinions />
           <Info />
           <CoachSide />
+          <ContactForm />
         </div>
       </SmoothScrolling>
     </>

@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { RiInstagramLine } from "react-icons/ri";
 import FadeInSection from "../../component/FadeInSection/FadeInSection.jsx";
 
 import "./CoachSide.scss";
 
 function CoachSide() {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="side__holder">
       <div className="coach-img__background">
-        <div className="coach__info">
+        <div
+          className="coach__info"
+          style={{
+            transform: `translateY(-${offsetY * 0.05}px)`,
+          }}
+        >
           <FadeInSection>
             <h1>Introducing your coach, Antonio Torres</h1>
           </FadeInSection>
