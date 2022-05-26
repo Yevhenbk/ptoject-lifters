@@ -12,11 +12,9 @@ const ContactForm = () => {
   return (
     <div className="contact-form__holder">
       <div className="form__title">
-        <span className="title__row-left" />
         <FadeInSection>
           <h1>Join Us Now</h1>
         </FadeInSection>
-        <span className="title__row-right" />
       </div>
       <div className="secondary-form">
         <FadeInSection>

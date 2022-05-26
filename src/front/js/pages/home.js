@@ -8,12 +8,13 @@ import CoachSide from "../luc/CoachSide/CoachSide.jsx";
 import SmoothScrolling from "../component/SmoothScrolling/SmoothScrolling.js";
 import ContactForm from "../luc/CoantactForm/ContactForm.jsx";
 import Installs from "../component/installs.jsx";
+import CustomCursor from "../component/CustomCursor/CustomCursor.jsx";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
 
   return (
-    <>
+    <><CustomCursor />
       <LucNav />
       <SmoothScrolling>
         <div className="luc__home">

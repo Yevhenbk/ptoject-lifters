@@ -63,6 +63,7 @@
     "@mui/material": "^5.4.2",
     "@mui/styled-engine-sc": "^5.4.2",
     "animate.css": "^4.1.1",
+    "babel-preset-es2015": "^6.24.1",
     "bootstrap": "^5.1.3",
     "cloudinary": "^1.28.1",
     "iframe": "^1.0.0",
@@ -82,6 +83,7 @@
     "react-scroll-motion": "^0.2.6",
     "sass": "^1.51.0",
     "styled-components": "^5.3.3",
-    "tar": "^6.1.11"
+    "tar": "^6.1.11",
+    "typescript": "^4.7.2"
   }
 }
