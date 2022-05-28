@@ -40,15 +40,6 @@ function CoachSide() {
               <li>Seleccionador asturiano 13/14</li>
               <li>Fundador escuelaastur 04 The House Of Lifters 18</li>
             </ul>
-            <FadeInSection>
-              <a
-                href="https://www.instagram.com/toni_torres_entrenador/"
-                className="coach__insta"
-              >
-                <RiInstagramLine className="insta__coach-icon" />
-                <h2>Instagram</h2>
-              </a>
-            </FadeInSection>
           </div>
         </div>
       </div>

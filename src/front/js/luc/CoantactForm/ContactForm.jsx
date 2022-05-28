@@ -17,44 +17,42 @@ const ContactForm = () => {
         </FadeInSection>
       </div>
       <div className="secondary-form">
-        <FadeInSection>
-          <div className="secondary__text">
-            <h2>Tu + Tu esfuerzo + Nuestra experiencia</h2>
-            <img src={noimg} className="logo__img-sec" />
-          </div>
-        </FadeInSection>
         <form action="" method="post" className="modal__form">
           <div className="mm__body">
-            <FadeInSection>
-              <h3>Solicita tu clase gratis</h3>
-            </FadeInSection>
-            <div className="inputs__holder">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="inputs__ls ls__second"
-                placeholder="Nombre"
-              />
-              <input
-                type="text"
-                id="number"
-                name="number"
-                className="inputs__ls ls__second"
-                placeholder="Telefono"
-              />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="inputs__ls ls__first"
-                placeholder="Email"
-              />
+            <div className="inps">
+              <FadeInSection>
+                <h3>Solicita tu clase gratis</h3>
+              </FadeInSection>
+              <div className="inputs__holder">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="inputs__ls ls__third"
+                  placeholder="Nombre"
+                />
+                <input
+                  type="text"
+                  id="number"
+                  name="number"
+                  className="inputs__ls ls__third"
+                  placeholder="Telefono"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="inputs__ls ls__third"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div className="mm__footer">
+              <input type="submit" value="Submit" className="signup__button" />
             </div>
           </div>
-
-          <div className="mm__footer">
-            <input type="submit" value="Submit" className="signup__button" />
+          <div className="textarea__holder">
+            <textarea className="textarea"></textarea>
           </div>
         </form>
       </div>
