@@ -22,7 +22,6 @@ export const Home = () => {
           <Opinions />
           <Info />
           <CoachSide />
-          <ContactForm />
           <Installs />
         </div>
       </SmoothScrolling>
