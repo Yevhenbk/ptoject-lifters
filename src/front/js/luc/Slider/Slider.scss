@@ -103,7 +103,7 @@
     max-width: 40rem;
   }
 }
-@media screen and (max-height: 950px) {
+@media (max-width: 415px) and (max-height: 950px) {
   .slider__section_one {
     height: 70vh;
   }
@@ -111,8 +111,19 @@
     max-width: 20rem;
   }
 }
-@media screen and (max-height: 668px) {
+@media screen and (max-height: 840px) {
   .slider__section_one {
     height: 100vh;
+  }
+  .inner__holder {
+    width: 20rem;
+  }
+}
+@media screen and (max-height: 3840px) {
+  .slider__section_one {
+    align-items: center;
+  }
+  .inner__holder {
+    width: 30rem;
   }
 }

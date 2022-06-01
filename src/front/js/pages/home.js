@@ -19,8 +19,8 @@ export const Home = () => {
       <SmoothScrolling>
         <div className="luc__home">
           <Slider />
-          {/* <Opinions />
-          <Info />
+          <Opinions />
+          {/* <Info />
           <CoachSide />
           <Installs /> */}
         </div>

@@ -141,14 +141,6 @@
   width: 100%;
   margin-top: 2.5rem;
 }
-.op__buttons {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-}
-.free-rating img {
-  width: 1.25rem;
-}
 .op__rating img {
   width: 1rem;
 }
@@ -162,17 +154,31 @@
   position: relative;
   top: 15vh;
 }
-@media screen and (max-width: 1260px) {
-  .op__card {
-    margin: 0 0.5rem;
+.grouped__op__hidden {
+  display: none;
+}
+.hidden__card .op__card {
+  display: none;
+}
+@media screen and (max-width: 1166px) {
+  .free__card {
+    display: none;
+  }
+  .hidden__card .op__card {
+    display: block;
   }
 }
-@media screen and (max-width: 795px) {
-  .op__cards {
-    flex-direction: column;
-  }
-  .op__card {
-    margin: 1rem 0;
+@media screen and (max-width: 860px) {
+  .op__headers {
+    max-width: 30rem;
     align-self: center;
+  }
+  .op__header__p {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 410px) {
+  .op__card {
+    width: 22rem;
   }
 }

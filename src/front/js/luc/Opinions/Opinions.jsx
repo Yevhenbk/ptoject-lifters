@@ -47,6 +47,16 @@ const Opinions = () => {
                 transform: `translateY(-${offsetY * 0.14}px)`,
               }}
             >
+              <div className="hidden__card">
+                <Card
+                  img="https://lh3.googleusercontent.com/a-/AOh14Gjc_5E8O7TP46hPM5luG76S6azjkfcqwOVlTxDT0Q=w75-h75-p-rp-mo-br100"
+                  name="Victor Siankope"
+                  rating={5}
+                  className="grouped__op__card"
+                  text="El mejor lugar donde aprender halterofilia en Madrid para todas las edades. Además dispone de un club de competidores donde también empezar a entrar en el mundo de la competición. Puedes ir y solicitar tu clase de prueba gratuita!!!"
+                />
+              </div>
+
               <Card
                 img="https://lh3.googleusercontent.com/a-/AOh14GhesxpQg56-QScfLW2j985LntsFMUgm9FE3fowH9A=w72-h72-p-c0x00000000-rp-mo-br100"
                 name="Coke Perez"
