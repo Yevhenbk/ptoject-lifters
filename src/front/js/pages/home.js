@@ -19,10 +19,10 @@ export const Home = () => {
       <SmoothScrolling>
         <div className="luc__home">
           <Slider />
-          <Opinions />
+          {/* <Opinions />
           <Info />
           <CoachSide />
-          <Installs />
+          <Installs /> */}
         </div>
       </SmoothScrolling>
     </>

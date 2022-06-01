@@ -57,3 +57,16 @@
 .carousel-indicators .active {
   opacity: 1;
 }
+@media screen and (max-width: 1166px) {
+  .carouselImage {
+    height: 35rem;
+  }
+  .carousel__par {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 416px) {
+  .carouselImage {
+    height: 25rem;
+  }
+}
