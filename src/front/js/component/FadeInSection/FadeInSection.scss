@@ -12,7 +12,7 @@
 }
 .fade-out-section {
   opacity: 0;
-  transform: translateY(4vh);
+  transform: translateY(5vh);
   visibility: hidden;
   transition: opacity 0.3s ease-out, transform 0.8s ease-out;
   will-change: opacity, visibility;
@@ -24,7 +24,7 @@
 }
 .fade-in-out-section {
   opacity: 0;
-  transform: translateY(5vh);
+  transform: translateY(7vh);
   visibility: hidden;
   transition: opacity 0.3s ease-out, transform 0.8s ease-out;
   will-change: opacity, visibility;

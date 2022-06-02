@@ -20,9 +20,9 @@ export const Home = () => {
         <div className="luc__home">
           <Slider />
           <Opinions />
-          {/* <Info />
+          <Info />
           <CoachSide />
-          <Installs /> */}
+          {/* <Installs /> */}
         </div>
       </SmoothScrolling>
     </>

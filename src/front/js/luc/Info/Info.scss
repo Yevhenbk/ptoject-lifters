@@ -76,3 +76,38 @@
   font-weight: 500;
   color: var(--secondary);
 }
+@media screen and (max-width: 1166px) {
+  .block__wrapper {
+    flex-direction: column;
+  }
+  .info {
+    padding-top: 0;
+  }
+  .info__par {
+    padding-left: 0;
+    text-align: center;
+  }
+  .info__block {
+    padding-bottom: 15rem;
+  }
+  .info__states {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 610px) {
+  .block__img__one {
+    width: 12rem;
+    position: relative;
+    right: -1rem;
+  }
+  .block__img__two {
+    width: 10rem;
+    left: -0.5rem;
+  }
+}
+@media screen and (max-width: 415px) {
+  .info__par {
+    width: 20rem;
+  }
+}
