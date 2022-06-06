@@ -9,6 +9,7 @@ import SmoothScrolling from "../component/SmoothScrolling/SmoothScrolling.js";
 import ContactForm from "../luc/CoantactForm/ContactForm.jsx";
 import Installs from "../component/installs.jsx";
 import CustomCursor from "../component/CustomCursor/CustomCursor.jsx";
+import SemiCards from "../luc/SemiCards/SemiCards.jsx";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -22,6 +23,7 @@ export const Home = () => {
           <Opinions />
           <Info />
           <CoachSide />
+          <SemiCards />
           {/* <Installs /> */}
         </div>
       </SmoothScrolling>

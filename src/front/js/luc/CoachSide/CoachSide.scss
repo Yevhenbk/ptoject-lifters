@@ -8,6 +8,7 @@
 }
 .coach-img {
   width: 25rem;
+  border-radius: 50%;
 }
 .coach__info {
   max-width: 25rem;
@@ -19,12 +20,13 @@
 }
 .coach__info p,
 ul li {
-  color: var(--white);
+  color: var(--secondary);
   font-weight: 300;
 }
 .coach__info p {
   font-size: 18px;
   font-style: italic;
+  font-family: "Libre Bodoni", serif;
 }
 .coach__info ul li {
   font-size: 16px;
@@ -45,4 +47,29 @@ ul li {
   padding-left: 1rem;
   color: var(--secondary);
   margin: 0;
+}
+@media screen and (max-width: 857px) {
+  .coach-img__background {
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .coach-img {
+    width: 15rem;
+    margin: 4rem 0 6rem;
+  }
+  .coach__info {
+    padding: 6rem 0 0;
+  }
+}
+@media screen and (max-width: 415px) {
+  .coach__info {
+    max-width: 20rem;
+  }
+}
+.icon-l {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  color: var(--secondary);
 }

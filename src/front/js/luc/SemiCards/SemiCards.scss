@@ -1,0 +1,17 @@
+.semi-cards__holder {
+  padding-bottom: 6rem;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.semi-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 857px) {
+  .semi-cards {
+    flex-direction: column;
+  }
+}

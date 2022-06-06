@@ -1,0 +1,32 @@
+.semi__card {
+  max-width: 20rem;
+  border: 1px solid var(--border-bb);
+  margin: 0 2rem;
+}
+.semi__holder {
+  padding: 1.5rem;
+}
+.semi__holder p {
+  font-size: 16px;
+  color: var(--white);
+}
+.semi__card__name {
+  font-size: 21px;
+  color: var(--secondary);
+  padding-left: 1rem;
+}
+.semi-img {
+  width: 3rem;
+  border: 3px solid var(--secondary);
+  border-radius: 50%;
+}
+.semi_sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 857px) {
+  .semi__card {
+    margin: 1rem 0;
+  }
+}

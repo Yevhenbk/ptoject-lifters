@@ -19,8 +19,6 @@ const Opinions = () => {
   return (
     <div className="opinions__holder">
       <div className="opinions">
-        <div className="horizontal__brake" />
-
         <div className="op__headers">
           <FadeInSection>
             <h1 className="op__header__text">¿Qué dicen de nosotros?</h1>
