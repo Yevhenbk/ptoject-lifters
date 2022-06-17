@@ -24,7 +24,7 @@ export const Home = () => {
           <Info />
           <CoachSide />
           <SemiCards />
-          <ContactForm />
+          {/* <ContactForm /> */}
           {/* <Installs /> */}
         </div>
       </SmoothScrolling>
