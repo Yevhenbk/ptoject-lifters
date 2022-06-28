@@ -15,7 +15,7 @@ export const Home = () => {
   const { store, actions } = useContext(Context);
 
   return (
-    <><CustomCursor />
+    <>
       <LucNav />
       <SmoothScrolling>
         <div className="luc__home">
