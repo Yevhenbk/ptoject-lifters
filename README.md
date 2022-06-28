@@ -15,6 +15,7 @@ Login:
 ### Technologies
 
 Frontend:
+
 	- HTML
 	- SCSS
 	- React.js
@@ -22,6 +23,7 @@ Frontend:
 	- React Icons
 	- React Router
 Backend:
+
 	- Python
 	- PostgreSQL
 	- SQLAlchemy
