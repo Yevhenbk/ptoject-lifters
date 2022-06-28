@@ -34,8 +34,11 @@ Backend:
 ### Getting started
 
 Run the project using:
+
 	`npm run start`
 	`pipenv run start`
+	
 If you need to install dependencies use:
+
 	`npm install`
 	`pipenv install`, `pipenv shell`, `pipenv run upgrade`, `pipenv run migrate`
