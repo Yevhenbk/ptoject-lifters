@@ -4,7 +4,7 @@ Los Tercios is a fullstack project developed for people getting familiar with we
 
 (Currently under construction)
 
-Home:
+Home(work in progress):
 
 ![This is an image](https://github.com/Yevhenbk/ptoject-lifters/blob/main/src/front/img/Group%2049.png)
 
@@ -12,6 +12,12 @@ Login:
 
 ![This is an image](https://github.com/Yevhenbk/ptoject-lifters/blob/main/src/front/img/image%2035.png)
 
+### Pending works:
+	
+	Frontend: Home page(Incomplete), Classes page(Incomplete), Competitors page, Products page, Admin mode(Incomplete);
+	
+	Backend: Cloudinary image upload;
+	
 ### Technologies
 
 Frontend:
