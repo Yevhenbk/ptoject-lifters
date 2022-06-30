@@ -22,20 +22,20 @@ Login:
 
 Frontend:
 
-	- HTML
-	- SCSS
-	- React.js
-	- React Bootstrap
-	- React Icons
-	- React Router
+	HTML
+	SCSS
+	React.js
+	React Bootstrap
+	React Icons
+	React Router
 Backend:
 
-	- Python
-	- PostgreSQL
-	- SQLAlchemy
-	- Flask
-	- JWT Authentication
-	- Cloudinary
+	Python
+	PostgreSQL
+	SQLAlchemy
+	Flask
+	JWT Authentication
+	Cloudinary
 	
 ### Back-End Manual Installation:
 
