@@ -4,7 +4,7 @@ Los Tercios is a fullstack project developed for people getting familiar with we
 
 (Currently under construction)
 
-Home(work in progress):
+Home(demo):
 
 ![This is an image](https://github.com/Yevhenbk/ptoject-lifters/blob/main/src/front/img/Group%2049.png)
 
