@@ -14,7 +14,8 @@ Login:
 
 ### Pending works:
 	
-	Frontend: Home page(Incomplete), Classes page(Incomplete), Competitors page, Products page, Admin mode(Incomplete);
+	Frontend: Home page(Incomplete), Classes page(Incomplete), Competitors page,
+	Products page, Admin mode(Incomplete);
 	
 	Backend: Cloudinary image upload;
 	
