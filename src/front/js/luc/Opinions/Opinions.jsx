@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "../../component/Cards/Opinions/Card.jsx";
 import CardFree from "../../component/Cards/Opinions/CardFree.jsx";
-import FadeInSection from "../../component/FadeInSection/FadeInSection.jsx";
-import FadeOutSection from "../../component/FadeInSection/FadeOutSection.jsx";
 
 import "./Opinions.scss";
 
@@ -20,15 +18,11 @@ const Opinions = () => {
     <div className="opinions__holder">
       <div className="opinions">
         <div className="op__headers">
-          <FadeInSection>
-            <h1 className="op__header__text">¿Qué dicen de nosotros?</h1>
-          </FadeInSection>
-          <FadeOutSection>
-            <p className="op__header__p">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ex
-              autem amet nostrum here.
-            </p>
-          </FadeOutSection>
+          <h1 className="op__header__text">¿Qué dicen de nosotros?</h1>
+          <p className="op__header__p">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ex
+            autem amet nostrum here.
+          </p>
         </div>
 
         <div className="op__cards__holder">

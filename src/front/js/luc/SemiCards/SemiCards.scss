@@ -1,7 +1,6 @@
 .semi-cards__holder {
-  padding-top: 2rem;
-  padding-bottom: 6rem;
-  background-color: var(--black);
+  padding: 6rem 0;
+  background-color: var(--primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,4 +14,84 @@
   .semi-cards {
     flex-direction: column;
   }
+}
+.semi__card {
+  position: relative;
+  width: 25rem;
+  display: block;
+  height: 100%;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: rgb(0 0 0 / 70%) 0px 3px 8px;
+}
+
+.card__image {
+  width: 25rem;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--black);
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.semi__card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.semi__card__header {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 2em;
+  padding: 2em;
+  border: none;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--black);
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--black);
+}
+
+.semi__card:hover .semi__card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  color: var(--black);
+  padding: 0.5rem;
+}
+.card__title {
+  color: var(--secondary);
+  margin: 0;
+}
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: var(--white);
 }
