@@ -1,4 +1,5 @@
 import React from "react";
+import { AiFillStar } from "react-icons/ai";
 
 const Card = ({ img, name, rating, text }) => {
   return (
@@ -12,10 +13,7 @@ const Card = ({ img, name, rating, text }) => {
               {Array(rating)
                 .fill()
                 .map((_, i) => (
-                  <img
-                    key={i}
-                    src="https://img.icons8.com/fluency/21/000000/filled-star.png"
-                  />
+                  <AiFillStar className="star__op" />
                 ))}
             </div>
           </div>

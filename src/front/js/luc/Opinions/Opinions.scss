@@ -44,7 +44,7 @@
   width: 25rem;
   background-color: transparent;
   margin: 1.5rem 1rem;
-  border: 1px solid var(--border-bb);
+  border: 1px solid var(--border);
   transition: all ease 0.3s;
 }
 .free__card {
@@ -143,6 +143,9 @@
 }
 .op__rating img {
   width: 1rem;
+}
+.star__op {
+  color: var(--border-bb);
 }
 .op__text__holder {
   height: 9.2rem;
