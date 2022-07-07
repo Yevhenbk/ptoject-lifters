@@ -1,121 +1,144 @@
-.slider__cards-ss {
+.slider__cards-holder {
+  height: 35rem;
+  margin: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+main#carousel {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  width: 35rem;
+  height: 500px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  --items: 2;
+  --position: 1;
+  pointer-events: none;
 }
-.op-slider__cards {
+
+.slider__cards-holder div.item {
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  background-color: coral;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.35s linear;
+  transform: rotateY(calc(-30deg * var(--r)))
+    translateX(calc(-450px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+
+.slider__cards-holder div.item:nth-of-type(1) {
+  --offset: 1;
+  background-color: #90f1ef;
+}
+.slider__cards-holder div.item:nth-of-type(2) {
+  --offset: 2;
+  background-color: #ff70a6;
+  width: 35rem;
+}
+.slider__cards-holder input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.slider__cards-holder input:nth-of-type(1):checked ~ main#carousel {
+  --position: 1;
+}
+
+.slider__cards-holder input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+.slider__cards-holder input:nth-of-type(2):checked ~ main#carousel {
+  --position: 2;
+}
+.radio__but {
+  display: none;
+}
+.op-buttons {
   display: flex;
-  justify-content: space-around;
-  width: 200%;
-  transition: 1s all ease;
-}
-#two:checked ~ div.op-slider__cards {
-  margin-left: -100%;
-}
-.slider__cards {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  width: calc(100% / 2 - 10px);
-}
-.slider-buttons {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin: 2rem 0;
 }
-.slider-buttons label {
-  background-color: var(--secondary);
-  margin: 1rem;
+.op-buttons label {
+  background-color: var(--border-bb);
+  margin: 0.4rem 0;
   border-radius: 50px;
-  height: 3rem;
-  width: 3rem;
+  height: 1rem;
+  width: 1rem;
   transition: 0.2s all ease;
 }
-.slider-buttons label:hover {
+.op-buttons label:hover {
   cursor: pointer;
 }
-.slider-buttons label.active {
-  width: 3rem;
-  height: 3rem;
-  background-color: var(--white);
+.op-buttons {
+  position: relative;
+  right: -33.2rem;
+  top: -22rem;
+}
+.op-buttons label.active {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--secondary);
 }
 .radio-but {
   display: none;
 }
-#one:checked ~ .slider-buttons label.one {
-  width: 3rem;
-  height: 3rem;
-  background-color: var(--disabled-white);
+#one:checked ~ .op-buttons label.one {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--secondary);
 }
-#one:checked:hover ~ .slider-buttons label.one::after {
-  content: "";
-  position: absolute;
-  border: 2px dashed var(--white);
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50px;
-  animation: glowing 20s linear infinite;
+#one:checked ~ .op-buttons label.one:hover {
+  background-color: #cb7b1a;
 }
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+#two:checked ~ .op-buttons label.two {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--border-bb);
 }
-#two:checked ~ .slider-buttons label.two {
-  width: 3rem;
-  height: 3rem;
-  background-color: var(--disabled-white);
+#two:checked ~ .op-buttons label.two:hover {
+  background-color: #661a1a;
 }
-#two:checked ~ .slider-buttons label.one {
-  width: 3rem;
-  height: 3rem;
-  background-color: var(--white);
+#two:checked ~ .op-buttons label.one {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--secondary);
 }
-#one:checked ~ .slider-buttons label.two {
-  width: 3rem;
-  height: 3rem;
-  background-color: var(--white);
+#two:checked ~ .op-buttons label.one:hover {
+  background-color: #cb7b1a;
 }
-.op-text-holder {
-  height: 5.5rem;
-  overflow: scroll;
-  overflow-x: hidden;
-  padding: 1rem;
+#one:checked ~ .op-buttons label.two {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--border-bb);
 }
-@keyframes fill {
-  0% {
-    width: 0%;
-  }
-
-  50% {
-    width: 100%;
-  }
-
-  100% {
-    width: 1%;
-  }
+#one:checked ~ .op-buttons label.two:hover {
+  background-color: #661a1a;
 }
-@media screen and (max-width: 1260px) {
-  .op-card {
-    margin: 0 0.5rem;
-  }
+.bs__arr {
+  font-size: 21px;
+  color: var(--border-bb);
 }
-@media screen and (max-width: 795px) {
-  .op-cards {
-    flex-direction: column;
-  }
-  .op-card {
-    margin: 1rem 0;
-    align-self: center;
-  }
+.bs__arr-r {
+  font-size: 21px;
+  color: var(--secondary);
 }
-.whatever {
-  width: 15rem;
+.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

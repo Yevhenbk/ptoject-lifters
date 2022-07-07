@@ -1,6 +1,6 @@
 import React from "react";
 import CardSlider from "../../component/CardSlider/CardSlider.jsx";
-import { MdProductionQuantityLimits } from "react-icons/md";
+import { GiArrowhead } from "react-icons/gi";
 
 import products from "../../../img/wats1.jpeg";
 
@@ -28,7 +28,9 @@ const SemiCards = () => {
             placeat asperiores iste autem fugiat velit numquam porro consequatur
             aliquid tempora soluta voluptatem!
           </p>
-          <input type="button" className="blog__butt" value="More here" />
+          <button className="blog__butt">
+            Empezar leyendo <GiArrowhead className="right__arrow" />
+          </button>
         </div>
         <div className="infos__se">
           <CardSlider />

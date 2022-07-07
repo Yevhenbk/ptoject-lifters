@@ -30,10 +30,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 8rem;
 }
 .infos__fi {
   padding: 4rem 0;
-  max-width: 45vw;
+  max-width: 35vw;
 }
 .infos__header {
   color: var(--secondary);
@@ -41,4 +42,25 @@
 .infos__h {
   font-size: 21px;
   padding: 1rem 0;
+}
+.infos__par {
+  color: var(--white);
+}
+.blog__butt {
+  font-size: 21px;
+  color: var(--secondary);
+  border: none;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  transition: 0.2s all ease;
+}
+.right__arrow {
+  font-size: 30px;
+  margin: 0 0.75rem 0 1rem;
+  transform: rotate(-45deg);
+  transition: 0.2s all ease;
+}
+.blog__butt:hover > .right__arrow {
+  margin-left: 2.5rem;
+  transform: rotate(-75deg);
 }
