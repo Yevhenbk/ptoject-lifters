@@ -28,43 +28,43 @@
   align-items: center;
   font-size: 2.5rem;
   text-align: center;
-  background-color: var(--border-bb);
+  background-color: var(--secondary);
   border-radius: 50px;
   padding: 0.5rem;
-  color: var(--secondary);
+  color: var(--border-bb);
   margin: 0 0.5rem;
 }
 .icon__small:hover {
   cursor: pointer;
-  color: var(--border-bb);
-  background-color: var(--secondary);
+  color: var(--secondary);
+  background-color: var(--border-bb);
 }
 .icon__grand {
   align-self: center;
   font-size: 3rem;
   text-align: center;
-  background-color: var(--border-bb);
+  background-color: var(--secondary);
   border-radius: 50px;
   padding: 0.5rem;
-  color: var(--secondary);
+  color: var(--border-bb);
   margin: 0 0.5rem;
 }
 .icon__grand:hover {
   cursor: pointer;
-  color: var(--border-bb);
-  background-color: var(--secondary);
+  color: var(--secondary);
+  background-color: var(--border-bb);
 }
 .menu__grand {
   align-self: center;
   width: 3rem;
   height: 3rem;
   text-align: center;
-  background-color: var(--border-bb);
+  background-color: var(--secondary);
   border-radius: 50px;
   padding: 0.5rem;
   color: black;
   margin: 0 0.5rem;
 }
 .menu__grand:hover {
-  background-color: var(--secondary);
+  background-color: var(--border-bb);
 }

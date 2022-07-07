@@ -7,91 +7,38 @@
 }
 .semi-cards {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 @media screen and (max-width: 857px) {
   .semi-cards {
     flex-direction: column;
   }
 }
-.semi__card {
-  position: relative;
-  width: 25rem;
-  display: block;
-  height: 100%;
-  border-radius: calc(var(--curve) * 1px);
-  overflow: hidden;
-  text-decoration: none;
-  box-shadow: rgb(0 0 0 / 70%) 0px 3px 8px;
-}
-
-.card__image {
-  width: 25rem;
-  height: auto;
-}
-
-.card__overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  border-radius: calc(var(--curve) * 1px);
-  background-color: var(--black);
-  transform: translateY(100%);
-  transition: 0.2s ease-in-out;
-}
-
-.semi__card:hover .card__overlay {
-  transform: translateY(0);
-}
-
-.semi__card__header {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  gap: 2em;
-  padding: 2em;
-  border: none;
-  border-radius: calc(var(--curve) * 1px) 0 0 0;
-  background-color: var(--black);
-  transform: translateY(-100%);
-  transition: 0.2s ease-in-out;
-}
-
-.card__arc {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  z-index: 1;
-}
-
-.card__arc path {
-  fill: var(--black);
-}
-
-.semi__card:hover .semi__card__header {
-  transform: translateY(0);
-}
-
-.card__thumb {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.semi__divider {
+  height: 2px;
+  width: 80vw;
   background-color: var(--secondary);
-  color: var(--black);
-  padding: 0.5rem;
 }
-.card__title {
+.span__text {
+  font-size: 18px;
   color: var(--secondary);
-  margin: 0;
+  text-align: left;
+  padding-top: 1rem;
 }
-.card__description {
-  padding: 0 2em 2em;
-  margin: 0;
-  color: var(--white);
+.semi__infos {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.infos__fi {
+  padding: 4rem 0;
+  max-width: 45vw;
+}
+.infos__header {
+  color: var(--secondary);
+}
+.infos__h {
+  font-size: 21px;
+  padding: 1rem 0;
 }

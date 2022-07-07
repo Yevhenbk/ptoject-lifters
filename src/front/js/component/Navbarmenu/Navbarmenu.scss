@@ -45,13 +45,13 @@
   top: calc(50% - 1px);
   left: 30%;
   width: 40%;
-  border-bottom: 0.2rem solid var(--secondary);
+  border-bottom: 0.2rem solid var(--border-bb);
   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .menu__btn:hover span,
 .menu__btn:hover:before,
 .menu__btn:hover:after {
-  border-bottom: 0.2rem solid var(--border-bb);
+  border-bottom: 0.2rem solid var(--secondary);
 }
 .menu__btn:before {
   transform: translateY(-0.5rem);

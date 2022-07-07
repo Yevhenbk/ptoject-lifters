@@ -1,0 +1,121 @@
+.slider__cards-ss {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.op-slider__cards {
+  display: flex;
+  justify-content: space-around;
+  width: 200%;
+  transition: 1s all ease;
+}
+#two:checked ~ div.op-slider__cards {
+  margin-left: -100%;
+}
+.slider__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: calc(100% / 2 - 10px);
+}
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.slider-buttons label {
+  background-color: var(--secondary);
+  margin: 1rem;
+  border-radius: 50px;
+  height: 3rem;
+  width: 3rem;
+  transition: 0.2s all ease;
+}
+.slider-buttons label:hover {
+  cursor: pointer;
+}
+.slider-buttons label.active {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--white);
+}
+.radio-but {
+  display: none;
+}
+#one:checked ~ .slider-buttons label.one {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--disabled-white);
+}
+#one:checked:hover ~ .slider-buttons label.one::after {
+  content: "";
+  position: absolute;
+  border: 2px dashed var(--white);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+  animation: glowing 20s linear infinite;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+#two:checked ~ .slider-buttons label.two {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--disabled-white);
+}
+#two:checked ~ .slider-buttons label.one {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--white);
+}
+#one:checked ~ .slider-buttons label.two {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--white);
+}
+.op-text-holder {
+  height: 5.5rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+@keyframes fill {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 1%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .op-card {
+    margin: 0 0.5rem;
+  }
+}
+@media screen and (max-width: 795px) {
+  .op-cards {
+    flex-direction: column;
+  }
+  .op-card {
+    margin: 1rem 0;
+    align-self: center;
+  }
+}
+.whatever {
+  width: 15rem;
+}
