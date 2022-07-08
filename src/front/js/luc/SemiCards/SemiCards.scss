@@ -21,9 +21,10 @@
 }
 .span__text {
   font-size: 18px;
-  color: var(--secondary);
+  color: var(--white);
   text-align: left;
   padding-top: 1rem;
+  font-style: italic;
 }
 .semi__infos {
   width: 80vw;
@@ -31,10 +32,11 @@
   flex-direction: row;
   justify-content: space-between;
   padding-top: 8rem;
+  align-items: center;
 }
 .infos__fi {
-  padding: 4rem 0;
   max-width: 35vw;
+  height: 35rem;
 }
 .infos__header {
   color: var(--secondary);

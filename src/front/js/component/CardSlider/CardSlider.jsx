@@ -24,10 +24,10 @@ const CardSlider = () => {
               <h2>Productos</h2>
               <p className="carousel__par">
                 <span className="span__cover">Lorem ipsum dolor sit amet </span>
-                <span className="span__par">consectetur adipiscing elit</span>
+                <span className="span__par">elit adipiscing </span>
               </p>
             </div>
-            <SliderButton />
+            <input type="button" className="cards__butt" value="See more" />
           </div>
         </div>
         <div className="itema">
@@ -37,7 +37,7 @@ const CardSlider = () => {
               <span className="span__cover">Lorem ipsum dolor sit amet </span>
               <span className="span__par">adipiscing elit</span>
             </p>
-            <SliderButton />
+            <input type="button" className="cards__butt" value="See more" />
           </div>
         </div>
       </main>
