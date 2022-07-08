@@ -1,8 +1,8 @@
 import React from "react";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { RiTeamFill } from "react-icons/ri";
-import slide1 from "../../../img/im1.jpeg";
-import slide2 from "../../../img/im4.jpeg";
+
+import SliderButton from "../Buttons/Slider/SliderButton.jsx";
 
 import "./CardSlider.scss";
 
@@ -18,8 +18,28 @@ const CardSlider = () => {
       />
       <input type="radio" id="two" name="position" className="radio__but" />
       <main id="carousel">
-        <div className="item"></div>
-        <div className="item"></div>
+        <div className="item">
+          <div className="caption__holder">
+            <div>
+              <h2>Productos</h2>
+              <p className="carousel__par">
+                <span className="span__cover">Lorem ipsum dolor sit amet </span>
+                <span className="span__par">consectetur adipiscing elit</span>
+              </p>
+            </div>
+            <SliderButton />
+          </div>
+        </div>
+        <div className="itema">
+          <div className="caption__holder-two">
+            <h2>Equipo de competicion</h2>
+            <p className="carousel__par">
+              <span className="span__cover">Lorem ipsum dolor sit amet </span>
+              <span className="span__par">adipiscing elit</span>
+            </p>
+            <SliderButton />
+          </div>
+        </div>
       </main>
       <div className="op-buttons">
         <label htmlFor="one" className="one active">

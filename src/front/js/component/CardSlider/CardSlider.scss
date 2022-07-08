@@ -19,14 +19,25 @@ main#carousel {
   perspective: 500px;
   --items: 2;
   --position: 1;
-  pointer-events: none;
 }
 
 .slider__cards-holder div.item {
   position: absolute;
   width: 350px;
-  height: 500px;
-  background-color: coral;
+  height: 470px;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.35s linear;
+  transform: rotateY(calc(-30deg * var(--r)))
+    translateX(calc(-450px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+.slider__cards-holder div.itema {
+  position: absolute;
+  width: 350px;
+  height: 470px;
+  display: flex;
+  justify-content: end;
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
   transition: all 0.35s linear;
@@ -35,14 +46,24 @@ main#carousel {
   z-index: calc((var(--position) - var(--abs)));
 }
 
-.slider__cards-holder div.item:nth-of-type(1) {
+.slider__cards-holder div.item {
   --offset: 1;
-  background-color: #90f1ef;
+  background: url("https://res.cloudinary.com/yevhenbk/image/upload/v1657275634/wats1_gorcff.jpg");
+  display: block;
+  background-position: center;
+  background-size: cover;
+  box-shadow: rgb(0 0 0 / 70%) 0px 3px 8px;
+  box-shadow: inset 0 0 0 1000px #0e111171;
 }
-.slider__cards-holder div.item:nth-of-type(2) {
+.slider__cards-holder div.item:hover {
+  transform: scale(1.02);
+}
+.slider__cards-holder div.itema {
   --offset: 2;
-  background-color: #ff70a6;
+  background: black;
   width: 35rem;
+  background-position: center;
+  background-size: cover;
 }
 .slider__cards-holder input:nth-of-type(1) {
   grid-column: 2 / 3;
@@ -141,4 +162,33 @@ main#carousel {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.caption__holder {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: inherit;
+}
+.caption__holder h2 {
+  -webkit-text-stroke: 1px var(--secondary);
+  font-size: 48px;
+  color: transparent;
+}
+.caption__holder .carousel__par {
+  font-size: 18px;
+}
+.caption__holder-two {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+  text-align: end;
+}
+.caption__holder-two h2 {
+  -webkit-text-stroke: 1px var(--secondary);
+  font-size: 48px;
+  color: transparent;
 }
