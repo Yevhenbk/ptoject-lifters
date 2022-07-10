@@ -2,10 +2,17 @@
   height: 40rem;
   background-color: var(--primary);
   background-size: cover;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: row-reverse;
   display: flex;
+  width: 80vw;
   align-items: center;
+}
+.luc__cc {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary);
+  flex-direction: column;
 }
 .coach-img {
   width: 25rem;
@@ -78,4 +85,11 @@
 }
 .ul-side__holder ul {
   padding: 0;
+}
+.hold__cc {
+  background-color: var(--primary);
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
