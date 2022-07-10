@@ -2,19 +2,13 @@ import React from "react";
 import CardSlider from "../../component/CardSlider/CardSlider.jsx";
 import { GiArrowhead } from "react-icons/gi";
 
-import products from "../../../img/wats1.jpeg";
-
 import "./SemiCards.scss";
 
 const SemiCards = () => {
   return (
-    <div className="semi-cards__holder">
-      <div className="semi-cards">
-        <span className="semi__divider" />
-        <h3 className="span__text">Discover more</h3>
-      </div>
-      <div className="semi__infos">
-        <div className="infos__fi">
+    <div className="semi__infos">
+      <div className="infos__fi">
+        <div className="fi_">
           <h1 className="infos__header">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h1>
@@ -32,9 +26,9 @@ const SemiCards = () => {
             Empezar leyendo <GiArrowhead className="right__arrow" />
           </button>
         </div>
-        <div className="infos__se">
-          <CardSlider />
-        </div>
+      </div>
+      <div className="infos__se">
+        <CardSlider />
       </div>
     </div>
   );

@@ -22,8 +22,9 @@ export const Home = () => {
           <Slider />
           <Opinions />
           <Info />
-          <CoachSide />
           <SemiCards />
+          <CoachSide />
+
           {/* <ContactForm /> */}
           <Installs />
         </div>

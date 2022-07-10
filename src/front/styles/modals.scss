@@ -7,7 +7,7 @@
   width: 24rem;
   margin: 7rem 0 4rem;
   padding: 2rem;
-  border: 1px solid var(--border-bb);
+  border: 1px solid var(--border);
 }
 .inputs__holder {
   display: flex;
@@ -32,7 +32,7 @@
   background-color: var(--primary);
 }
 ::placeholder {
-  color: var(--border-bb);
+  color: var(--border);
 }
 .signup__button {
   width: 100%;
@@ -44,7 +44,7 @@
 }
 .signup__button:hover {
   background: var(--border-bb);
-  color: var(--white);
+  color: var(--secondary);
 }
 .mm__footer {
   margin-top: 1rem;
@@ -67,7 +67,7 @@
   color: var(--white);
 }
 .href__mm:hover {
-  color: var(--border-bb);
+  color: var(--border);
 }
 .mm__body p {
   font-weight: 400;

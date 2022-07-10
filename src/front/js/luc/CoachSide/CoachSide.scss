@@ -1,8 +1,9 @@
 .coach-img__background {
   height: 40rem;
-  background-color: var(--black);
+  background-color: var(--primary);
   background-size: cover;
   justify-content: space-evenly;
+  flex-direction: row-reverse;
   display: flex;
   align-items: center;
 }
@@ -13,13 +14,15 @@
 .coach__info {
   max-width: 25rem;
   height: max-content;
-  text-align: end;
+  text-align: start;
 }
 .coach__info h1 {
   color: var(--secondary);
 }
-.coach__info p,
-ul li {
+.coach__info p {
+  color: var(--white);
+}
+.coach__info ul li {
   color: var(--secondary);
   font-weight: 300;
 }
@@ -72,4 +75,7 @@ ul li {
   height: 2rem;
   margin: 0.5rem;
   color: var(--secondary);
+}
+.ul-side__holder ul {
+  padding: 0;
 }

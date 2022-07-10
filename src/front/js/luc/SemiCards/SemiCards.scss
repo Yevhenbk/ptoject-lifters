@@ -1,5 +1,4 @@
 .semi-cards__holder {
-  padding: 6rem 0;
   background-color: var(--primary);
   display: flex;
   flex-direction: column;
@@ -14,29 +13,16 @@
     flex-direction: column;
   }
 }
-.semi__divider {
-  height: 2px;
-  width: 80vw;
-  background-color: var(--secondary);
-}
-.span__text {
-  font-size: 18px;
-  color: var(--white);
-  text-align: left;
-  padding-top: 1rem;
-  font-style: italic;
-}
 .semi__infos {
-  width: 80vw;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 8rem;
+  flex-direction: row-reverse;
   align-items: center;
 }
 .infos__fi {
-  max-width: 35vw;
-  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
 }
 .infos__header {
   color: var(--secondary);
@@ -46,7 +32,7 @@
   padding: 1rem 0;
 }
 .infos__par {
-  color: var(--white);
+  color: var(--secondary);
 }
 .blog__butt {
   font-size: 21px;
@@ -65,4 +51,15 @@
 .blog__butt:hover > .right__arrow {
   margin-left: 2.5rem;
   transform: rotate(-75deg);
+}
+.infos__se {
+  width: 40vw;
+  height: 40rem;
+}
+.fi_ {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
 }
