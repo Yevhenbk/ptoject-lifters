@@ -1,5 +1,9 @@
-.footer-holder {
+.footer {
   background-color: var(--secondary);
+  padding: 1.5rem 0;
+  box-shadow: inset 0 10px 10px -5px #00000062;
+  display: flex;
+  justify-content: center;
 }
 .footer-section-one {
   margin: 0;
@@ -14,8 +18,7 @@
   flex-direction: row;
   justify-content: space-between;
   background: var(--secondary);
-  padding: 2rem;
-  box-shadow: inset 0 10px 10px -5px #00000062;
+  width: 90vw;
 }
 .sct-first {
   display: flex;
@@ -24,7 +27,7 @@
 .sct-first p {
   font-size: 16px;
 
-  color: var(--border-bb);
+  color: var(--black);
 }
 .sct-second p:hover {
   cursor: pointer;
@@ -43,7 +46,7 @@
   align-self: center;
   height: 1rem;
   width: 0.1rem;
-  background-color: var(--border-bb);
+  background-color: var(--black);
 }
 .img-holder-footer {
   display: flex;
@@ -54,7 +57,7 @@
   padding: 0 1rem;
   font-size: 16px;
   font-family: "Libre Bodoni", serif;
-  color: var(--border-bb);
+  color: var(--black);
   font-weight: 500;
 }
 @media screen and (max-width: 1032px) {

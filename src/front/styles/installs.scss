@@ -3,25 +3,24 @@
 }
 .installs p {
   color: var(--secondary);
-  text-align: end;
+  text-align: start;
   font-size: 21px;
 }
 .installs-section-one {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-direction: column;
   width: 60vw;
   padding: 6rem;
 }
 .installs {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 .installs-title {
   color: var(--secondary);
-  text-align: right;
   padding-bottom: 1rem;
   margin: 0;
 }

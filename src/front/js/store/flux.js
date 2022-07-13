@@ -1,4 +1,4 @@
-const BASE_URL = "https://3001-yevhenbk-ptojectlifters-ao0qvicfike.ws-eu34.gitpod.io/api/";
+const BASE_URL = "https://3001-yevhenbk-ptojectlifters-3whg9limbjz.ws-eu53.gitpod.io/api/";
 
 
 const getState = ({ getStore, getActions, setStore }) => {
@@ -15,9 +15,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			login: data => {
 				console.log(data);
-				const redirectToProfile = () => {
+				const redirectToHome = () => {
 					if (localStorage.getItem("role") === "1") {
-						location.replace("profile");
+						location.replace("admin");
 					}
 				};
 				fetch(BASE_URL + "login", {
@@ -44,7 +44,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						localStorage.setItem("name", data.name);
 						localStorage.setItem("role", data.role);
 						setStore({ islogged: true });
-						redirectToProfile();
+						redirectToHome();
 					})
 					.catch(error => {
 						console.error("Unknown error", error);

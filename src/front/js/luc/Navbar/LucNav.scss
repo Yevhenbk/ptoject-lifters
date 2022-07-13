@@ -68,3 +68,16 @@
 .menu__grand:hover {
   background-color: var(--border-bb);
 }
+.over__logged {
+  display: block;
+  position: relative;
+  top: -0.75rem;
+  right: -5.55rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: var(--secondary);
+}
+.nonne {
+  display: none;
+}

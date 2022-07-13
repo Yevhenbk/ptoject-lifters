@@ -3,7 +3,7 @@ import "../../styles/footer.scss";
 
 const Footer = () => {
   return (
-    <>
+    <div className="footer">
       <div className="footer-section-two">
         <div className="sct-first">
           <p>Copyright © 2021</p>
@@ -17,7 +17,7 @@ const Footer = () => {
           <p>Contactar con nosotros</p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
