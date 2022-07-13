@@ -15,12 +15,12 @@ a.thar-three:hover {
   background-color: transparent;
   text-shadow: nthree;
 }
-a.thar-three:hover:before {
+a.thar-three:hover::before {
   left: 0%;
   right: auto;
   width: 100%;
 }
-a.thar-three:before {
+a.thar-three::before {
   display: block;
   position: absolute;
   top: 0px;

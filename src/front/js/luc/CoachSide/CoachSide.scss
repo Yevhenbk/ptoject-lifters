@@ -2,10 +2,17 @@
   height: 40rem;
   background-color: var(--primary);
   background-size: cover;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row-reverse;
   display: flex;
-  width: 70vw;
+  width: 100%;
+  align-items: center;
+}
+.semi__head {
+  padding-top: 6rem;
+  color: var(--secondary);
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .luc__cc {

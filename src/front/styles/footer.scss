@@ -1,25 +1,10 @@
 .footer-holder {
-  background-color: black;
-}
-.footer-Logo {
-  width: 12rem;
-  margin: 1rem 0;
-  align-self: center;
+  background-color: var(--secondary);
 }
 .footer-section-one {
   margin: 0;
 }
-.footer-section-one ul li {
-  text-align: center;
-  list-style-type: none;
-  font-size: 14px;
-  width: 18rem;
-  padding-bottom: 0.25rem;
-}
-.footer-section-one ul {
-  display: none;
-  padding: 0;
-}
+
 .footer-holder .card-group {
   justify-content: center;
   padding: 0;
@@ -28,19 +13,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: black;
-  padding: 1.25rem 0.5rem;
-  box-shadow: inset 0 10px 10px -5px #000000;
+  background: var(--secondary);
+  padding: 2rem;
+  box-shadow: inset 0 10px 10px -5px #00000062;
 }
 .sct-first {
-  color: white;
   display: flex;
   flex-direction: row;
 }
 .sct-first p {
-  font-size: 14px;
-  font-weight: 300;
-  color: white;
+  font-size: 16px;
+
+  color: var(--border-bb);
 }
 .sct-second p:hover {
   cursor: pointer;
@@ -48,31 +32,18 @@
 .sct-second p {
   font-size: 14px;
   color: white;
-  font-weight: 300;
 }
 .sct-second {
   display: flex;
   flex-direction: row;
 }
-.fa-instagram {
-  color: white;
-  font-size: 16px;
-  padding: 0.2rem 1rem 0;
-}
-.fa-instagram:hover {
-  color: var(--border-bb);
-  cursor: pointer;
-}
-.copy-right {
-  color: white;
-  margin: 0;
-}
+
 .vertical {
   display: flex;
   align-self: center;
   height: 1rem;
   width: 0.1rem;
-  background-color: white;
+  background-color: var(--border-bb);
 }
 .img-holder-footer {
   display: flex;
@@ -81,6 +52,10 @@
 .footer-section-two p {
   margin: 0;
   padding: 0 1rem;
+  font-size: 16px;
+  font-family: "Libre Bodoni", serif;
+  color: var(--border-bb);
+  font-weight: 500;
 }
 @media screen and (max-width: 1032px) {
   .middle-section {

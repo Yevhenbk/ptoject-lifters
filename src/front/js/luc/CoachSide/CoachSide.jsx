@@ -7,6 +7,13 @@ import "./CoachSide.scss";
 function CoachSide() {
   return (
     <div className="luc__cc">
+      <div className="semi__head">
+        <h1>Lorem ipsum, dolor sit amet consectetur.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+          nostrum exercitationem quis.
+        </p>
+      </div>
       <div className="coach-img__background">
         <img src={noimage} className="coach-img" />
         <div className="coach__info">

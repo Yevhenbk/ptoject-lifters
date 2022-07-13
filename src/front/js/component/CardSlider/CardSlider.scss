@@ -61,6 +61,25 @@ main#carousel {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 995px) {
+  .slider__cards-holder div.item {
+    width: 100vw;
+  }
+  .slider__cards-holder div.itema {
+    width: 100vw;
+  }
+  .slider__cards-holder {
+    justify-content: center;
+  }
+  .op-buttons {
+    top: -4rem !important;
+    flex-direction: row !important;
+  }
+  .op-buttons label.one,
+  label.two {
+    margin: 0 0.25rem !important;
+  }
+}
 .slider__cards-holder input:nth-of-type(1) {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
@@ -86,12 +105,8 @@ main#carousel {
   margin: 2rem 0;
 }
 .op-buttons label {
-  background-color: var(--border-bb);
   margin: 0.4rem 0;
   border-radius: 50px;
-  height: 1rem;
-  width: 1rem;
-  transition: 0.2s all ease;
 }
 .op-buttons label:hover {
   cursor: pointer;
@@ -114,32 +129,44 @@ main#carousel {
   height: 3.5rem;
   background-color: var(--secondary);
 }
-#one:checked ~ .op-buttons label.one:hover {
-  background-color: #b87b00;
-}
+
 #two:checked ~ .op-buttons label.two {
   width: 3.5rem;
   height: 3.5rem;
-  background-color: var(--border-bb);
+  background-color: var(--secondary);
 }
-#two:checked ~ .op-buttons label.two:hover {
-  background-color: rgb(82, 21, 21);
-}
+
 #two:checked ~ .op-buttons label.one {
   width: 3.5rem;
   height: 3.5rem;
   background-color: var(--secondary);
 }
-#two:checked ~ .op-buttons label.one:hover {
-  background-color: #b87b00;
-}
+
 #one:checked ~ .op-buttons label.two {
   width: 3.5rem;
   height: 3.5rem;
+  background-color: var(--secondary);
+}
+label.one:hover > .bs__arr {
+  color: var(--secondary);
+}
+label.two:hover > .bs__arr-r {
+  color: var(--secondary);
+}
+#one:checked ~ .op-buttons label.one:hover {
   background-color: var(--border-bb);
 }
 #one:checked ~ .op-buttons label.two:hover {
-  background-color: rgb(82, 21, 21);
+  background-color: var(--border-bb);
+}
+#two:checked ~ .op-buttons label.one:hover {
+  background-color: var(--border-bb);
+}
+#two:checked ~ .op-buttons label.two:hover {
+  background-color: var(--border-bb);
+}
+label.two:hover {
+  background-color: var(--border-bb);
 }
 .bs__arr {
   font-size: 21px;
@@ -147,7 +174,7 @@ main#carousel {
 }
 .bs__arr-r {
   font-size: 21px;
-  color: var(--secondary);
+  color: var(--border-bb);
 }
 .one {
   display: flex;

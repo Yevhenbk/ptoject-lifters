@@ -11,6 +11,7 @@ import Installs from "../component/installs.jsx";
 import CustomCursor from "../component/CustomCursor/CustomCursor.jsx";
 import SemiCards from "../luc/SemiCards/SemiCards.jsx";
 import HorizontalBrake from "../component/HorizontalBrake/HorizontalBrake.jsx";
+import Footer from "../component/footer.jsx";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -24,11 +25,11 @@ export const Home = () => {
           <Opinions />
           <Info />
           <SemiCards />
-          <HorizontalBrake />
           <CoachSide />
 
           {/* <ContactForm /> */}
           <Installs />
+          <Footer />
         </div>
       </SmoothScrolling>
     </>
