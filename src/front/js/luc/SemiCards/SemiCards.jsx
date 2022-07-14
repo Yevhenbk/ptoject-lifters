@@ -22,9 +22,9 @@ const SemiCards = () => {
             placeat asperiores iste autem fugiat velit numquam porro consequatur
             aliquid tempora soluta voluptatem!
           </p>
-          <a className="blog__butt">
-            Empezar a leer <GiArrowhead className="right__arrow" />
-          </a>
+          {/* <a className="blog__butt">
+            Start reading <GiArrowhead className="right__arrow" />
+          </a> */}
         </div>
       </div>
       <div className="infos__se">
