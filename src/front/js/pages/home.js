@@ -11,6 +11,7 @@ import Installs from "../component/installs.jsx";
 import CustomCursor from "../component/CustomCursor/CustomCursor.jsx";
 import SemiCards from "../luc/SemiCards/SemiCards.jsx";
 import HorizontalBrake from "../component/HorizontalBrake/HorizontalBrake.jsx";
+import OpenCards from "../luc/OpenCards/OpenCards.jsx";
 import Footer from "../component/footer.jsx";
 
 export const Home = () => {
@@ -26,7 +27,7 @@ export const Home = () => {
           <Info />
           <SemiCards />
           <CoachSide />
-
+          <OpenCards />
           {/* <ContactForm /> */}
           <Installs />
           <Footer />
