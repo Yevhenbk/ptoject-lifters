@@ -8,15 +8,23 @@ const OpenCards = () => {
     <div className="open__cards">
       <div className="open__tarifs">
         <div className="tarifs__first">
-          <h2>Tarifas</h2>
-          <p>¡Incluye uso de maquinas de musculacion!</p>
+          <h2>Nuestras Tarifas.</h2>
+          <h2>¡Incluye uso de maquinas de musculacion!</h2>
         </div>
         <div className="tarifs__cards">
           <OpenCard
             price="59"
             span="99"
-            text="Lorem ipsum"
-            title="Lorem ipsum"
+            text="¡Sesiones ilimitadas por semana!"
+            title='"Beyound the limits"'
+            desc="Halterofilia (Pista Coberta): Ilimitado"
+          />
+          <OpenCard
+            price="59"
+            span="99"
+            text="¡Sesiones ilimitadas por semana!"
+            title='"Beyound the limits"'
+            desc="Halterofilia (Pista Coberta): Ilimitado"
           />
         </div>
       </div>
