@@ -16,6 +16,16 @@ body {
   background-color: var(--black);
   font-family: "Roboto";
 }
+/* body::-webkit-scrollbar {
+     display: none;
+ }*/
+::-webkit-scrollbar {
+  width: 7px;
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
 ul {
   list-style-type: none;
 }
