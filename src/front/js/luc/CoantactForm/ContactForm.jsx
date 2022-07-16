@@ -1,9 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { ImWhatsapp } from "react-icons/im";
-import { useForm } from "react-hook-form";
-import { Context } from "../../store/appContext.js";
-import FadeInSection from "../../component/FadeInSection/FadeInSection.jsx";
-import noimg from "../../../img/noimage.jpg";
+import React from "react";
 
 import "./ContactForm.scss";
 import "../../../styles/modals.scss";
@@ -11,54 +6,50 @@ import "../../../styles/modals.scss";
 const ContactForm = () => {
   return (
     <div className="contact-form__holder">
-      <div className="form__title">
-        <FadeInSection>
-          <h1>Join Us Now</h1>
-        </FadeInSection>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-          qui vel perspiciatis repellendus.
-        </p>
-      </div>
-      <div className="secondary-form">
-        <div className="contact__anim"></div>
-        <div className="secondary__form">
-          <form action="" method="post" className="modal__form">
-            <div className="mm__body">
-              <div className="inputs__holder">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="inputs__ls ls__third"
-                  placeholder="Nombre"
-                />
-                <input
-                  type="text"
-                  id="number"
-                  name="number"
-                  className="inputs__ls ls__third"
-                  placeholder="Telefono"
-                />
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="inputs__ls ls__third"
-                  placeholder="Email"
-                />
-                <textarea className="textarea"></textarea>
-              </div>
-              <div className="mm__footer">
-                <input
-                  type="submit"
-                  value="Submit"
-                  className="signup__button"
-                />
-              </div>
-            </div>
-          </form>
+      <div className="contact__form">
+        <div className="form__header">
+          <h3>Contact Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            aspernatur, molestiae illum neque ipsum pariatur dignissimos
+            voluptatum aliquam magni quae, laborum consequuntur ab ipsam
+            provident, autem facilis necessitatibus.
+          </p>
         </div>
+        <div className="form__inps-holder">
+          <div className="contact__inputs">
+            <input
+              type="text"
+              className="contact__input"
+              placeholder="Nombre"
+            />
+            <input
+              type="email"
+              className="contact__input"
+              placeholder="Email"
+            />
+            <input
+              type="number"
+              className="contact__input"
+              placeholder="Telefono"
+            />
+          </div>
+          <div className="contact__inputs">
+            <textarea
+              className="contact__textarea"
+              placeholder="Your message"
+            />
+            <input type="button" className="contact__button" value="Submit" />
+          </div>
+        </div>
+      </div>
+      <div className="contact__header">
+        <h3>Send us a message.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          aspernatur, molestiae illum neque ipsum pariatur dignissimos
+          voluptatum aliquam magni quae.
+        </p>
       </div>
     </div>
   );

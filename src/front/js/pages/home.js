@@ -28,9 +28,9 @@ export const Home = () => {
           <SemiCards />
           <CoachSide />
           <OpenCards />
-          {/* <ContactForm /> */}
+          <ContactForm />
           <Installs />
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </SmoothScrolling>
     </>
