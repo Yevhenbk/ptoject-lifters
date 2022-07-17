@@ -1,0 +1,55 @@
+.footer__logo {
+  width: 16rem;
+}
+.footer {
+  box-shadow: inset 0 10px 10px -5px #0d111680;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary);
+}
+.super__class {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+.class__holder p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0 0.15rem;
+}
+.class__holder p:hover {
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: var(--black);
+}
+.class__holder div.footer__brake {
+  width: 2px;
+  height: 1rem;
+  margin: 0 0.75rem;
+  background-color: var(--secondary);
+}
+.footer__class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.super__class p {
+  font-size: 16px;
+  margin: 0;
+}
+.super__class span {
+  font-family: "Libre Bodoni", serif;
+  font-style: italic;
+}
+.class__holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

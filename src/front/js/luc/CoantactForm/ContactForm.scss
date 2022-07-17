@@ -90,7 +90,7 @@
 }
 .data__icon {
   color: var(--secondary);
-  font-size: 28px;
+  font-size: 21px;
 }
 .data__title {
   font-family: "Libre Bodoni", serif;
@@ -104,6 +104,9 @@
   margin: 0;
   color: var(--secondary);
   font-style: italic;
+}
+.contact__header p {
+  color: var(--white);
 }
 .vertical__brake {
   margin-top: 0.75rem;
