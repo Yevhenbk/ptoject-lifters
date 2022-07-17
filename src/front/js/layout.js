@@ -7,7 +7,6 @@ import { Clases } from "./pages/clases";
 import { Login } from './pages/login';
 import { Competitors } from "./pages/competitors";
 import injectContext from "./store/appContext";
-import Footer from "./component/footer.jsx";
 import "../styles/globals.scss";
 import "../styles/tokens.scss";
 

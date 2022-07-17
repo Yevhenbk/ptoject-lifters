@@ -12,7 +12,7 @@ import CustomCursor from "../component/CustomCursor/CustomCursor.jsx";
 import SemiCards from "../luc/SemiCards/SemiCards.jsx";
 import HorizontalBrake from "../component/HorizontalBrake/HorizontalBrake.jsx";
 import OpenCards from "../luc/OpenCards/OpenCards.jsx";
-import Footer from "../component/footer.jsx";
+import Footer from "../luc/Footer/Footer.jsx";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -30,7 +30,7 @@ export const Home = () => {
           <OpenCards />
           <ContactForm />
           <Installs />
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </SmoothScrolling>
     </>

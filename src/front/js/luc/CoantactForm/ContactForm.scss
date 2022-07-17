@@ -27,7 +27,7 @@
 .contact__form {
   background-color: #2f2f2f;
   box-shadow: rgb(0 0 0 / 70%) 0px 3px 8px;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -40,33 +40,74 @@
   padding: 0.75rem;
   border: none;
   font-size: 21px;
-  width: 30rem;
+  width: 25rem;
   color: var(--secondary);
   font-weight: 300;
-  background: #222222;
-  border: 1px solid #222222;
+  background: #272727;
+  border: 1px solid #272727;
 }
 .contact__inputs {
   display: flex;
   flex-direction: column;
+  padding-left: 2rem;
 }
 .contact__textarea {
   margin: 0.75rem;
   padding: 0.75rem;
-  background: #222222;
-  border: 1px solid #222222;
+  background: #272727;
+  border: 1px solid #272727;
   font-size: 21px;
   color: var(--secondary);
   font-weight: 300;
   height: 8.65rem;
-  width: 30rem;
+  width: 25rem;
 }
 .contact__button {
   margin: 0.75rem;
   padding: 0.75rem;
-  border: 1px solid var(--secondary);
+  border: none;
   font-size: 21px;
   color: var(--black);
-  width: 30rem;
+  width: 25rem;
   background-color: var(--secondary);
+}
+.contact__button:hover {
+  color: var(--secondary);
+  background-color: var(--border-bb);
+}
+.contact__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem 0 0;
+}
+.data__holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+.data__icon {
+  color: var(--secondary);
+  font-size: 28px;
+}
+.data__title {
+  font-family: "Libre Bodoni", serif;
+  font-size: 16px;
+  color: var(--secondary);
+  padding: 0.5rem 0 0;
+  margin: 0;
+}
+.data__p {
+  font-size: 16px;
+  margin: 0;
+  color: var(--secondary);
+  font-style: italic;
+}
+.vertical__brake {
+  margin-top: 0.75rem;
+  width: 1px;
+  background-color: var(--border);
+  height: 24rem;
 }
