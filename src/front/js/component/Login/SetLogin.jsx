@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Context } from "../../store/appContext.js";
-import "../../../styles/modals.scss";
+import "./SetLogin.scss";
 
 const Setlogin = () => {
   const { register, handleSubmit } = useForm();

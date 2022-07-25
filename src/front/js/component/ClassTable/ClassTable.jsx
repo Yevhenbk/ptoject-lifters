@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from "react";
-import "../../styles/table.scss";
-import { Context } from "../store/appContext.js";
+import "./ClassTable.scss";
+import { Context } from "../../store/appContext.js";
 
-const Table = () => {
+const ClassTable = () => {
   const { store, actions } = useContext(Context);
   useEffect(() => {
     actions.getClasses();
@@ -86,4 +86,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default ClassTable;

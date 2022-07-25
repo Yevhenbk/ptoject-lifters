@@ -1,8 +1,8 @@
 import React from "react";
-import Members from "../component/members.jsx";
-import "../../styles/profcard.scss";
+import Members from "../Members/Members.jsx";
+import "./ProfileCard.scss";
 import Addclass from "../component/addclass.jsx";
-import Registeradmin from "./registeradmin.jsx";
+import Registeradmin from "../registeradmin.jsx";
 
 const Profcard = () => {
   return (
