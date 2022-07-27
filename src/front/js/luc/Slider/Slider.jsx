@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Carousel from "../../component/carousel.jsx";
+import Carousel from "../../component/Carousel/Carousel.jsx";
 import SliderButton from "../../component/Buttons/Slider/SliderButton.jsx";
 
 import "./Slider.scss";

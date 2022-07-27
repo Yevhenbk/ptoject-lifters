@@ -7,7 +7,7 @@ import Info from "../luc/Info/Info.jsx";
 import CoachSide from "../luc/CoachSide/CoachSide.jsx";
 import SmoothScrolling from "../component/SmoothScrolling/SmoothScrolling.js";
 import ContactForm from "../luc/CoantactForm/ContactForm.jsx";
-import Installs from "../component/installs.jsx";
+import Installs from "../component/Installs/Installs.jsx";
 import CustomCursor from "../component/CustomCursor/CustomCursor.jsx";
 import SemiCards from "../luc/SemiCards/SemiCards.jsx";
 import HorizontalBrake from "../component/HorizontalBrake/HorizontalBrake.jsx";
@@ -25,12 +25,12 @@ export const Home = () => {
           <Slider />
           <Opinions />
           <Info />
-          <SemiCards />
+          {/* <SemiCards />
           <CoachSide />
           <OpenCards />
           <ContactForm />
           <Installs />
-          <Footer />
+          <Footer /> */}
         </div>
       </SmoothScrolling>
     </>

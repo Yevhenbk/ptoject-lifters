@@ -4,7 +4,6 @@ import { BsWhatsapp } from "react-icons/bs";
 import { AiTwotoneMail } from "react-icons/ai";
 
 import "./ContactForm.scss";
-import "../../../styles/modals.scss";
 
 const ContactForm = () => {
   return (
