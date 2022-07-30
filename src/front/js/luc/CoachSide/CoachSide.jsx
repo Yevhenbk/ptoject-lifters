@@ -1,21 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import noimage from "../../../img/noimage.jpg";
 
 import "./CoachSide.scss";
 
 function CoachSide() {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="luc__cc">
-      <div className="semi__head">
-        <h1>Lorem ipsum, dolor sit amet consectetur.</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-          nostrum exercitationem quis.
-        </p>
-      </div>
       <div className="coach-img__background">
-        <img src={noimage} className="coach-img" />
+        <img
+          src={noimage}
+          className="coach-img"
+          style={{
+            transform: `translateY(${offsetY * -0.14}px)`,
+          }}
+        />
         <div className="coach__info">
           <h1>Introducing your coach, Antonio Torres</h1>
           <p>

@@ -12,7 +12,7 @@
 .semi__infos {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
+  justify-content: space-around;
 }
 @media screen and (max-width: 995px) {
   .semi__infos {
@@ -41,8 +41,8 @@
 .infos__fi {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 60vw;
+  align-self: center;
+  width: 30rem;
 }
 .infos__header {
   color: var(--secondary);
@@ -78,10 +78,7 @@
   margin-left: 2.5rem;
   transform: rotate(-75deg);
 }
-.infos__se {
-  width: 40vw;
-  height: 40rem;
-}
+
 .fi_ {
   width: 30rem;
   display: flex;

@@ -15,14 +15,12 @@ const SemiCards = () => {
           <p className="infos__par">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quos
             pariatur natus, rerum, tempore debitis, distinctio reiciendis
-            placeat asperiores iste autem fugiat velit numquam porro consequatur
-            aliquid tempora soluta voluptatem! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. At officia est hic laborum maxime
-            quae numquam doloremque modi?
+            placeat asperiores iste autem fugiat velit numquam porro
+            consequatur.
           </p>
-          {/* <a className="blog__butt">
+          <a className="blog__butt">
             Start reading <GiArrowhead className="right__arrow" />
-          </a> */}
+          </a>
         </div>
       </div>
       <div className="infos__se">

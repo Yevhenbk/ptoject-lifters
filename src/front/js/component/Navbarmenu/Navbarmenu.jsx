@@ -67,15 +67,15 @@ export const Navbarmenu = () => {
           </li>
           <li>
             <Link to="/" className="menu__href">
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link to="/" className="menu__href">
               Productos
             </Link>
           </li>
           <li>
+            <Link to="/" className="menu__href">
+              Blog
+            </Link>
+          </li>
+          {/* <li>
             {!store.islogged ? (
               <Link to="/login" className="menu__href">
                 Login
@@ -110,7 +110,7 @@ export const Navbarmenu = () => {
                 </Dropdown.Menu>
               </Dropdown>
             )}
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

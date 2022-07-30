@@ -1,6 +1,6 @@
 .coach-img__background {
   height: 40rem;
-  background-color: var(--primary);
+  background-color: var(--black);
   background-size: cover;
   justify-content: space-around;
   flex-direction: row-reverse;
@@ -22,8 +22,11 @@
   flex-direction: column;
 }
 .coach-img {
+  position: relative;
+  top: 10.5rem;
   width: 25rem;
-  border-radius: 50%;
+  border-radius: none;
+  z-index: 10;
 }
 .coach__info {
   max-width: 25rem;
@@ -34,7 +37,7 @@
   color: var(--secondary);
 }
 .coach__info p {
-  color: var(--white);
+  color: var(--secondary);
 }
 .coach__info ul li {
   color: var(--secondary);

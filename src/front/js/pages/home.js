@@ -24,9 +24,9 @@ export const Home = () => {
         <div className="luc__home">
           <Slider />
           <Opinions />
-          <Info />
+          <Info /><CoachSide />
           {/* <SemiCards />
-          <CoachSide />
+          
           <OpenCards />
           <ContactForm />
           <Installs />
