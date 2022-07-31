@@ -15,9 +15,27 @@ const SemiCards = () => {
   }, []);
 
   return (
-    <div>
+    <div className="semi">
+      <div className="hor__brake-holder">
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
+          quidem tenetur explicabo laudantium ullam quis.
+        </p>
+      </div>
       <div className="background__text">
-        <h1 className="sticky__header">Sticky Header</h1>
+        <h1
+          className="sticky__header"
+          style={{
+            transform: `translateY(${offsetY * 0.94}px)`,
+            position: `relative`,
+            top: `-1100px`,
+          }}
+        >
+          Lorem, ipsum dolor
+          <br />
+          sit amet consectetur
+        </h1>
         <div className="card__slider-holder">
           <CardSlider
             style={{

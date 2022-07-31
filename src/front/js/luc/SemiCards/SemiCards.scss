@@ -1,3 +1,17 @@
+.semi {
+  background-color: var(--primary);
+  padding-top: 8rem;
+  color: var(--secondary);
+}
+.hor__brake-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hor__brake-holder p {
+  color: var(--white);
+  margin: 0;
+}
 .card__slider-holder {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -7,10 +21,11 @@
 }
 .background__text {
   background-color: var(--primary);
-  padding: 8rem 0;
+  padding: 2rem 0 12rem;
 }
-#slider-card1 {
-  position: absolute;
-  display: none;
-  top: -20rem;
+.sticky__header {
+  text-align: center;
+  color: var(--secondary);
+  font-size: 76px;
+  font-weight: 400;
 }
