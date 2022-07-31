@@ -1,0 +1,26 @@
+.coach-img {
+  position: relative;
+  top: 10.5rem;
+  width: 25rem;
+  border-radius: none;
+  z-index: 10;
+  box-shadow: rgb(0 0 0 / 70%) 0px 3px 8px;
+}
+.coach-tr {
+  width: 8rem;
+  height: 8rem;
+  bottom: -6.5rem;
+  right: -18.5rem;
+  position: relative;
+  background-color: var(--secondary);
+  z-index: 9;
+}
+.coach-br {
+  width: 8rem;
+  height: 8rem;
+  bottom: 6.5rem;
+  right: 1.5rem;
+  position: relative;
+  background-color: var(--secondary);
+  z-index: 9;
+}

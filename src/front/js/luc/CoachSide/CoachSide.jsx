@@ -1,29 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { AiFillSafetyCertificate } from "react-icons/ai";
-import noimage from "../../../img/noimage.jpg";
+import CoachBlock from "../../component/CoachBlock/CoachBlock.jsx";
 
 import "./CoachSide.scss";
 
 function CoachSide() {
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="luc__cc">
       <div className="coach-img__background">
-        <img
-          src={noimage}
-          className="coach-img"
-          style={{
-            transform: `translateY(${offsetY * -0.14}px)`,
-          }}
-        />
+        <CoachBlock />
         <div className="coach__info">
           <h1>Introducing your coach, Antonio Torres</h1>
           <p>

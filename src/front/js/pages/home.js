@@ -25,8 +25,8 @@ export const Home = () => {
           <Slider />
           <Opinions />
           <Info /><CoachSide />
-          {/* <SemiCards />
-          
+          {/* 
+          <SemiCards />
           <OpenCards />
           <ContactForm />
           <Installs />
