@@ -21,17 +21,17 @@ export const Home = () => {
     <><CustomCursor />
       <LucNav />
       <SmoothScrolling>
-        <div className="luc__home">
-          <Slider />
-          <Opinions />
-          <Info /><CoachSide />
-          {/* 
-          <SemiCards />
+
+        <Slider />
+        <Opinions />
+        <Info /><CoachSide /><SemiCards />
+        {/* 
+          
           <OpenCards />
           <ContactForm />
           <Installs />
           <Footer /> */}
-        </div>
+
       </SmoothScrolling>
     </>
   );

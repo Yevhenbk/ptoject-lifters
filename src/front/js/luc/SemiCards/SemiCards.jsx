@@ -6,7 +6,7 @@ import "./SemiCards.scss";
 
 const SemiCards = () => {
   return (
-    <div className="semi__infos">
+    <div>
       {/* <div className="infos__fi">
         <div className="fi_">
           <h1 className="infos__header">
@@ -24,16 +24,16 @@ const SemiCards = () => {
         </div>
       </div>
       <div className="infos__se">
-        <CardSlider />
+        
       </div> */}
       <div className="background__text">
-        <div className="sticky__header"></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quas
-          dolorem recusandae omnis minus repudiandae in soluta aspernatur quis
-          perferendis, quia blanditiis aliquam voluptas ratione esse tenetur
-          porro at magnam?
-        </p>
+        <h1 className="sticky__header">Sticky Header</h1>
+        <div className="card__slider-holder">
+          <CardSlider />
+          <CardSlider />
+          <CardSlider />
+          <CardSlider />
+        </div>
       </div>
     </div>
   );

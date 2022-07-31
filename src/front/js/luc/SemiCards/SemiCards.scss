@@ -1,13 +1,6 @@
-.semi__infos {
-  background-color: var(--primary);
-  padding: 8rem 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: var(--secondary);
-}
-.sticky__header::after {
-  content: "Sticky Header";
-  position: static;
-  top: 20rem;
+.card__slider-holder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
 }
