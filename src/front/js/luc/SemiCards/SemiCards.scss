@@ -3,4 +3,14 @@
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+  padding-top: 8rem;
+}
+.background__text {
+  background-color: var(--primary);
+  padding: 8rem 0;
+}
+#slider-card1 {
+  position: absolute;
+  display: none;
+  top: -20rem;
 }

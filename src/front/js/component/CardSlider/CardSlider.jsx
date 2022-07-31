@@ -6,9 +6,9 @@ import SliderButton from "../Buttons/Slider/SliderButton.jsx";
 
 import "./CardSlider.scss";
 
-const CardSlider = () => {
+const CardSlider = ({ style }) => {
   return (
-    <div className="card__slider">
+    <div className="card__slider" style={style}>
       <video
         muted
         playsInline
