@@ -2,6 +2,7 @@
   max-width: 25rem;
   height: 29.07rem;
   transition: 0.5s all;
+  border-bottom: 1px solid var(--border);
 }
 .slider__video {
   width: 25rem;
@@ -16,7 +17,6 @@
   position: relative;
   width: 25rem;
   overflow: hidden;
-  border-bottom: 1px solid var(--border);
 }
 .cnnContents {
   width: 100%;
@@ -84,16 +84,17 @@
 }
 div.card__slider:hover::after {
   content: "See more";
-  top: -18rem;
-  left: 10rem;
+  top: -17rem;
+  left: 9.5rem;
   position: relative;
   color: var(--border-bb);
   background-color: var(--secondary);
   font-size: 21px;
-  padding: 0.25rem;
+  padding: 0.5rem;
 }
 div.card__slider:hover {
   cursor: pointer;
   background-color: var(--border-bb);
+  border-bottom: 1px solid var(--secondary);
   box-shadow: rgb(0 0 0 / 70%) 0px 3px 8px;
 }
