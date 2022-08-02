@@ -18,58 +18,12 @@ const SemiCards = () => {
     <>
       <div className="semi">
         <div className="hor__brake-holder">
-          <div className="left-al">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <div className="hr" />
-            <h2>Discover more</h2>
-          </div>
-
-          <div className="gg">
-            <div className="brake-holder">
-              <div className="braked-class">
-                <div className="circle-br">1</div>
-                <div>
-                  <h4>Lorem ipsum</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quasi repellendus aliquam.
-                  </p>
-                </div>
-              </div>
-              <div className="braked-class">
-                <div className="circle-br">2</div>
-                <div>
-                  <h4>Lorem ipsum</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quasi repellendus aliquam.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="brake-holder">
-              <div className="braked-class">
-                <div className="circle-br">3</div>
-                <div>
-                  <h4>Lorem ipsum</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quasi repellendus aliquam.
-                  </p>
-                </div>
-              </div>
-              <div className="braked-class">
-                <div className="circle-br">4</div>
-                <div>
-                  <h4>Lorem ipsum</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quasi repellendus aliquam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad,
+            libero, possimus obcaecati.
+          </p>
+          <div className="hr" />
         </div>
         <div className="background__text">
           {/* <h1

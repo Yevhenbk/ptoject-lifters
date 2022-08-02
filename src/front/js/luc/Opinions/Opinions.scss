@@ -14,6 +14,10 @@
 }
 .op__headers {
   padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .op__cards__holder {
   display: flex;

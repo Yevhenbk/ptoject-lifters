@@ -21,9 +21,9 @@ function CoachBlock() {
         <img
           src={noimage}
           className="coach-img"
-          style={{
-            transform: `translateY(${offsetY * -0.14}px)`,
-          }}
+          // style={{
+          //   transform: `translateY(${offsetY * -0.14}px)`,
+          // }}
         />
         <div className="coach-br" />
       </div>

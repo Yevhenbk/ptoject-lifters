@@ -23,6 +23,7 @@ const Opinions = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ex
             autem amet nostrum here.
           </p>
+          <div className="hr" />
         </div>
 
         <div className="op__cards__holder">

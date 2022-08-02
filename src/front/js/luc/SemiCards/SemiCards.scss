@@ -9,9 +9,11 @@
 .hor__brake-holder {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   max-width: 65vw;
   background-color: var(--primary);
+  padding-bottom: 8rem;
 }
 .left-al p {
   color: var(--secondary);
@@ -77,7 +79,6 @@
   font-size: 21px;
   font-family: "Libre Bodoni", serif;
 }
-.braked-class div p {
-  font-size: 16px;
-  color: var(--white);
+.hor__brake-holder p {
+  margin-bottom: 2rem;
 }
